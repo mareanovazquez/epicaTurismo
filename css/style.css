@@ -1,3 +1,84 @@
+body {
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+    background-color: #ccccd2;
+    height: 200vh;
+}
+
+.topBar {
+    color: #056734;
+    font-family: 'neueMontrealRegular', sans-serif;
+    font-size: 16px;
+}
+
+.topBar a {
+    color: #056734;
+}
+
+.topBar a:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.bg-light {
+    background-color: #f0f0f0 !important;
+}
+
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-sm-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    font-weight: normal;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #056734;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.navbar-brand .logoEpica {
+    width: 100px;
+}
+
+main{
+    height: 100vh;
+}
+section{
+    height: 200px;
+}
+
 /*BOTÓN WHATSAPP*/
 .whatsapp {
     position: fixed;
@@ -24,4 +105,79 @@
 .whatsapp i {
     margin-top: 10px;
     color: white;
+}
+
+/*BOTÓN VOLVER ARRIBA*/
+.btn-volver-arriba {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    z-index: 99999;
+    margin-left: -60px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.btn-volver-arriba a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.btn-volver-arriba a i {
+    font-size: 1rem;
+    color: white;
+    line-height: 40px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+    height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
 }
