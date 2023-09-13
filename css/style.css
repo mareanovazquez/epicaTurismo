@@ -19,7 +19,7 @@ PRODUCTOS: FFB000 rgb(255, 176, 0) Amarillo
 
 body {
     font-family: 'Montserrat', 'Courier New', Courier, monospace;
-    background-color:#F5F5DC ;
+    background-color: #F5F5DC;
     height: 200vh;
 }
 
@@ -60,6 +60,7 @@ body {
     height: 32px;
     font-weight: normal;
 }
+
 /* Esta regla se aplica al pseudoelemento "::after" 
 de la barra desplegable de la barra de navegación. 
 Elimina cualquier borde, establece el contenido en un código de 
@@ -98,14 +99,15 @@ El icono aparece después del contenido del menú desplegable.*/
     width: 100px;
 }
 
-main{
+main {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-section{
+
+section {
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -185,7 +187,7 @@ footer {
     background-color: #056734;
 }
 
-footer h2{
+footer h2 {
     padding-top: 20px;
     color: #F5F5DC;
     text-align: center;
@@ -200,7 +202,7 @@ footer h6 {
 
 .contenedorFooter {
     /*Decoración contenido*/
-   color: #F5F5DC;
+    color: #F5F5DC;
     /*Organización cotenido*/
     padding-top: 20px;
     padding-bottom: 20px;
@@ -215,7 +217,7 @@ footer h6 {
     color: #F5F5DC;
 }
 
-.contenedorFooter2{
+.contenedorFooter2 {
     color: #F5F5DC;
     padding-left: 20px;
     padding-right: 20px;
@@ -223,23 +225,28 @@ footer h6 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    }
+}
 
-    .contenedorFooter2 small a{
-        text-decoration: none;
-        color: #F5F5DC;
-    }
+.contenedorFooter2 small a {
+    text-decoration: none;
+    color: #F5F5DC;
+}
 
-    .contenedorFooter2 small i:hover{
-        color:#e40434;
-        transform: rotate(360deg);
-        transition: 1s;
-    }
-    .contenedorFooter2 small a:hover {
-        color:#e40434;
-        font-weight: 700;
-    }
-@media (max-width: 991.98px) {
+.contenedorFooter2 small i:hover {
+    color: #e40434;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.contenedorFooter2 small a:hover {
+    color: #e40434;
+    font-weight: 700;
+}
+
+
+/* Estilo para dispositivos con un ancho de 500px o menos */
+@media (max-width: 500px) {
+
     .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
@@ -248,22 +255,76 @@ footer h6 {
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
+
+
+    .navbar-light .navbar-brand,
+    .navbar-light a.btn {
+        height: 75px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+        font-weight: 500;
+    }
+
+    .navbar-light.sticky-top {
+        top: -100px;
+        transition: .5s;
+    }
+    
+    .footerNosotros {
+        display: none;
+    }
+    .footerExperiencias {
+        display: none;
+    }
+    .footerServicios {
+        display: none;
+    }
+    .footerDestinos {
+        display: none;
+    }
+
+    .footerContacto {
+        text-align: center;
+    }
+    .contenedorFooter2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
 }
 
-.navbar-light .navbar-brand,
-.navbar-light a.btn {
-    height: 75px;
+/* Estilo para dispositivos con un ancho entre 500.01px y 991.98px */
+@media (min-width: 501px) and (max-width: 991.98px) {
+
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+
+
+    .navbar-light .navbar-brand,
+    .navbar-light a.btn {
+        height: 75px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+        font-weight: 500;
+    }
+
+    .navbar-light.sticky-top {
+        top: -100px;
+        transition: .5s;
+    }
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-    font-weight: 500;
-}
-
-.navbar-light.sticky-top {
-    top: -100px;
-    transition: .5s;
-}
+/* Estilo para dispositivos con un ancho de 992px o más */
 
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
