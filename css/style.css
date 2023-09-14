@@ -81,7 +81,7 @@ El icono aparece después del contenido del menú desplegable.*/
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #FFFFFF;
+    color: black;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
@@ -107,13 +107,6 @@ main {
     align-items: center;
 }
 
-section {
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 /*BOTÓN WHATSAPP*/
 .whatsapp {
@@ -271,16 +264,19 @@ footer h6 {
         top: -100px;
         transition: .5s;
     }
-    
+
     .footerNosotros {
         display: none;
     }
+
     .footerExperiencias {
         display: none;
     }
+
     .footerServicios {
         display: none;
     }
+
     .footerDestinos {
         display: none;
     }
@@ -288,6 +284,7 @@ footer h6 {
     .footerContacto {
         text-align: center;
     }
+
     .contenedorFooter2 {
         display: flex;
         flex-direction: column;
@@ -327,6 +324,7 @@ footer h6 {
 /* Estilo para dispositivos con un ancho de 992px o más */
 
 @media (min-width: 992px) {
+
     .navbar .nav-item .dropdown-menu {
         display: block;
         border: none;
@@ -343,4 +341,156 @@ footer h6 {
         transition: .5s;
         opacity: 1;
     }
+
+    #experiencias h2 {
+        text-align: center;
+    }
+
+    .contenedorExperiencias {
+        /*Decoración contenedor*/
+        background-color: #F86F03;
+        padding: 30px;
+
+        /*Organización contenido*/
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .expClassicTitle {
+        width: 20%;
+        height: 300px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expClassicTitle h3 {
+        font-family: 'blennyTrial', sans-serif;
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+
+    .expClassic {
+        margin: 20px;
+        width: 15%;
+        height: 300px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    .contenedorUnicas {
+        /*Decoración contenedor*/
+        background-color: #C23373;
+        padding: 30px;
+
+        /*Organización contenido*/
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .expUnicTitle {
+        width: 20%;
+        height: 300px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expUnicTitle h3 {
+        font-family: 'blennyTrial', sans-serif;
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+
+    .expUnic {
+        margin: 20px;
+        width: 15%;
+        height: 300px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    .contenedorEpicas {
+        /*Decoración contenedor*/
+        background-color: #5D9C59;
+        padding: 30px;
+
+        /*Organización contenido*/
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .expEpicTitle {
+        width: 20%;
+        height: 300px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expEpicTitle h3 {
+        font-family: 'blennyTrial', sans-serif;
+        letter-spacing: 2px;
+        font-size: 40px;
+    }
+
+    .expEpic {
+        margin: 20px;
+        width: 15%;
+        height: 300px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    #servicios {
+        padding: 30px;
+    }
+    #servicios h2 {
+        text-align: center;
+    }
+
+    .contenedorService {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .itemService {
+        width: 17%;
+        height: 400px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    #destinos {
+        padding: 30px;
+    }
+
+    #destinos  h2{
+        text-align: center;
+    }
+
+    .carouselDestinos {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
 }

@@ -33,6 +33,12 @@
             src: url('./assets/fonts/NeueMontreal-Medium.otf');
         }
     </style>
+    <style type="text/css" media="screen, print">
+        @font-face {
+            font-family: blennyTrial;
+            src: url('./assets/fonts/Blenny_Trial_Blk.ttf');
+        }
+    </style>
     <meta name="description" content="Breve descripción para mostrar en la miniatura del buscador">
     <meta name="keywords" content="Listado de palabras clave para el posicionamiento SEO">
     <link rel="shortcut icon" href="./img/favicon.png">
@@ -126,6 +132,7 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
     <!-- MAIN -->
     <main id="principal">
         <article>
@@ -133,17 +140,111 @@
             <h2>Vení a visitarnos a la costa</h2>
         </article>
     </main>
+    <!-- MAIN END -->
 
+    <!-- EXPERIENCIAS START -->
     <section id="experiencias">
-        <article>
-            <h2>EXPERIENCIAS</h2>
+        <h2>EXPERIENCIAS</h2>
+        <article class="contenedorExperiencias">
+            <div class="expClassicTitle">
+                <h3> CLÁSICAS</h3>
+            </div>
+            <div class="expClassic"></div>
+            <div class="expClassic"></div>
+            <div class="expClassic"></div>
+            <div class="expClassic"></div>
+        </article>
+        <article class="contenedorUnicas">
+            <div class="expUnicTitle">
+                <h3> ÚNICAS</h3>
+            </div>
+            <div class="expUnic"></div>
+            <div class="expUnic"></div>
+            <div class="expUnic"></div>
+            <div class="expUnic"></div>
+        </article>
+        <article class="contenedorEpicas">
+            <div class="expEpicTitle">
+                <h3> ÉPICAS</h3>
+            </div>
+            <div class="expEpic"></div>
+            <div class="expEpic"></div>
+            <div class="expEpic"></div>
+            <div class="expEpic"></div>
         </article>
     </section>
+    <!-- EXPERIENCIAS END -->
 
-    <section>
-        <article>
-            <h2>DESTINOS</h2>
-        </article>
+    <!-- SERVICIOS START -->
+    <section id="servicios">
+        <h2>SERVICIOS</h2>
+        <div class="contenedorService">
+            <article class="itemService">
+                <h3>CORPORATIVO</h3>
+            </article>
+            <article class="itemService">
+                <h3>GASTRONOMÍA</h3>
+            </article>
+            <article class="itemService">
+                <h3>ALOJAMIENTO</h3>
+            </article>
+            <article class="itemService">
+                <h3>TRANSFERS</h3>
+            </article>
+            <article class="itemService">
+                <h3>PERSONALIZADO</h3>
+            </article>
+        </div>
+    </section>
+    <!-- SERVICIOS END -->
+
+    <section id="destinos" class="carouselDestinos">
+        <h2>DESTINOS</h2>
+        <section >
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/destinos/laCosta.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>LA COSTA</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/destinos/nacionales.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>NACIONALES</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/destinos/internacionales.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>INTERNACIONALES</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </section>
     </section>
 
     <section>
@@ -202,7 +303,7 @@
                 <a href="#" class="dropdown-item">Nacionales</a>
                 <a href="#" class="dropdown-item">Internacionales</a>
             </div>
-            <div class="footerContacto"> 
+            <div class="footerContacto">
                 <h4>Dónde estamos</h4>
                 <p><i class="fa-regular fa-map-location-dot"></i> Partido de la Costa</p>
                 <p><i class="fa-solid fa-phone"></i> <a class=" text-decoration-none" href="tel:+5492246519749"> +54 9
