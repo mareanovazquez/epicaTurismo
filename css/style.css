@@ -100,12 +100,17 @@ El icono aparece después del contenido del menú desplegable.*/
 }
 
 main {
-    height: 100vh;
+    background-image: url('../img/main.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 
 /*BOTÓN WHATSAPP*/
@@ -265,6 +270,19 @@ footer h6 {
         transition: .5s;
     }
 
+    main article h1 {
+        font-size: 30px;
+        color: #F5F5DC;
+    }
+
+    main article h2 {
+        text-align: center;
+        font-family: 'neueMontralRegular', sans-serif;
+        font-size: 20px;
+        color: #F5F5DC;
+    }
+
+
     .footerNosotros {
         display: none;
     }
@@ -319,6 +337,18 @@ footer h6 {
         top: -100px;
         transition: .5s;
     }
+
+    main article h1 {
+        font-size: 50px;
+        color: #F5F5DC;
+    }
+
+    main article h2 {
+        text-align: center;
+        font-family: 'neueMontralRegular', sans-serif;
+        font-size: 25px;
+        color: #F5F5DC;
+    }
 }
 
 /* Estilo para dispositivos con un ancho de 992px o más */
@@ -342,19 +372,45 @@ footer h6 {
         opacity: 1;
     }
 
+    main article h1 {
+        font-size: 90px;
+        color: #F5F5DC;
+    }
+
+    main article h2 {
+        text-align: center;
+        font-family: 'neueMontralRegular', sans-serif;
+        font-size: 60px;
+        color: #F5F5DC;
+    }
+
     #experiencias h2 {
         text-align: center;
+        padding: 20px;
+        font-family: 'Rowdies', sans-serif;
+        font-size: 50px;
     }
 
     .contenedorExperiencias {
-        /*Decoración contenedor*/
-        background-color: #F86F03;
         padding: 30px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .contenedorClassic {
+        /*Decoración contenedor*/
+        background-image: linear-gradient(98deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%), url('../img/expClassic/faro.jpg');
+        background-size: center;
+        padding: 30px;
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
 
         /*Organización contenido*/
         display: flex;
         flex-direction: row;
-        width: 100%;
         justify-content: space-evenly;
         align-items: center;
     }
@@ -373,6 +429,7 @@ footer h6 {
         font-family: 'blennyTrial', sans-serif;
         letter-spacing: 2px;
         font-size: 40px;
+        color: #F5F5DC;
     }
 
     .expClassic {
@@ -381,6 +438,31 @@ footer h6 {
         height: 300px;
         border: 2px solid black;
         border-radius: 20px;
+    }
+
+    .expClassic1{
+        background-image: url('../img/expClassic/puntaRasa.JPG');
+        background-position: center;
+        background-size: cover;
+        transition: background-position 6s;
+        border: none;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .expClassic1 h4 {
+        color:#F5F5DC;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        
+    }
+
+    .expClassic1:hover {
+        background-position: right;
+        
     }
 
     .contenedorUnicas {
@@ -431,6 +513,8 @@ footer h6 {
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     .expEpicTitle {
@@ -460,11 +544,21 @@ footer h6 {
     #servicios {
         padding: 30px;
     }
+
     #servicios h2 {
         text-align: center;
+        padding: 20px;
+        font-family: 'Rowdies', sans-serif;
+        font-size: 50px;
     }
 
-    .contenedorService {
+    .contenedorServicios {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .subContenedorService {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -482,8 +576,11 @@ footer h6 {
         padding: 30px;
     }
 
-    #destinos  h2{
+    #destinos h2 {
         text-align: center;
+        padding: 20px;
+        font-family: 'Rowdies', sans-serif;
+        font-size: 50px;
     }
 
     .carouselDestinos {

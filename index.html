@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <style type="text/css" media="screen, print">
@@ -88,17 +88,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="#" class="nav-item nav-link">Inicio</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="#" class="dropdown-item">Clásicas</a>
-                        <a href="#" class="dropdown-item">Únicas</a>
-                        <a href="#" class="dropdown-item">Épicas</a>
+                        <a href="#clasicas" class="dropdown-item">Clásicas</a>
+                        <a href="#unicas" class="dropdown-item">Únicas</a>
+                        <a href="#epicas" class="dropdown-item">Épicas</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
+                    <a href="#servicios" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
                     <div class="dropdown-menu fade-up m-0">
                         <a href="#" class="dropdown-item">Corporativo</a>
                         <a href="#" class="dropdown-item">Gastronomía</a>
@@ -108,7 +107,7 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinos</a>
+                    <a href="#destinos" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinos</a>
                     <div class="dropdown-menu fade-up m-0">
                         <a href="#" class="dropdown-item">La Costa</a>
                         <a href="#" class="dropdown-item">Nacionales</a>
@@ -137,24 +136,29 @@
     <main id="principal">
         <article>
             <h1>Épica servicios turísticos</h1>
-            <h2>Vení a visitarnos a la costa</h2>
+
+            <h2>Creadores de experiencias memorables</h2>
         </article>
     </main>
     <!-- MAIN END -->
 
     <!-- EXPERIENCIAS START -->
-    <section id="experiencias">
+    <section id="experiencias" class="contenedorExperiencias">
         <h2>EXPERIENCIAS</h2>
-        <article class="contenedorExperiencias">
+        <article class="contenedorClassic" id="clasicas">
             <div class="expClassicTitle">
                 <h3> CLÁSICAS</h3>
+            </div>
+            <div class="expClassic expClassic1">
+                <h4>PUNTA RASA</h4>
+                <button class="btn btn-light">+info</button>
+
             </div>
             <div class="expClassic"></div>
             <div class="expClassic"></div>
             <div class="expClassic"></div>
-            <div class="expClassic"></div>
         </article>
-        <article class="contenedorUnicas">
+        <article class="contenedorUnicas" id="unicas">
             <div class="expUnicTitle">
                 <h3> ÚNICAS</h3>
             </div>
@@ -163,7 +167,7 @@
             <div class="expUnic"></div>
             <div class="expUnic"></div>
         </article>
-        <article class="contenedorEpicas">
+        <article class="contenedorEpicas" id="epicas">
             <div class="expEpicTitle">
                 <h3> ÉPICAS</h3>
             </div>
@@ -176,9 +180,9 @@
     <!-- EXPERIENCIAS END -->
 
     <!-- SERVICIOS START -->
-    <section id="servicios">
+    <section id="servicios" class="contenedorServicios">
         <h2>SERVICIOS</h2>
-        <div class="contenedorService">
+        <div class="subContenedorService">
             <article class="itemService">
                 <h3>CORPORATIVO</h3>
             </article>
@@ -200,7 +204,7 @@
 
     <section id="destinos" class="carouselDestinos">
         <h2>DESTINOS</h2>
-        <section >
+        <section>
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -244,7 +248,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            </section>
+        </section>
     </section>
 
     <section>
