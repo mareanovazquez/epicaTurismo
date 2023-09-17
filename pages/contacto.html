@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/fontAwesome/css/brands.css">
     <link rel="stylesheet" href="../assets/fontAwesome/css/solid.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleForm.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,7 +34,7 @@
             src: url('../assets/fonts/NeueMontreal-Medium.otf');
         }
     </style>
-     <style type="text/css" media="screen, print">
+    <style type="text/css" media="screen, print">
         @font-face {
             font-family: blennyTrial;
             src: url('./assets/fonts/Blenny_Trial_Blk.ttf');
@@ -88,7 +89,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                
+
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias</a>
                     <div class="dropdown-menu fade-up m-0">
@@ -129,9 +130,41 @@
         </div>
     </nav>
     <!-- Navbar End -->
-    <main>
-        Formulario
+   <main>
+        <!-- Contacto -->
+        <div class="contacto" id="contacto" data-parallax="scroll" data-image-src="img/bg-contacto.jpg">
+            <div class="contenedor">
+                <div class="contenedor-formulario">
+                    <div class="formulario" id="formulario">
+                        <h2>Envianos tu consulta</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, fugit.</p>
+                        <form>
+                            <div>
+                                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                                <p class="error">Por favor escribe tu nombre</p>
+                            </div>
+                            <div>
+                                <input type="email" name="email" placeholder="Correo electrónico" id="email">
+                                <p class="error">Por favor escribe tu correo</p>
+                            </div>
+                            <div>
+                                <textarea name="mensaje" placeholder="Dejá aquí tu consulta" id="mensaje"></textarea>
+                                <p class="error">Por favor escribe tu mensaje</p>
+                            </div>
+                            <div>
+                                <input type="submit" name="enviar" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="foto">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    
     <footer>
         <h2>Épica Servicios turísticos</h2>
         <h6>EVyT Legajo MINTUR: XXX</h6>
@@ -204,9 +237,10 @@
         </div>
     </section>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/stickyNavBar.js"></script>
-    <script src="./js/volverArriba.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/stickyNavBar.js"></script>
+    <script src="../js/volverArriba.js"></script>
+    <script src="../js/validateForm.js"></script>
 </body>
 
 </html>
