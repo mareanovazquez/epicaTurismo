@@ -289,7 +289,7 @@ footer h6 {
         color: #F5F5DC;
     }
 
-  
+
 
     .footerNosotros {
         display: none;
@@ -380,12 +380,13 @@ footer h6 {
         opacity: 1;
     }
 
-    main article{
+    main article {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     main article h1 {
         font-size: 90px;
         color: #F5F5DC;
@@ -398,7 +399,7 @@ footer h6 {
         color: #F5F5DC;
     }
 
-    
+
     #experiencias h2 {
         text-align: center;
         padding: 20px;
@@ -406,17 +407,17 @@ footer h6 {
         font-size: 50px;
     }
 
+    /* EXPERIENCIAS CLÁSICAS */
     .contenedorExperiencias {
         padding: 30px;
         width: 95%;
         margin-left: auto;
         margin-right: auto;
-
     }
 
     .contenedorClassic {
         /*Decoración contenedor*/
-        background-image: linear-gradient(98deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%), url('../img/expClassic/faro.jpg');
+        background-image: linear-gradient(98deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%), url('../img/expClassic/mundoMarino.jpg');
         background-size: center;
         padding: 30px;
         width: 100%;
@@ -433,7 +434,6 @@ footer h6 {
     .expClassicTitle {
         width: 20%;
         height: 300px;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -453,42 +453,116 @@ footer h6 {
         height: 300px;
         border: 2px solid black;
         border-radius: 20px;
+
+        /* ORGANIZACIÓN DEL CONTENIDO */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .expClassic1{
-        background-image: url('../img/expClassic/puntaRasa.JPG');
+    .expClassic h4 {
+        color: #F5F5DC;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .expClassic1 {
+        background-image: url('../img/expClassic/costaAcuatica.jpeg');
         background-position: center;
         background-size: cover;
         transition: background-position 6s;
         border: none;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .expClassic1 h4 {
-        color:#F5F5DC;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        
     }
 
     .expClassic1:hover {
         background-position: right;
-        
+
     }
 
+    .expClassic2 {
+        background-image: url('../img/expClassic/cabalgatas.jpg');
+        background-position: center;
+        background-size: cover;
+        transition: background-position 6s;
+        border: none;
+    }
+
+    .expClassic2:hover {
+        background-position: right;
+
+    }
+
+    .expClassic3 {
+        background-image: url('../img/expClassic/clinicaSurf.JPG');
+        background-position: center;
+        background-size: cover;
+        transition: background-position 6s;
+        border: none;
+    }
+
+    .expClassic3:hover {
+        background-position: right;
+
+    }
+
+    .expClassic4 {
+        background-image: url('../img/expClassic/pescaEmbarcada.jpg');
+        background-position: center;
+        background-size: cover;
+        transition: background-position 6s;
+        border: none;
+    }
+
+    .expClassic4:hover {
+        background-position: right;
+
+    }
+
+    /* CUERPO MODAL EXPERIENCIAS CLÁSICAS */
+
+    .modalCompleto {
+        background-image: linear-gradient(98deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 91%), url('../img/expClassic/mundoMarino.jpg');
+        background-size: center;
+        background-size: cover;
+        transition: background-position 6s;
+        border: none;
+    }
+
+    .modalCompleto .modal-header h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #F5F5DC;
+    }
+
+    .modalBodyExpClassic1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 500;
+        color: #F5F5DC;
+    }
+
+    .modalBodyExpClassic1 p:hover {
+        font-weight: 800;
+        transition: 0.2s;
+    }
+
+    /* EXPERIENCIAS ÚNICAS */
     .contenedorUnicas {
         /*Decoración contenedor*/
-        background-color: #C23373;
+        background-image: linear-gradient(98deg, rgba(194, 51, 115, 0.5215336134453781) 0%, rgba(194,51, 115, 1) 41%), url('../img/expUnicas/faro.jpg');
+        background-size: center;
         padding: 30px;
+        width: 100%;
+
 
         /*Organización contenido*/
         display: flex;
         flex-direction: row;
-        width: 100%;
         justify-content: space-evenly;
         align-items: center;
     }
@@ -507,6 +581,7 @@ footer h6 {
         font-family: 'blennyTrial', sans-serif;
         letter-spacing: 2px;
         font-size: 40px;
+        color: #F5F5DC;
     }
 
     .expUnic {
@@ -518,18 +593,19 @@ footer h6 {
     }
 
     .contenedorEpicas {
-        /*Decoración contenedor*/
-        background-color: #5D9C59;
+
+        background-image: linear-gradient(98deg, rgba(93,156,89, 0.5215336134453781) 0%, rgba(93,156,89, 1) 41%), url('../img/expEpic/kayak.jpg');
+        background-size: center;
         padding: 30px;
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
 
         /*Organización contenido*/
         display: flex;
         flex-direction: row;
-        width: 100%;
         justify-content: space-evenly;
         align-items: center;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
     }
 
     .expEpicTitle {
@@ -546,6 +622,7 @@ footer h6 {
         font-family: 'blennyTrial', sans-serif;
         letter-spacing: 2px;
         font-size: 40px;
+        color: #F5F5DC;
     }
 
     .expEpic {
