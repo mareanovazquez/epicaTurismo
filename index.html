@@ -111,14 +111,14 @@
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#destinos" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinos</a>
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinos</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="#" class="dropdown-item">La Costa</a>
-                        <a href="#" class="dropdown-item">Nacionales</a>
-                        <a href="#" class="dropdown-item">Internacionales</a>
+                        <a href="#destinos" class="dropdown-item">La Costa</a>
+                        <a href="#destinos" class="dropdown-item">Nacionales</a>
+                        <a href="#destinos" class="dropdown-item">Internacionales</a>
                     </div>
                 </div>
-                <a href="#" class="nav-item nav-link">Clientes</a>
+                <a href="#nuestrosClientes" class="nav-item nav-link">Clientes</a>
                 <a href="#" class="nav-item nav-link">Nosotros</a>
                 <a href="./pages/contacto.html" class="nav-item nav-link">Contacto</a>
                 <a href="#" class="nav-item nav-link">Reservá online <i class="fa-regular fa-store"></i> </a>
@@ -156,7 +156,7 @@
             <div class="expClassicTitle">
                 <h3> CLÁSICAS</h3>
             </div>
-            <div class="expClassic expClassic1"  type="button" data-bs-toggle="modal"
+            <div class="expClassic expClassic1" type="button" data-bs-toggle="modal"
                 data-bs-target="#modalExperienciasClasicas1">
                 <h4>PARQUES TEMÁTICOS</h4>
             </div>
@@ -191,6 +191,7 @@
                         <p>Costa Acuática</p>
                         <p>Mundo Marino</p>
                         <p>Costa Salvaje</p>
+                        <button class="btn btn-outline-light btn-sm">Reservá online</button>
                     </div>
                 </div>
             </div>
@@ -245,62 +246,147 @@
     <section id="destinos" class="carouselDestinos">
         <h2>DESTINOS</h2>
         <section>
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselDestinos" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner contenedorImgCarousel">
                     <div class="carousel-item active">
-                        <img src="./img/destinos/laCosta.jpg" class="d-block w-100 rounded" alt="...">
+                        <img src="./img/destinos/laCosta.jpg" class="d-block w-75 rounded" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>LA COSTA</h5>
+                            <h3>LA COSTA</h3>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/destinos/nacionales.jpg" class="d-block w-100" alt="...">
+                        <img src="./img/destinos/nacionales.jpg" class="d-block w-75 rounded" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>NACIONALES</h5>
+                            <h3>NACIONALES</h3>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/destinos/internacionales.jpg" class="d-block w-100" alt="...">
+                        <img src="./img/destinos/internacionales.jpg" class="d-block w-75 rounded" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>INTERNACIONALES</h5>
+                            <h3>INTERNACIONALES</h3>
                             <p>Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                <!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestinos"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDestinos"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                </button>
+                </button> -->
             </div>
         </section>
     </section>
 
-    <section>
-        <article>
-            <h2>NUESTRA MISIÓN</h2>
-        </article>
+    <section id="clientes" class="contenedorClientes">
+
+        <h2>NUESTROS CLIENTES</h2>
+
+        <div id="nuestrosClientes" class="carousel slide nuestrosClientes" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="quote">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <blockquote class="blockquote mb-0">
+                                <p>Excelente el servicio de la empresa, estuvieron en cada detalle y siempre muy amables
+                                    en la atención.</p>
+                                <footer class="blockquote-footer text-end">Lorena, <cite title="Source Title">San
+                                        Fernando</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="quote">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <blockquote class="blockquote mb-0">
+                                <p>Después de muchos años yendo a la costa pudimos conocer algo nuevo con la remada en
+                                    kayak por la ría. Inolvidable!
+                                </p>
+                                <footer class="blockquote-footer text-end">Diego, <cite title="Source Title">CABA</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="quote">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <blockquote class="blockquote mb-0">
+                                <p>Nos encantó viajar con Épica, todo bien organizado, desde el hotel hasta las
+                                    excursiones.</p>
+                                <footer class="blockquote-footer text-end">Camila, <cite
+                                        title="Source Title">CABA</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="quote">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <blockquote class="blockquote mb-0">
+                                <p>Muy buena la experiencia del día de surf y la visita a la reserva de Punta Rasa. La
+                                    recomiendo para ir con amigos.</p>
+                                <footer class="blockquote-footer text-end">Juan Diego, <cite title="Source Title">Bahía
+                                        Blanca</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="quote">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <blockquote class="blockquote mb-0">
+                                <p>Aprovechamos un día feo para hacer la excursión full day a los tres parques y a los
+                                    chicos les encantó.</p>
+                                <footer class="blockquote-footer text-end">Lara, <cite
+                                        title="Source Title">Quilmes</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    <button class="carousel-control-prev" type="button" data-bs-target="#nuestrosClientes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#nuestrosClientes" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+
     </section>
-    <section>
-        <article>
-            <h2>SOBRE NOSOTROS</h2>
-        </article>
-    </section>
+
     <!-- BOTON WHATSAPP -->
     <section>
         <div>
@@ -316,19 +402,29 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footerEpico">
         <h2>Épica Servicios turísticos</h2>
-        <h6>EVyT Legajo MINTUR: XXX</h6>
         <div class="contenedorFooter">
             <div class="footerNosotros">
-                <h4>Nosotros</h4>
-                <a href="#" class="nav-item nav-link">Ventajas</a>
-                <a href="#" class="nav-item nav-link">Clientes</a>
-                <a href="#" class="nav-item nav-link">Misión</a>
-                <a href="#" class="nav-item nav-link">Nosotros</a>
-                <a href="#" class="nav-item nav-link">Reservá online <i class="fa-regular fa-store"></i> </a>
+                <!-- <h4>Nosotros</h4> -->
+                <p>Épica Servicio turísticos es un producto de Querandí Turismo</p>
+                <p>Todos los derechos reservados <i class="fa-regular fa-copyright"></i> 2023</p>
+                <h6>EVyT Legajo MINTUR: XXX</h6>
             </div>
-            <div class="footerExperiencias">
+            <div class="footerContacto">
+              <!--   <h4>Dónde estamos</h4> -->
+                <p><i class="fa-regular fa-map-location-dot"></i> Partido de la Costa</p>
+                <p><i class="fa-solid fa-phone"></i> <a class=" text-decoration-none" href="tel:+5492246519749"> +54 9
+                        2246
+                        51 9749</a></p>
+                <p><a href="mailto:epicaserviciosturisticos@gmail.com" target="_blank"><i
+                            class="fa-regular fa-envelope"></i> epicaserviciosturisticos@gmail.com</a></p>
+                <p><a href="https://www.instagram.com/epica.tur" target="_blank"><i class="fa-brands fa-instagram"></i>
+                        instagram.com/epica.tur</a></p>
+                <p><a href="#" class="nav-item nav-link">Reservá online <i class="fa-regular fa-store"></i> </a></p>
+            </div>
+
+            <!-- <div class="footerExperiencias">
                 <h4>Experiencias</h4>
                 <a href="#" class="nav-item nav-link">Clásicas</a>
                 <a href="#" class="nav-item nav-link">Únicas</a>
@@ -348,17 +444,7 @@
                 <a href="#" class="dropdown-item">Nacionales</a>
                 <a href="#" class="dropdown-item">Internacionales</a>
             </div>
-            <div class="footerContacto">
-                <h4>Dónde estamos</h4>
-                <p><i class="fa-regular fa-map-location-dot"></i> Partido de la Costa</p>
-                <p><i class="fa-solid fa-phone"></i> <a class=" text-decoration-none" href="tel:+5492246519749"> +54 9
-                        2246
-                        51 9749</a></p>
-                <p><a href="mailto:epicaserviciosturisticos@gmail.com" target="_blank"><i
-                            class="fa-regular fa-envelope"></i> epicaserviciosturisticos@gmail.com</a></p>
-                <p><a href="https://www.instagram.com/epica.tur" target="_blank"><i class="fa-brands fa-instagram"></i>
-                        instagram.com/epica.tur</a></p>
-            </div>
+ -->
         </div>
         <div class="contenedorFooter">
 
@@ -367,14 +453,13 @@
 
         </div>
         <div class="contenedorFooter2">
-            <small>Todos los derechos reservados <i class="fa-regular fa-copyright"></i> 2023</small>
             <small class="firmaER">Hecho con <i class="fa-sharp fa-solid fa-heart"></i> por <a
                     href="https://estudiorec.com.ar/" target="_blank">EstudioREC</a></small>
         </div>
     </footer>
 
 
-    
+
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/stickyNavBar.js"></script>
     <script src="./js/volverArriba.js"></script>
