@@ -111,7 +111,13 @@ El icono aparece después del contenido del menú desplegable.*/
     align-items: center;
 }
 
+.principal h1 {
+    font-family: 'GFS Didot', serif;
+}
 
+.principal article img {
+    width: 50%;
+}
 
 /*BOTÓN WHATSAPP*/
 .whatsapp {
