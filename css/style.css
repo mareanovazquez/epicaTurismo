@@ -20,7 +20,7 @@ PRODUCTOS: FFB000 rgb(255, 176, 0) Amarillo
 body {
     font-family: 'Montserrat', 'Courier New', Courier, monospace;
     background-color: #F5F5DC;
-    height: 200vh;
+    
 }
 
 .topBar {
@@ -99,7 +99,7 @@ El icono aparece después del contenido del menú desplegable.*/
     width: 100px;
 }
 
-main {
+.principal {
     background-image: url('../img/main.JPG');
     background-position: center;
     background-size: cover;
@@ -184,9 +184,18 @@ main {
 .footerEpico {
     background-color: #056734;
 }
+.footerEpico .contenedorImgFooter{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.footerEpico .contenedorImgFooter img {
+    padding-top: 10px;
+   
+}
 
-.footerEpico h2 {
-    padding-top: 20px;
+.footerEpico h3 {
+    padding-top: 10px;
     color: #F5F5DC;
     text-align: center;
 }
@@ -679,6 +688,7 @@ main {
     .itemService h3 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
+        font-size: 22px;
         
     }
 
