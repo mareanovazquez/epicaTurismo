@@ -19,7 +19,7 @@ reescrito en MediaQueries */
 
 }
 
-contenedor-formulario {
+.contenedor-formulario {
 
     display: flex;
     flex-direction: column;
