@@ -19,7 +19,7 @@ reescrito en MediaQueries */
 
 }
 
-.contenedor-formulario {
+contenedor-formulario {
 
     display: flex;
     flex-direction: column;
@@ -35,10 +35,12 @@ reescrito en MediaQueries */
     box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.3);
 
 }
+
 .contenedor-formulario .formulario {
-    width: 80%;
-    padding: 70px;
+    width: 100%;
+    padding: 30px;
 }
+
 .imgForm img {
     display: none;
 }
@@ -62,44 +64,40 @@ reescrito en MediaQueries */
     text-align: center;
 }
 
-.contenedor-formulario .foto {
-    display: inline-block;
-    padding: 20px;
+.contacto .contenedor-formulario .formulario form input[type="text"],
+.contacto .contenedor-formulario .formulario form input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: 'neueMontrealRegular', sans-serif;
 }
 
-.contacto .contenedor-formulario .formulario form input[type="text"],
-    .contacto .contenedor-formulario .formulario form input[type="email"] {
-        border: none;
-        border-bottom: 1px solid #ccc;
-        padding: 10px 0;
-        outline: none;
-        width: 100%;
-        margin-bottom: 10px;
-        color: #979797;
-        font-size: 0.9rem;
-        font-weight: 400;
-        letter-spacing: 0.5px;
-        font-family: 'neueMontrealRegular', sans-serif;
-    }
+.contacto .contenedor-formulario .formulario form textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    outline: none;
+    width: 100%;
+    max-width: 100%;
+    max-height: 88px;
+    min-height: 88px;
+    color: #979797;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: 'neueMontrealRegular', sans-serif;
+    letter-spacing: 0.5px;
+}
 
-    .contacto .contenedor-formulario .formulario form textarea {
-        border: none;
-        border-bottom: 1px solid #ccc;
-        padding: 10px 0;
-        outline: none;
-        width: 100%;
-        max-width: 100%;
-        max-height: 88px;
-        min-height: 88px;
-        color: #979797;
-        margin-bottom: 10px;
-        font-size: 0.9rem;
-        font-weight: 400;
-        font-family: 'neueMontrealRegular', sans-serif;
-        letter-spacing: 0.5px;
-    }
 
-    .contacto .contenedor-formulario .formulario form input[type="submit"] {
+/* .contacto .contenedor-formulario .formulario form input[type="submit"] {
         width: 100%;
         border: none;
         border: 1px solid #0089E0;
@@ -111,31 +109,29 @@ reescrito en MediaQueries */
         letter-spacing: 0.5px;
         cursor: pointer;
         transition: all .7s ease;
-    }
+    } */
 
-    .contacto .contenedor-formulario .formulario form input[type="submit"]:hover {
+/*  .contacto .contenedor-formulario .formulario form input[type="submit"]:hover {
         background: #fff;
         color: #056734;
         font-family: 'neueMontrealRegular', sans-serif;
-    }
+    } */
 
 
-    /*Validacion formulario*/
+/*Validacion formulario*/
 
-    .contacto .contenedor-formulario .formulario form .error {
-        display: none;
-        color: #ff8c8c;
-        font-size: 12px;
-        margin-top: -10px;
-        margin-bottom: 10px;
-    }
+.contacto .contenedor-formulario .formulario form .error {
+    display: none;
+    color: #ff8c8c;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
 
 
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
-@media (min-width: 576px) {
-
-}
+@media (min-width: 576px) {}
 
 /* Entre 768px y 991px */
 /* Bootstrap breakpoints MD y superiores */
@@ -155,13 +151,13 @@ reescrito en MediaQueries */
         box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
     }
 
     .contacto .contenedor-formulario .formulario {
-        width: 70%;
-        padding: 70px;
+        width: 90%;
+        padding: 20px;
     }
 
     .contacto .contenedor-formulario .formulario h2 {
@@ -181,26 +177,33 @@ reescrito en MediaQueries */
         text-align: left;
     }
 
-   
-    .contenedor-formulario .imgForm img{
-        display: inline-block;
-        padding: 20px;
-        border-radius: 10px;
-        
-    } 
-    
-
-    
 }
 
 /* Entre 992px y 1199px */
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 992px) {
+
+    .contacto .contenedor-formulario .formulario {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .contenedor-formulario .imgForm img {
+        display: inline-block;
+        padding: 20px;
+        border-radius: 10px;
+    }
     /* Tus estilos para dispositivos large y superiores van aquí */
 }
 
 /* Desde 1200px en adelante */
-/* Bootstrap breakpoints LG y superiores */
+/* Bootstrap breakpoints XG y superiores */
 @media (min-width: 1200px) {
+
+    .contacto .contenedor-formulario .formulario {
+        width: 70%;
+        padding: 70px;
+    }
+
     /* Tus estilos para dispositivos extra large y superiores van aquí */
 }
