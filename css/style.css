@@ -20,7 +20,7 @@ PRODUCTOS: FFB000 rgb(255, 176, 0) Amarillo
 body {
     font-family: 'Montserrat', 'Courier New', Courier, monospace;
     background-color: #F5F5DC;
-    
+
 }
 
 .topBar {
@@ -99,9 +99,9 @@ El icono aparece después del contenido del menú desplegable.*/
     width: 100px;
 }
 
-.principal {
-    background-image: url('../img/main.JPG');
-    background-position: center;
+.principal article {
+    background-image: url('../img/avistadoresAves.JPG');
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
@@ -112,11 +112,21 @@ El icono aparece después del contenido del menú desplegable.*/
 }
 
 .principal h1 {
-    font-family: 'GFS Didot', serif;
+    font-family: 'Montserrat', serif;
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+
+    margin-top: 10px;
+    padding: 5px;
+
+
 }
 
 .principal article img {
-    width: 50%;
+    width: 60%;
 }
 
 /*BOTÓN WHATSAPP*/
@@ -199,14 +209,15 @@ El icono aparece después del contenido del menú desplegable.*/
     /*Decoración contenido*/
     color: #F5F5DC;
 }
-.footerEpico .contenedorImgFooter{
+
+.footerEpico .contenedorImgFooter {
     margin-left: auto;
     margin-right: auto;
     width: 20%;
 }
 
 .footerEpico .contenedorImgFooter img {
-    padding-top: 30px;   
+    padding-top: 30px;
 }
 
 .footerEpico h3 {
@@ -222,9 +233,11 @@ El icono aparece después del contenido del menú desplegable.*/
     margin-left: auto;
     margin-right: auto;
 }
+
 .footerEpico button {
     margin-top: 20px;
 }
+
 .footerNosotros {
     text-align: center;
     font-family: 'neueMontrealRegular', sans-serif;
@@ -233,6 +246,7 @@ El icono aparece después del contenido del menú desplegable.*/
     border-radius: 10px;
     border-width: .5px;
     padding: 20px;
+    width: 75%;
 }
 
 
@@ -242,6 +256,7 @@ El icono aparece después del contenido del menú desplegable.*/
     text-align: center;
     font-size: 16px;
 }
+
 .contenedorFooter .footerContacto p a {
     text-decoration: none;
     color: #F5F5DC;
@@ -250,6 +265,7 @@ El icono aparece después del contenido del menú desplegable.*/
 .contenedorFooter .footerContacto p {
     margin-top: -15px;
 }
+
 .contenedorFooter2 {
     color: #F5F5DC;
     padding-left: 20px;
@@ -326,7 +342,7 @@ El icono aparece después del contenido del menú desplegable.*/
 
 
 
-    
+
     .contenedorFooter2 {
         display: flex;
         flex-direction: column;
@@ -363,7 +379,6 @@ El icono aparece después del contenido del menú desplegable.*/
     }
 
     main article h1 {
-        font-size: 50px;
         color: #F5F5DC;
     }
 
@@ -396,6 +411,10 @@ El icono aparece después del contenido del menú desplegable.*/
         opacity: 1;
     }
 
+    .principal article img {
+        width: 30%;
+    }
+
     main article {
         display: flex;
         flex-direction: column;
@@ -403,9 +422,10 @@ El icono aparece después del contenido del menú desplegable.*/
         align-items: center;
     }
 
-    main article h1 {
-        font-size: 90px;
+    .principal article h1 {
+        font-size: 50px;
         color: #F5F5DC;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     main article h2 {
@@ -421,6 +441,7 @@ El icono aparece después del contenido del menú desplegable.*/
         padding: 20px;
         font-family: 'Rowdies', sans-serif;
         font-size: 50px;
+        color: #056734
     }
 
     /* EXPERIENCIAS CLÁSICAS */
@@ -454,6 +475,7 @@ El icono aparece después del contenido del menú desplegable.*/
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
 
     .expClassicTitle h3 {
@@ -467,7 +489,6 @@ El icono aparece después del contenido del menú desplegable.*/
         margin: 20px;
         width: 15%;
         height: 300px;
-        border: 2px solid black;
         border-radius: 20px;
 
         /* ORGANIZACIÓN DEL CONTENIDO */
@@ -489,7 +510,6 @@ El icono aparece después del contenido del menú desplegable.*/
         background-position: center;
         background-size: cover;
         transition: background-position 6s;
-        border: none;
     }
 
     .expClassic1:hover {
@@ -502,7 +522,6 @@ El icono aparece después del contenido del menú desplegable.*/
         background-position: center;
         background-size: cover;
         transition: background-position 6s;
-        border: none;
     }
 
     .expClassic2:hover {
@@ -515,7 +534,6 @@ El icono aparece después del contenido del menú desplegable.*/
         background-position: center;
         background-size: cover;
         transition: background-position 6s;
-        border: none;
     }
 
     .expClassic3:hover {
@@ -528,7 +546,6 @@ El icono aparece después del contenido del menú desplegable.*/
         background-position: center;
         background-size: cover;
         transition: background-position 6s;
-        border: none;
     }
 
     .expClassic4:hover {
@@ -605,7 +622,15 @@ El icono aparece después del contenido del menú desplegable.*/
         width: 15%;
         height: 300px;
         border: 2px solid black;
-        border-radius: 20px;
+
+    }
+
+    .expUnic1 {
+        border-top-left-radius: 20px;
+    }
+
+    .expUnic4 {
+        border-bottom-right-radius: 20px;
     }
 
     .contenedorEpicas {
@@ -658,6 +683,7 @@ El icono aparece después del contenido del menú desplegable.*/
         padding: 20px;
         font-family: 'Rowdies', sans-serif;
         font-size: 50px;
+        color: #056734
     }
 
     .contenedorServicios {
@@ -679,8 +705,8 @@ El icono aparece después del contenido del menú desplegable.*/
         border: 2px solid black;
         border-radius: 20px;
         color: #F5F5DC;
-        
-        
+
+
 
         display: flex;
         flex-direction: column;
@@ -690,14 +716,14 @@ El icono aparece después del contenido del menú desplegable.*/
 
     .itemService:hover {
         transition: .3s;
-        box-shadow: 5px 5px 5px 0px rgba(5,103,52,0.75);
+        box-shadow: 5px 5px 5px 0px rgba(5, 103, 52, 0.75);
     }
 
     .itemService h3 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
         font-size: 22px;
-        
+
     }
 
     .itemService1 {
@@ -705,9 +731,9 @@ El icono aparece después del contenido del menú desplegable.*/
         background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
-        border: none; 
+        border: none;
     }
-    
+
     .itemService2 {
         background-image: url(../img/servicios/gastronomia.png);
         background-position: center;
@@ -715,6 +741,7 @@ El icono aparece después del contenido del menú desplegable.*/
         background-repeat: no-repeat;
         border: none;
     }
+
     .itemService3 {
         background-image: url(../img/servicios/hoteleria.jpg);
         background-position: left;
@@ -738,7 +765,7 @@ El icono aparece después del contenido del menú desplegable.*/
         background-repeat: no-repeat;
         border: none;
     }
-    
+
 
 
     #destinos {
@@ -750,6 +777,7 @@ El icono aparece después del contenido del menú desplegable.*/
         padding: 20px;
         font-family: 'Rowdies', sans-serif;
         font-size: 50px;
+        color: #056734
     }
 
     #destinos h3 {
@@ -766,27 +794,32 @@ El icono aparece después del contenido del menú desplegable.*/
         margin-right: auto;
         border-radius: 20px;
     }
+
     .contenedorImgCarousel .carousel-item {
         display: flex;
-        justify-content: center; /* Centra horizontalmente */
-        align-items: center;     /* Centra verticalmente */
-    }
-    
-    .contenedorImgCarousel .carousel-item img {
-        max-height: 100%; /* Para asegurarte de que la imagen no exceda el alto del contenedor */
+        justify-content: center;
+        /* Centra horizontalmente */
+        align-items: center;
+        /* Centra verticalmente */
     }
 
-   
+    .contenedorImgCarousel .carousel-item img {
+        max-height: 100%;
+        /* Para asegurarte de que la imagen no exceda el alto del contenedor */
+    }
+
+
     .contenedorClientes {
         width: 95%;
         padding: 30px;
     }
 
-    .contenedorClientes  h2 {
+    .contenedorClientes h2 {
         text-align: center;
         padding: 20px;
         font-family: 'Rowdies', sans-serif;
         font-size: 50px;
+        color: #056734;
     }
 
     .nuestrosClientes {
@@ -797,21 +830,24 @@ El icono aparece después del contenido del menú desplegable.*/
 
     .nuestrosClientes .card {
         background-color: #F5F5DC;
-        
+
     }
 
     .nuestrosClientes .card .quote {
         font-size: 80px;
         color: #056734;
     }
-    .footerEpico .contenedorImgFooter{
+
+    .footerEpico .contenedorImgFooter {
         margin-left: auto;
         margin-right: auto;
         width: 13%;
     }
+
     .footerEpico hr {
         display: none;
     }
+
     .footerEpico .contenedorFooter {
         display: flex;
         flex-direction: row;
@@ -822,14 +858,17 @@ El icono aparece después del contenido del menú desplegable.*/
     }
 
     .footerEpico .footerNosotros {
-        border:none;
+        border: none;
+        width: 50%;
     }
+
     .footerEpico .contenedorFooter .footerNosotros {
         text-align: left;
     }
 
     .footerEpico .contenedorFooter .footerContacto {
         text-align: left;
+
     }
 
 }
