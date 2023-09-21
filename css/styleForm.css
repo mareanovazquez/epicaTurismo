@@ -5,8 +5,8 @@ reescrito en MediaQueries */
 .principalForm {
 
     /* CONTENIDO */
-    background-image: url('../img/main.JPG');
-    background-position: center;
+    background-image: url('../img/contacto/faro.jpg');
+    background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
