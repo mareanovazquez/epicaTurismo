@@ -17,10 +17,13 @@ PRODUCTOS: FFB000 rgb(255, 176, 0) Amarillo
             F6635C rgb(246, 99, 92) Anaranjado
 */
 
+/* Menores a 576px 
+aplica a todo aquello que no sea 
+reescrito en MediaQueries */
+
 body {
     font-family: 'Montserrat', 'Courier New', Courier, monospace;
     background-color: #F5F5DC;
-
 }
 
 .topBar {
@@ -61,46 +64,41 @@ body {
     font-weight: normal;
 }
 
-/* Esta regla se aplica al pseudoelemento "::after" 
-de la barra desplegable de la barra de navegación. 
-Elimina cualquier borde, establece el contenido en un código de 
-icono de Font Awesome para un icono específico ("\f107") y 
-lo estiliza utilizando la familia de fuentes "Font Awesome 5 Free" 
-con un peso de fuente de 900. El icono aparece después del desplegable. 
-El icono aparece después del contenido del menú desplegable.*/
-
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
+/* MAIN CAROUSEL SLIDE 1 */
+.principal .mainCarousel .slide1 {
+    background-image: url('../img/mainCarousel/plavaVistaAerea.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    margin-right: 30px;
-    padding: 25px 0;
-    color: black;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    outline: none;
+.principal .mainCarousel .slide1 img {
+    width: 50%;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: #056734;
-    font-weight: 600;
-    transition: 0.2s;
+.principal .mainCarousel h1 {
+    font-size: 20px;
+    width: 80%;
+    padding: 5px;
+    color: #F5F5DC;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'neueMontralRegular', sans-serif;
+    margin-top: 20px;
 }
 
-.navbar-brand .logoEpica {
-    width: 100px;
+.principal .mainCarousel button {
+    margin-top: 50px;
 }
 
-.principal article {
-    background-image: url('../img/avistadoresAves.JPG');
+/* MAIN CAROUSEL SLIDE 2 */
+.principal .mainCarousel .slide2 {
+    background-image: url('../img/mainCarousel/avistadoresAves.jpg');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,23 +109,27 @@ El icono aparece después del contenido del menú desplegable.*/
     align-items: center;
 }
 
-.principal h1 {
-    font-family: 'Montserrat', serif;
-    font-size: 25px;
-    text-align: center;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 2px;
-
-    margin-top: 10px;
-    padding: 5px;
-
-
+.principal .mainCarousel .slide2 img {
+    width: 50%;
 }
 
-.principal article img {
-    width: 60%;
+/* MAIN CAROUSEL SLIDE 3 */
+.principal .mainCarousel .slide3 {
+    background-image: url('../img/mainCarousel/kitesurf.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.principal .mainCarousel .slide3 img {
+    width: 50%;
+}
+
 
 /*BOTÓN WHATSAPP*/
 .whatsapp {
@@ -293,146 +295,90 @@ El icono aparece después del contenido del menú desplegable.*/
 }
 
 
-/* Estilo para dispositivos con un ancho de 500px o menos */
-@media (max-width: 500px) {
 
-    .navbar-light .navbar-nav .nav-link {
-        margin-right: 0;
-        padding: 10px 0;
+/* Entre 576px y 767px */
+/* Bootstrap breakpoints SM y superiores */
+@media (min-width: 576px) {
+    .principal .mainCarousel h1 {
+        font-size: 30px;
     }
+}
 
-    .navbar-light .navbar-nav {
-        border-top: 1px solid #EEEEEE;
-    }
+/* Entre 768px y 991px */
+/* Bootstrap breakpoints MD y superiores */
+@media (min-width: 768px) {}
 
-
-    .navbar-light .navbar-brand,
-    .navbar-light a.btn {
-        height: 75px;
-    }
-
-    .navbar-light .navbar-nav .nav-link {
-        color: black;
-        font-weight: 500;
-    }
-
-    .navbar-light.sticky-top {
-        top: -100px;
-        transition: .5s;
-    }
-
-    main article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+/* Entre 992px y 1199px */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 992px) {
+    /* Tus estilos para dispositivos large y superiores van aquí */
+    
+    .principal .mainCarousel .slide1 {
+        background-image: url('../img/mainCarousel/plavaVistaAerea.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+        justify-content: space-around;
         align-items: center;
     }
 
-    main article h1 {
-        font-size: 30px;
-        color: #F5F5DC;
+    /* MAIN CAROUSEL SLIDE 1 */
+    .principal .mainCarousel .slide1 {
+        background-image: url('../img/mainCarousel/plavaVistaAerea.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 70vh;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    main article h2 {
-        text-align: center;
-        font-family: 'neueMontralRegular', sans-serif;
-        font-size: 20px;
-        color: #F5F5DC;
-    }
-
-
-
-
-    .contenedorFooter2 {
-        display: flex;
-        flex-direction: column;
-        font-size: 12px;
-    }
-}
-
-/* Estilo para dispositivos con un ancho entre 500.01px y 991.98px */
-@media (min-width: 501px) and (max-width: 991.98px) {
-
-    .navbar-light .navbar-nav .nav-link {
-        margin-right: 0;
-        padding: 10px 0;
-    }
-
-    .navbar-light .navbar-nav {
-        border-top: 1px solid #EEEEEE;
-    }
-
-
-    .navbar-light .navbar-brand,
-    .navbar-light a.btn {
-        height: 75px;
-    }
-
-    .navbar-light .navbar-nav .nav-link {
-        color: black;
-        font-weight: 500;
-    }
-
-    .navbar-light.sticky-top {
-        top: -100px;
-        transition: .5s;
-    }
-
-    main article h1 {
-        color: #F5F5DC;
-    }
-
-    main article h2 {
-        text-align: center;
-        font-family: 'neueMontralRegular', sans-serif;
-        font-size: 25px;
-        color: #F5F5DC;
-    }
-}
-
-/* Estilo para dispositivos con un ancho de 992px o más */
-
-@media (min-width: 992px) {
-
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-    }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
-    }
-
-    .principal article img {
+    .principal .mainCarousel .slide1 img {
         width: 30%;
     }
 
-    main article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .principal .mainCarousel h1 {
+        font-size: 30px;
+        color: #F5F5DC;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'neueMontralRegular', sans-serif;
+        margin-top: -40px;
+    }
+
+    .principal .mainCarousel button {
+        margin-top: 100px;
+    }
+
+    /* MAIN CAROUSEL SLIDE 2 */
+    .principal .mainCarousel .slide2 {
+        background-image: url('../img/mainCarousel/avistadoresAves.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+        justify-content: space-around;
         align-items: center;
     }
 
-    .principal article h1 {
-        font-size: 50px;
-        color: #F5F5DC;
-        background-color: rgba(0, 0, 0, 0);
+    .principal .mainCarousel .slide2 img {
+        width: 30%;
     }
 
-    main article h2 {
-        text-align: center;
-        font-family: 'neueMontralRegular', sans-serif;
-        font-size: 60px;
-        color: #F5F5DC;
+    /* MAIN CAROUSEL SLIDE 3 */
+    .principal .mainCarousel .slide3 {
+        background-image: url('../img/mainCarousel/kitesurf.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .principal .mainCarousel .slide3 img {
+        width: 30%;
     }
 
 
@@ -869,6 +815,78 @@ El icono aparece después del contenido del menú desplegable.*/
     .footerEpico .contenedorFooter .footerContacto {
         text-align: left;
 
+    }
+
+}
+
+/* Desde 1200px en adelante */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 1200px) {
+    /* Tus estilos para dispositivos extra large y superiores van aquí */
+
+    /* MAIN CAROUSEL SLIDE 1 */
+    .principal .mainCarousel .slide1 {
+        background-image: url('../img/mainCarousel/plavaVistaAerea.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 80vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .principal .mainCarousel .slide1 img {
+        width: 30%;
+    }
+
+    .principal .mainCarousel h1 {
+        font-size: 40px;
+        color: #F5F5DC;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'neueMontralRegular', sans-serif;
+    }
+
+    .principal .mainCarousel button {
+        margin-top: 100px;
+    }
+
+    /* MAIN CAROUSEL SLIDE 2 */
+    .principal .mainCarousel .slide2 {
+        background-image: url('../img/mainCarousel/avistadoresAves.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .principal .mainCarousel .slide2 img {
+        width: 30%;
+    }
+
+    /* MAIN CAROUSEL SLIDE 3 */
+    .principal .mainCarousel .slide3 {
+        background-image: url('../img/mainCarousel/kitesurf.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .principal .mainCarousel .slide3 img {
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+    .principal .mainCarousel h1 {
+        font-size: 50px;
     }
 
 }

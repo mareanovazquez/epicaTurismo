@@ -1,0 +1,116 @@
+/* Esta regla se aplica al pseudoelemento "::after" 
+de la barra desplegable de la barra de navegación. 
+Elimina cualquier borde, establece el contenido en un código de 
+icono de Font Awesome para un icono específico ("\f107") y 
+lo estiliza utilizando la familia de fuentes "Font Awesome 5 Free" 
+con un peso de fuente de 900. El icono aparece después del desplegable. 
+El icono aparece después del contenido del menú desplegable.*/
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #056734;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.navbar-brand .logoEpica {
+    width: 100px;
+}
+
+/* Estilo para NAVBAR CON TOPE DE ANCHO EN 500px o menos */
+@media (max-width: 500px) {
+
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+
+
+    .navbar-light .navbar-brand,
+    .navbar-light a.btn {
+        height: 75px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+        font-weight: 500;
+    }
+
+    .navbar-light.sticky-top {
+        top: -100px;
+        transition: .5s;
+    }
+    
+}
+
+/* Estilo para NAVBAR PARA dispositivos con un ancho entre 500.01px y 991.98px */
+@media (min-width: 501px) and (max-width: 991.98px) {
+
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+    
+    .navbar-light .navbar-brand,
+    .navbar-light a.btn {
+        height: 75px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+        font-weight: 500;
+    }
+
+    .navbar-light.sticky-top {
+        top: -100px;
+        transition: .5s;
+    }
+
+}
+
+@media (min-width: 992px) {
+    /* Tus estilos para dispositivos large y superiores van aquí */
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}

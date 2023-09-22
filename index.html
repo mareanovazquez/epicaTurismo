@@ -49,6 +49,7 @@
     <link rel="stylesheet" href="./assets/fontAwesome/css/brands.css">
     <link rel="stylesheet" href="./assets/fontAwesome/css/solid.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleNavBar.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Favicon y título -->
@@ -104,17 +105,18 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias <br>clásicas</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="#clasicas" class="dropdown-item">Clásicas</a>
-                        <a href="#unicas" class="dropdown-item">Únicas</a>
-                        <a href="#epicas" class="dropdown-item">Épicas</a>
+                        <a href="#" class="dropdown-item">Parques temáticos</a>
+                        <a href="#" class="dropdown-item">Cabalgatas</a>
+                        <a href="#" class="dropdown-item">Clínicas de Surf</a>
+                        <a href="#" class="dropdown-item">Pesca embarcada</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias <br> únicas</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="#clasicas" class="dropdown-item">Clásicas</a>
-                        <a href="#unicas" class="dropdown-item">Únicas</a>
-                        <a href="#epicas" class="dropdown-item">Épicas</a>
+                        <a href="" class="dropdown-item">Clásicas</a>
+                        <a href="#" class="dropdown-item">Únicas</a>
+                        <a href="#" class="dropdown-item">Épicas</a>
                     </div>
                 </div>
 
@@ -122,9 +124,9 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias <br> épicas</a>
                     <div class="dropdown-menu fade-up m-0">
 
-                        <a href="#clasicas" class="dropdown-item">Clásicas</a>
-                        <a href="#unicas" class="dropdown-item">Únicas</a>
-                        <a href="#epicas" class="dropdown-item">Épicas</a>
+                        <a href="" class="dropdown-item">Clásicas</a>
+                        <a href="#" class="dropdown-item">Únicas</a>
+                        <a href="#" class="dropdown-item">Épicas</a>
                     </div>
                 </div>
 
@@ -149,7 +151,7 @@
                 </div>
                 <a href="#" class="nav-item nav-link">Nosotros</a>
                 <a href="./pages/contacto.html" class="nav-item nav-link">Contacto</a>
-                <a href="#" class="nav-item nav-link">Reservá online <i class="fa-regular fa-store"></i> </a>
+               <!--  <a href="#" class="nav-item nav-link">Reservá online <i class="fa-regular fa-store"></i> </a> -->
                 <div class="d-inline-flex align-items-center d-lg-none RRSSMenuMobile">
                     <a class="btn btn-sm-square bg-white me-2" href="https://www.instagram.com/epica.tur/"
                         target="_blank"><i class="fab fa-instagram"></i></a>
@@ -165,18 +167,34 @@
 
     <!-- MAIN -->
     <main id="principal" class="principal">
-        <article>
+        <div id="carouselExample" class="carousel slide  carousel-fade mainCarousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active slide1">
+                    <img src="./img/logotipo_claro.svg" alt="">
+                    <h1>CREADORES DE EXPERIENCIAS MEMORABLES</h1>
+                    <button class="btn btn-success btn-lg">Reservá online</button>
+                </div>
+                <div class="carousel-item slide2">
+                    <img src="./img/logotipo_claro.svg" alt="">
+                    <h1>CREADORES DE EXPERIENCIAS MEMORABLES</h1>
+                    <button class="btn btn-success btn-lg">Reservá online</button>
+                </div>
+                <div class="carousel-item slide3">
+                    <img src="./img/logotipo_claro.svg" alt="">
+                    <h1>CREADORES DE EXPERIENCIAS MEMORABLES</h1>
+                    <button class="btn btn-success btn-lg">Reservá online</button>
+                </div>
+            </div>
+            <!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
 
-            <img src="./img/logotipo_claro.svg" alt="">
-            <h1>CREADORES DE EXPERIENCIAS MEMORABLES</h1>
-            <!-- <h1>Servicios turísticos</h1> -->
-
-            <!-- <h2>Creadores de experiencias memorables</h2> -->
-            <button class="btn btn-success btn-lg">Reservá online</button>
-
-
-
-        </article>
     </main>
     <!-- MAIN END -->
 
@@ -352,8 +370,9 @@
 
             <div class="footerContacto">
                 <!--   <h4>Dónde estamos</h4> -->
-                <p><a href="https://maps.app.goo.gl/rkxnW6pYVV2pFZmb7" target="_blank"><i
-                            class="fa-regular fa-map-location-dot"></i> Partido de la Costa</a></p>
+                <p><a href="https://maps.app.goo.gl/AJWC1nfeCbJDZdVr7" target="_blank"><i
+                            class="fa-regular fa-map-location-dot"></i> Calle 3 N° 1225, Santa Teresita, partido de La
+                        Costa</a></p>
                 <p><i class="fa-solid fa-phone"></i> <a class=" text-decoration-none" href="tel:+5492246519749"> +54 9
                         2246
                         51 9749</a></p>
@@ -376,7 +395,7 @@
         </div>
     </footer>
 
-    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/stickyNavBar.js"></script>
     <script src="./js/volverArriba.js"></script>
 </body>
