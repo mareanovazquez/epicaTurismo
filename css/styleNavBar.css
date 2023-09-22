@@ -36,6 +36,57 @@ El icono aparece después del contenido del menú desplegable.*/
     width: 100px;
 }
 
+.navClasicas {
+    background-image: linear-gradient(278deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%);
+    border: none;
+    
+}
+
+.navClasicas a {
+    color:#F5F5DC;
+}
+
+.navClasicas a:hover {
+    background-image: linear-gradient(278deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%);
+    font-weight: 800;
+    transition: .3s;
+}
+
+.navUnicas {
+    background-image: linear-gradient(90deg, rgba(194, 51, 115, 1) 0%, rgba(194, 51, 115, 0.5215336134453781) 100%);
+    border: none;
+    transition: background-image 0.3s ease;
+    
+}
+
+.navUnicas a {
+    color:#F5F5DC;
+}
+
+.navUnicas a:hover {
+    background-image: linear-gradient(90deg, rgba(194, 51, 115, 1) 0%, rgba(194, 51, 115, 0.5215336134453781) 100%);
+    font-weight: 800;
+    transition: 0.3s;
+    
+}
+
+.navEpicas {
+    background-image: linear-gradient(278deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%);
+    border: none;
+}
+
+.navEpicas a {
+    color:#F5F5DC;
+}
+
+.navEpicas a:hover {
+    background-image: linear-gradient(278deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%);
+    font-weight: 800;
+    transition: .3s;
+}
+
+
+
 /* Estilo para NAVBAR CON TOPE DE ANCHO EN 500px o menos */
 @media (max-width: 500px) {
 

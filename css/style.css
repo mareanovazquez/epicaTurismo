@@ -563,26 +563,80 @@ body {
         color: #F5F5DC;
     }
 
+    .expUnic h4 {
+        color: #F5F5DC;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
     .expUnic {
         margin: 20px;
         width: 15%;
         height: 300px;
-        border: 2px solid black;
+        border-radius: 20px;
 
+        /* ORGANIZACIÓN DEL CONTENIDO */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .expUnic1 {
-        border-top-left-radius: 20px;
+        background-image: url('../img/expUnicas/faro.jpg');
+        background-position: center;
+        background-size: cover;
+        transition: background-position 6s;
+    }
+
+    .expUnic1:hover {
+        background-position: right;
+
+    }
+
+    .expUnic2 {
+        background-image: url('../img/expUnicas/madariaga.jpg');
+        background-position: left;
+        background-size: cover;
+        transition: background-position 6s;
+    }
+
+    
+    .expUnic2:hover {
+        background-position: right;
+    }
+
+    .expUnic3 {
+        background-image: url('../img/expUnicas/avistajeAves.jpg');
+        background-position: left;
+        background-size: cover;
+        transition: background-position 6s;
+    }
+
+    
+    .expUnic3:hover {
+        background-position: right;
     }
 
     .expUnic4 {
-        border-bottom-right-radius: 20px;
+        background-image: url('../img/expUnicas/bahiaSamboronbom.JPG');
+        background-position: center;
+        background-size: cover;
+        transition: background-position 6s;
     }
+
+    
+    .expUnic4:hover {
+        background-position: right;
+    }
+    
 
     .contenedorEpicas {
 
         background-image: linear-gradient(98deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%), url('../img/expEpic/kayak.jpg');
-        background-size: center;
+        background-size: contain;
+        background-position:left ;
+        background-repeat: repeat;
         padding: 30px;
         width: 100%;
         border-bottom-left-radius: 20px;
@@ -616,10 +670,65 @@ body {
         margin: 20px;
         width: 15%;
         height: 300px;
-        border: 2px solid black;
         border-radius: 20px;
+
+        /* ORGANIZACIÓN DEL CONTENIDO */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
+    .expEpic h4 {
+        color: #F5F5DC;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .expEpic1 {
+        background-image: url('../img/expEpic/surf.JPG');
+        background-position: center;
+        background-size: cover;
+        transition: background-position 6s;
+    }
+
+    .expEpic1:hover {
+        background-position: right;
+    }
+
+    .expEpic2 {
+        background-image: url('../img/expEpic/kayak2.JPG');
+        background-position: center;
+        background-size: cover;
+        transition: background-position 6s;
+    }
+
+    .expEpic2:hover {
+        background-position: right;
+    }
+
+    .expEpic3 {
+        background-image: url('../img/expEpic/sandboard.jpg');
+        background-position: right;
+        background-size: cover;
+        transition: background-position 6s;
+    }
+
+    .expEpic3:hover {
+        background-position: center;
+    }
+
+    .expEpic4 {
+        background-image: url('../img/expEpic/playaAtardecer.jpg');
+        background-position: center;
+        background-size: cover;
+        transition: background-position 6s;
+    }
+
+    .expEpic4:hover {
+        background-position: right;
+    }
     #servicios {
         padding: 30px;
     }
@@ -651,6 +760,8 @@ body {
         border: 2px solid black;
         border-radius: 20px;
         color: #F5F5DC;
+        transition: transform 0.3s ease, filter 0.3s ease ;
+        
 
 
 
@@ -662,7 +773,9 @@ body {
 
     .itemService:hover {
         transition: .3s;
-        box-shadow: 5px 5px 5px 0px rgba(5, 103, 52, 0.75);
+        transform: translateY(5px);
+        filter: grayscale(70%);
+        
     }
 
     .itemService h4 {
@@ -671,6 +784,8 @@ body {
         font-size: 20px;
 
     }
+
+   
 
     .itemService1 {
         background-image: url(../img/servicios/corporativo.png);
