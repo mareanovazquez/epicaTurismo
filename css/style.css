@@ -719,10 +719,10 @@ El icono aparece después del contenido del menú desplegable.*/
         box-shadow: 5px 5px 5px 0px rgba(5, 103, 52, 0.75);
     }
 
-    .itemService h3 {
+    .itemService h4 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
-        font-size: 22px;
+        font-size: 20px;
 
     }
 

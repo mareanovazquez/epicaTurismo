@@ -1,50 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <!-- Metadatos básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Épica Servicios turísticos es una agencia del Partido de La Costa que ofrece propuestas variadas para disfrutar la región del Tuyú en todo su esplendor.">
+    <meta name="keywords"
+        content="Servicios turísticos La Costa viajes descanso vacaciones viajeros turismo nacionales internacionales">
+
+    <!-- Preconexión para Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuentes de Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Fuentes locales -->
+    <style type="text/css" media="screen, print">
+        @font-face {
+            font-family: neueMontrealRegular;
+            src: url('../assets/fonts/NeueMontreal-Regular.otf');
+        }
+
+        @font-face {
+            font-family: neueMontrealBold;
+            src: url('../assets/fonts/NeueMontreal-Bold.otf');
+        }
+
+        @font-face {
+            font-family: neueMontrealMedium;
+            src: url('../assets/fonts/NeueMontreal-Medium.otf');
+        }
+
+        @font-face {
+            font-family: blennyTrial;
+            src: url('../assets/fonts/Blenny_Trial_Blk.ttf');
+        }
+    </style>
+
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/fontAwesome/css/fontawesome.css">
     <link rel="stylesheet" href="../assets/fontAwesome/css/brands.css">
     <link rel="stylesheet" href="../assets/fontAwesome/css/solid.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleForm.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <style type="text/css" media="screen, print">
-        @font-face {
-            font-family: neueMontrealRegular;
-            src: url('../assets/fonts/NeueMontreal-Regular.otf');
-        }
-    </style>
-    <style type="text/css" media="screen, print">
-        @font-face {
-            font-family: neueMontrealBold;
-            src: url('../assets/fonts/NeueMontreal-Bold.otf');
-        }
-    </style>
-    <style type="text/css" media="screen, print">
-        @font-face {
-            font-family: neueMontrealMedium;
-            src: url('../assets/fonts/NeueMontreal-Medium.otf');
-        }
-    </style>
-    <style type="text/css" media="screen, print">
-        @font-face {
-            font-family: blennyTrial;
-            src: url('./assets/fonts/Blenny_Trial_Blk.ttf');
-        }
-    </style>
-    <meta name="description" content="Breve descripción para mostrar en la miniatura del buscador">
-    <meta name="keywords" content="Listado de palabras clave para el posicionamiento SEO">
+
+    <!-- Favicon y título -->
     <link rel="shortcut icon" href="../img/favicon.png">
-    <title>Épica | Contacto</title>
+    <title>Épica | CONTACTO</title>
 </head>
 
 <body>
@@ -149,11 +159,12 @@
                                 <p class="error">Por favor escribe tu correo</p>
                             </div>
                             <div>
-                                <textarea name="mensaje" placeholder="Dejá aquí tu consulta" id="mensaje"></textarea>
+                                <textarea name="mensaje" placeholder="Mensaje" id="mensaje"></textarea>
                                 <p class="error">Por favor escribe tu mensaje</p>
                             </div>
                             <div>
-                                <button class="btn btn-sm btn-outline-success" type="submit" name="enviar" value="Enviar">ENVIAR</button>
+                                <button class="btn btn-sm btn-outline-success" type="submit" name="enviar"
+                                    value="Enviar">ENVIAR</button>
                             </div>
                         </form>
                     </div>
@@ -168,7 +179,7 @@
     </main>
 
     <footer class="footerEpico">
-        <div class="contenedorImgFooter"><img src="../img/logotipo claro.svg" alt=""></div>
+        <div class="contenedorImgFooter"><img src="../img/logotipo_claro.svg" alt=""></div>
         <h3>Servicios turísticos</h3>
         <hr>
         <div class="contenedorFooter">
@@ -191,28 +202,6 @@
                         instagram.com/epica.tur</a></p>
                 <p><a href="#" class="nav-item nav-link">Reservá online <i class="fa-regular fa-store"></i> </a></p>
             </div>
-
-            <!-- <div class="footerExperiencias">
-                <h4>Experiencias</h4>
-                <a href="#" class="nav-item nav-link">Clásicas</a>
-                <a href="#" class="nav-item nav-link">Únicas</a>
-                <a href="#" class="nav-item nav-link">Épicas</a>
-            </div>
-            <div class="footerServicios">
-                <h4>Servicios</h4>
-                <a href="#" class="dropdown-item">Corporativo</a>
-                <a href="#" class="dropdown-item">Gastronomía</a>
-                <a href="#" class="dropdown-item">Alojamiento</a>
-                <a href="#" class="dropdown-item">Transfers</a>
-                <a href="#" class="dropdown-item">Personalizado</a>
-            </div>
-            <div class="footerDestinos">
-                <h4>Destinos</h4>
-                <a href="#" class="dropdown-item">La Costa</a>
-                <a href="#" class="dropdown-item">Nacionales</a>
-                <a href="#" class="dropdown-item">Internacionales</a>
-            </div>
- -->
         </div>
         <div class="contenedorFooter">
 

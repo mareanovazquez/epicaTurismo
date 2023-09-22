@@ -1,49 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <!-- Metadatos básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/fontAwesome/css/fontawesome.css">
-    <link rel="stylesheet" href="./assets/fontAwesome/css/brands.css">
-    <link rel="stylesheet" href="./assets/fontAwesome/css/solid.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description"
+        content="Épica Servicios turísticos es una agencia del Partido de La Costa que ofrece propuestas variadas para disfrutar la región del Tuyú en todo su esplendor.">
+    <meta name="keywords"
+        content="Servicios turísticos La Costa viajes descanso vacaciones viajeros turismo nacionales internacionales">
+
+    <!-- Preconexión para Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuentes de Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Fuentes locales -->
     <style type="text/css" media="screen, print">
         @font-face {
             font-family: neueMontrealRegular;
             src: url('./assets/fonts/NeueMontreal-Regular.otf');
         }
-    </style>
-    <style type="text/css" media="screen, print">
+
         @font-face {
             font-family: neueMontrealBold;
             src: url('./assets/fonts/NeueMontreal-Bold.otf');
         }
-    </style>
-    <style type="text/css" media="screen, print">
+
         @font-face {
             font-family: neueMontrealMedium;
             src: url('./assets/fonts/NeueMontreal-Medium.otf');
         }
-    </style>
-    <style type="text/css" media="screen, print">
+
         @font-face {
             font-family: blennyTrial;
             src: url('./assets/fonts/Blenny_Trial_Blk.ttf');
         }
     </style>
-    <meta name="description"
-        content="Épica Servicios turísticos es una agencia del Partido de La  Costa que ofrece propuestas variadas para disfrutar la región del Tuyú en todo su esplendor.">
-    <meta name="keywords"
-        content="Servicios turísticos La Costa viajes descanso vacaciones viajeros turismo nacionales internacionales">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/brands.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/solid.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Favicon y título -->
     <link rel="shortcut icon" href="./img/favicon.png">
     <title>Épica servicios turísticos</title>
 </head>
@@ -94,13 +102,33 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias <br>clásicas</a>
                     <div class="dropdown-menu fade-up m-0">
                         <a href="#clasicas" class="dropdown-item">Clásicas</a>
                         <a href="#unicas" class="dropdown-item">Únicas</a>
                         <a href="#epicas" class="dropdown-item">Épicas</a>
                     </div>
                 </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias <br> únicas</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="#clasicas" class="dropdown-item">Clásicas</a>
+                        <a href="#unicas" class="dropdown-item">Únicas</a>
+                        <a href="#epicas" class="dropdown-item">Épicas</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias <br> épicas</a>
+                    <div class="dropdown-menu fade-up m-0">
+
+                        <a href="#clasicas" class="dropdown-item">Clásicas</a>
+                        <a href="#unicas" class="dropdown-item">Únicas</a>
+                        <a href="#epicas" class="dropdown-item">Épicas</a>
+                    </div>
+                </div>
+
+
                 <div class="nav-item dropdown">
                     <a href="#servicios" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
                     <div class="dropdown-menu fade-up m-0">
@@ -119,7 +147,6 @@
                         <a href="#destinos" class="dropdown-item">Internacionales</a>
                     </div>
                 </div>
-                <a href="#nuestrosClientes" class="nav-item nav-link">Clientes</a>
                 <a href="#" class="nav-item nav-link">Nosotros</a>
                 <a href="./pages/contacto.html" class="nav-item nav-link">Contacto</a>
                 <a href="#" class="nav-item nav-link">Reservá online <i class="fa-regular fa-store"></i> </a>
@@ -139,9 +166,9 @@
     <!-- MAIN -->
     <main id="principal" class="principal">
         <article>
-            
+
             <img src="./img/logotipo_claro.svg" alt="">
-            <h1>CREADORES DE EXPERIENCIAS MEMORABLES</h1>    
+            <h1>CREADORES DE EXPERIENCIAS MEMORABLES</h1>
             <!-- <h1>Servicios turísticos</h1> -->
 
             <!-- <h2>Creadores de experiencias memorables</h2> -->
@@ -228,20 +255,20 @@
     <section id="servicios" class="contenedorServicios">
         <h2>SERVICIOS</h2>
         <div class="subContenedorService">
-            <article class="itemService itemService1">
-                <h3>CORPORATIVO</h3>
+            <article class="itemService itemService3">
+                <h4>ALOJAMIENTO</h4>
             </article>
             <article class="itemService itemService2">
-                <h3>GASTRONOMÍA</h3>
-            </article>
-            <article class="itemService itemService3">
-                <h3>ALOJAMIENTO</h3>
+                <h4>GASTRONOMÍA</h4>
             </article>
             <article class="itemService itemService4">
-                <h3>TRANSFERS</h3>
+                <h4>TRANSFERS</h4>
             </article>
             <article class="itemService itemService5">
-                <h3>PERSONALIZADO</h3>
+                <h4>PERSONALIZADO</h4>
+            </article>
+            <article class="itemService itemService1">
+                <h4>CORPORATIVO</h4>
             </article>
         </div>
     </section>
@@ -296,101 +323,6 @@
         </section>
     </section>
 
-    <section id="clientes" class="contenedorClientes">
-
-        <h2>NUESTROS CLIENTES</h2>
-
-        <div id="nuestrosClientes" class="carousel slide nuestrosClientes" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="quote">
-                                <i class="fa-solid fa-quote-left"></i>
-                            </div>
-                            <blockquote class="blockquote mb-0">
-                                <p>Excelente el servicio de la empresa, estuvieron en cada detalle y siempre muy amables
-                                    en la atención.</p>
-                                <footer class="blockquote-footer text-end">Lorena, <cite title="Source Title">San
-                                        Fernando</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="quote">
-                                <i class="fa-solid fa-quote-left"></i>
-                            </div>
-                            <blockquote class="blockquote mb-0">
-                                <p>Después de muchos años yendo a la costa pudimos conocer algo nuevo con la remada en
-                                    kayak por la ría. Inolvidable!
-                                </p>
-                                <footer class="blockquote-footer text-end">Diego, <cite title="Source Title">CABA</cite>
-                                </footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="quote">
-                                <i class="fa-solid fa-quote-left"></i>
-                            </div>
-                            <blockquote class="blockquote mb-0">
-                                <p>Nos encantó viajar con Épica, todo bien organizado, desde el hotel hasta las
-                                    excursiones.</p>
-                                <footer class="blockquote-footer text-end">Camila, <cite
-                                        title="Source Title">CABA</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="quote">
-                                <i class="fa-solid fa-quote-left"></i>
-                            </div>
-                            <blockquote class="blockquote mb-0">
-                                <p>Muy buena la experiencia del día de surf y la visita a la reserva de Punta Rasa. La
-                                    recomiendo para ir con amigos.</p>
-                                <footer class="blockquote-footer text-end">Juan Diego, <cite title="Source Title">Bahía
-                                        Blanca</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="quote">
-                                <i class="fa-solid fa-quote-left"></i>
-                            </div>
-                            <blockquote class="blockquote mb-0">
-                                <p>Aprovechamos un día feo para hacer la excursión full day a los tres parques y a los
-                                    chicos les encantó.</p>
-                                <footer class="blockquote-footer text-end">Lara, <cite
-                                        title="Source Title">Quilmes</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--    <button class="carousel-control-prev" type="button" data-bs-target="#nuestrosClientes" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#nuestrosClientes" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> -->
-        </div>
-
-    </section>
-
     <!-- BOTON WHATSAPP -->
     <section>
         <div>
@@ -431,28 +363,6 @@
                         instagram.com/epica.tur</a></p>
                 <p><a href="#" class="nav-item nav-link">Reservá online <i class="fa-regular fa-store"></i> </a></p>
             </div>
-
-            <!-- <div class="footerExperiencias">
-                <h4>Experiencias</h4>
-                <a href="#" class="nav-item nav-link">Clásicas</a>
-                <a href="#" class="nav-item nav-link">Únicas</a>
-                <a href="#" class="nav-item nav-link">Épicas</a>
-            </div>
-            <div class="footerServicios">
-                <h4>Servicios</h4>
-                <a href="#" class="dropdown-item">Corporativo</a>
-                <a href="#" class="dropdown-item">Gastronomía</a>
-                <a href="#" class="dropdown-item">Alojamiento</a>
-                <a href="#" class="dropdown-item">Transfers</a>
-                <a href="#" class="dropdown-item">Personalizado</a>
-            </div>
-            <div class="footerDestinos">
-                <h4>Destinos</h4>
-                <a href="#" class="dropdown-item">La Costa</a>
-                <a href="#" class="dropdown-item">Nacionales</a>
-                <a href="#" class="dropdown-item">Internacionales</a>
-            </div>
- -->
         </div>
         <div class="contenedorFooter">
 
@@ -466,9 +376,7 @@
         </div>
     </footer>
 
-
-
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/stickyNavBar.js"></script>
     <script src="./js/volverArriba.js"></script>
 </body>
