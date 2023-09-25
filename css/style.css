@@ -138,6 +138,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .contenedorExperiencias h2 {
     text-align: center;
     padding: 20px;
@@ -146,7 +147,121 @@ body {
     color: #056734
 }
 
+.contenedorClassic {
+    display: none;
+}
 
+.contenedorClassicAccordion {
+    background-image: linear-gradient(98deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%), url('../img/expClassic/mundoMarino.jpg');
+    background-size: center;
+    padding: 30px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.contenedorClassicAccordion h3 {
+    font-family: 'blennyTrial', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding: 5px;
+    color: #F5F5DC;
+    text-align: center;
+}
+
+.contenedorClassicAccordion h2 button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #056734;
+    background-color: #F5F5DC;
+}
+
+
+.contenedorClassicAccordion .accordionItemClassic {
+    background-color: #F5F5DC;
+}
+
+.contenedorUnicas {
+    display: none;
+}
+
+.contenedorUnicAccordion {
+    background-image: linear-gradient(98deg, rgba(194, 51, 115, 0.5215336134453781) 0%, rgba(194, 51, 115, 1) 41%), url('../img/expUnicas/faro.jpg');
+    background-size: center;
+    padding: 30px;
+    width: 100%;
+
+}
+
+.contenedorUnicAccordion h3 {
+    font-family: 'blennyTrial', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding: 5px;
+    color: #F5F5DC;
+    text-align: center;
+}
+
+.contenedorUnicAccordion h2 button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #056734;
+    background-color: #F5F5DC;
+}
+
+
+.contenedorUnicAccordion .accordionItemUnic {
+    background-color: #F5F5DC;
+}
+
+.contenedorEpicAccordion {
+    background-image: linear-gradient(98deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%), url('../img/expEpic/kayak.jpg');
+        background-size: contain;
+        background-position: left;
+        background-repeat: repeat;
+    padding: 30px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.contenedorEpicAccordion h3 {
+    font-family: 'blennyTrial', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding: 5px;
+    color: #F5F5DC;
+    text-align: center;
+}
+
+.contenedorEpicAccordion h2 button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #056734;
+    background-color: #F5F5DC;
+}
+
+
+.contenedorEpicAccordion .accordionItemEpic {
+    background-color: #F5F5DC;
+}
+
+.contenedorEpicas {
+    display: none;
+}
 
 /*BOTÓN WHATSAPP*/
 .whatsapp {
@@ -268,8 +383,12 @@ body {
     border-width: .5px;
     padding: 20px;
     width: 75%;
-}
+    }
 
+    .footerNosotros p a {
+        text-decoration: none;
+        color: #F5F5DC;
+    }
 
 
 .contenedorFooter .footerContacto {
@@ -331,7 +450,7 @@ body {
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 992px) {
     /* Tus estilos para dispositivos large y superiores van aquí */
-    
+
     .principal .mainCarousel .slide1 {
         background-image: url('../img/mainCarousel/plavaVistaAerea.jpg');
         background-position: top;
@@ -584,6 +703,7 @@ body {
         text-transform: uppercase;
         padding: 10px
     }
+
     .expUnic {
         width: 18%;
         height: 300px;
@@ -615,7 +735,7 @@ body {
         transition: background-position 6s;
     }
 
-    
+
     .expUnic2:hover {
         background-position: right;
     }
@@ -627,7 +747,7 @@ body {
         transition: background-position 6s;
     }
 
-    
+
     .expUnic3:hover {
         background-position: right;
     }
@@ -640,17 +760,17 @@ body {
         font-weight: 500;
     }
 
-    
+
     .expUnic4:hover {
         background-position: right;
     }
-    
+
 
     .contenedorEpicas {
 
         background-image: linear-gradient(98deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%), url('../img/expEpic/kayak.jpg');
         background-size: contain;
-        background-position:left ;
+        background-position: left;
         background-repeat: repeat;
         padding: 30px;
         width: 100%;
@@ -680,7 +800,8 @@ body {
         letter-spacing: 1px;
         font-size: 30px;
         padding: 5px;
-        color: #F5F5DC;;
+        color: #F5F5DC;
+        ;
     }
 
     .expEpic {
@@ -748,6 +869,19 @@ body {
     .expEpic4:hover {
         background-position: right;
     }
+
+    .contenedorClassicAccordion {
+        display: none;
+    }
+
+    .contenedorUnicAccordion {
+        display: none;
+    }
+
+    .contenedorEpicAccordion {
+        display: none;
+    }
+
     #servicios {
         padding: 30px;
     }
@@ -779,8 +913,8 @@ body {
         border: 2px solid black;
         border-radius: 20px;
         color: #F5F5DC;
-        transition: transform 0.3s ease, filter 0.3s ease ;
-        
+        transition: transform 0.3s ease, filter 0.3s ease;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -791,7 +925,7 @@ body {
         transition: .3s;
         transform: translateY(5px);
         filter: grayscale(70%);
-        
+
     }
 
     .itemService h4 {
@@ -799,7 +933,7 @@ body {
         font-weight: 800;
         font-size: 20px;
 
-    }   
+    }
 
     .itemService1 {
         background-image: url(../img/servicios/corporativo.png);
@@ -1185,6 +1319,7 @@ body {
         font-weight: 800;
         text-align: center;
     }
+
     .expUnic {
         margin: 20px;
         width: 15%;
@@ -1217,7 +1352,7 @@ body {
         transition: background-position 6s;
     }
 
-    
+
     .expUnic2:hover {
         background-position: right;
     }
@@ -1229,7 +1364,7 @@ body {
         transition: background-position 6s;
     }
 
-    
+
     .expUnic3:hover {
         background-position: right;
     }
@@ -1242,17 +1377,17 @@ body {
         font-weight: 500;
     }
 
-    
+
     .expUnic4:hover {
         background-position: right;
     }
-    
+
 
     .contenedorEpicas {
 
         background-image: linear-gradient(98deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%), url('../img/expEpic/kayak.jpg');
         background-size: contain;
-        background-position:left ;
+        background-position: left;
         background-repeat: repeat;
         padding: 30px;
         width: 100%;
@@ -1346,6 +1481,7 @@ body {
     .expEpic4:hover {
         background-position: right;
     }
+
     #servicios {
         padding: 30px;
     }
@@ -1377,8 +1513,8 @@ body {
         border: 2px solid black;
         border-radius: 20px;
         color: #F5F5DC;
-        transition: transform 0.3s ease, filter 0.3s ease ;
-        
+        transition: transform 0.3s ease, filter 0.3s ease;
+
 
 
 
@@ -1392,7 +1528,7 @@ body {
         transition: .3s;
         transform: translateY(5px);
         filter: grayscale(70%);
-        
+
     }
 
     .itemService h4 {
@@ -1402,7 +1538,7 @@ body {
 
     }
 
-   
+
 
     .itemService1 {
         background-image: url(../img/servicios/corporativo.png);
