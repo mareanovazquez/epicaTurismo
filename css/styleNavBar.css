@@ -46,6 +46,10 @@ El icono aparece después del contenido del menú desplegable.*/
     color:#F5F5DC;
 }
 
+.navClasicas hr {
+    color: #F5F5DC;
+}
+
 .navClasicas a:hover {
     background-image: linear-gradient(278deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%);
     font-weight: 800;
@@ -163,5 +167,7 @@ El icono aparece después del contenido del menú desplegable.*/
         visibility: visible;
         transition: .5s;
         opacity: 1;
+        background: rgb(248,111,3);
+background: linear-gradient(180deg, rgba(248,111,3,1) 10%, rgba(194,51,115,1) 35%, rgba(93,156,89,1) 100%);
     }
 }

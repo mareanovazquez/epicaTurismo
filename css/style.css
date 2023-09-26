@@ -494,9 +494,8 @@ body {
 }
 
 .footerNosotros .nosotros a:hover {
-    letter-spacing: 2px;
     font-weight: 800;
-    transition: .8s;
+    transition: .4s;
 }
 
 

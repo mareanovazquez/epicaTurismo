@@ -5,34 +5,41 @@
     <!-- Metadatos básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Épica Servicios turísticos es una agencia del Partido de La Costa que ofrece propuestas variadas para disfrutar la región del Tuyú en todo su esplendor.">
-    <meta name="keywords" content="Servicios turísticos La Costa viajes descanso vacaciones viajeros turismo nacionales internacionales">
+    <meta name="description"
+        content="Épica Servicios turísticos es una agencia del Partido de La Costa que ofrece propuestas variadas para disfrutar la región del Tuyú en todo su esplendor.">
+    <meta name="keywords"
+        content="Servicios turísticos La Costa viajes descanso vacaciones viajeros turismo nacionales internacionales">
 
     <!-- Preconexión para Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Fuentes de Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
 
     <!-- Fuentes locales -->
     <style type="text/css" media="screen, print">
         @font-face {
             font-family: neueMontrealRegular;
-            src: url('../assets/fonts/NeueMontreal-Regular.otf');
+            src: url('./assets/fonts/NeueMontreal-Regular.otf');
         }
+
         @font-face {
             font-family: neueMontrealBold;
-            src: url('../assets/fonts/NeueMontreal-Bold.otf');
+            src: url('./assets/fonts/NeueMontreal-Bold.otf');
         }
+
         @font-face {
             font-family: neueMontrealMedium;
-            src: url('../assets/fonts/NeueMontreal-Medium.otf');
+            src: url('./assets/fonts/NeueMontreal-Medium.otf');
         }
+
         @font-face {
             font-family: blennyTrial;
-            src: url('../assets/fonts/Blenny_Trial_Blk.ttf');
+            src: url('./assets/fonts/Blenny_Trial_Blk.ttf');
         }
     </style>
 
@@ -42,13 +49,227 @@
     <link rel="stylesheet" href="../assets/fontAwesome/css/brands.css">
     <link rel="stylesheet" href="../assets/fontAwesome/css/solid.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleNavBar.css">
+    <link rel="stylesheet" href="../css/styleAboutUs.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Favicon y título -->
     <link rel="shortcut icon" href="../img/favicon.png">
-    <title>Épica | Nosotros</title>
+    <title>Épica | Quiénes somos</title>
 </head>
+
 <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 topBar" id="topBar">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4"> <a class=" text-decoration-none"
+                        href="https://maps.app.goo.gl/rkxnW6pYVV2pFZmb7" target="_blank">
+                        <small class="fa fa-map-marker-alt me-2"></small>
+                        <small>Partido de La Costa</small>
+                    </a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock me-2"></small>
+                    <small>Lunes a viernes de 09 a 19</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt me-2"></small>
+                    <small> <a class=" text-decoration-none" href="tel:+5492246519749">54 9 2246
+                            51-9749</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-light me-1" href="https://www.instagram.com/epica.tur/"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-sm-square bg-light me-1" href="mailto:epicaserviciosturisticos@gmail.com"><i
+                            class="fa-regular fa-envelope"></i></a>
+                    <a class="btn btn-sm-square bg-light me-0" href="https://wa.me/5492246519749" target="_blank"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="btn btn-sm-square bg-light me-1"> <i class="fa-regular fa-store"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="../index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img class="logoEpica" src="../img/logotipo.svg">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias <br>clásicas</a>
+                    <div class="dropdown-menu fade-up m-0 navClasicas">
+                        <a href="#" class="dropdown-item">Parques temáticos</a>
+                        <a href="#" class="dropdown-item">Cabalgatas</a>
+                        <a href="#" class="dropdown-item">Clínicas de Surf</a>
+                        <a href="#" class="dropdown-item">Pesca embarcada</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias <br> únicas</a>
+                    <div class="dropdown-menu fade-up m-0 navUnicas">
+                        <a href="" class="dropdown-item">Playas Naturales</a>
+                        <a href="#" class="dropdown-item">Historia viva</a>
+                        <a href="#" class="dropdown-item">Punta Rasa</a>
+                        <a href="#" class="dropdown-item">Avistaje de aves</a>
+                        <a href="#" class="dropdown-item">Kayak</a>
+                        <a href="#" class="dropdown-item">Bahía Samborombón</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Experiencias <br> épicas</a>
+                    <div class="dropdown-menu fade-up m-0 navEpicas">
+                        <a href="" class="dropdown-item">Surf trip</a>
+                        <a href="#" class="dropdown-item">Cruce de aguas</a>
+                        <a href="#" class="dropdown-item">Desconexión</a>
+                        <a href="#" class="dropdown-item">Dunas milenarias</a>
+                        <a href="#" class="dropdown-item">Noche de luna</a>
+                        <a href="#" class="dropdown-item">Kite day</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#servicios" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="#" class="dropdown-item">Alojamiento</a>
+                        <a href="#" class="dropdown-item">Gastronomía</a>
+                        <a href="#" class="dropdown-item">Transfers</a>
+                        <a href="#" class="dropdown-item">Personalizado</a>
+                        <a href="#" class="dropdown-item">Corporativo</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinos</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a href="#destinos" class="dropdown-item">La Costa</a>
+                        <a href="#destinos" class="dropdown-item">Nacionales</a>
+                        <a href="#destinos" class="dropdown-item">Internacionales</a>
+                    </div>
+                </div>
+                <a href="./contacto.html" class="nav-item nav-link">Contacto</a>
+                <!--  <a href="#" class="nav-item nav-link">Reservá online <i class="fa-regular fa-store"></i> </a> -->
+                <div class="d-inline-flex align-items-center d-lg-none RRSSMenuMobile">
+                    <a class="btn btn-sm-square bg-white me-2" href="https://www.instagram.com/epica.tur/"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-sm-square bg-white me-2" href="mailto:epicaserviciosturisticos@gmail.com"><i
+                            class="fa-regular fa-envelope"></i></a>
+                    <a class="btn btn-sm-square bg-white me-1" href="https://wa.me/5492246519749" target="_blank"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <main class="principalAboutUs">
+        <!-- NOSOTROS -->
+        <h1>Quiénes somos</h1>
+        <section class="contenedorAboutUs">
+
+            <article>
+                <p>Somos un grupo intrépido de costeros y costeras profesionales del turismo que decidimos abrir
+                    nuestras puertas para que conozcas el Partido de La Costa y la región del Tuyú en todo su esplendor.
+                </p>
+                <p>
+                    En <b>Épica</b> Servicios turísticos ofrecemos experiencias de viaje únicas y memorables y nos esforzamos
+                    por brindarles a nuestros clientes un servicio de calidad, completo, personalizado y adaptado a las
+                    necesidades y preferencias de cada persona, familia o grupo.
+                </p>
+                <p>
+                    Diseñamos una amplia e innovadora gama de propuestas en el Tuyú. Nuestro objetivo, como licenciados
+                    en
+                    turismo, es proporcionar una visión auténtica y enriquecedora de la región, destacando sus
+                    atractivos
+                    naturales, culturales y recreativos. Estamos comprometidos con la sostenibilidad, por lo que
+                    promovemos
+                    prácticas responsables que preserven los recursos naturales y apoyamos el desarrollo local. Además,
+                    trabajamos con otros destinos, tanto nacionales como internacionales.
+                </p>
+
+                <!-- <p>
+                    ¿Querés viajar? Dejá todo en nuestras manos. Planificamos y organizamos el itinerario, desde la reserva
+                    de alojamiento hasta la selección de actividades y visitas turísticas. Y te recomendamos nuevos lugares
+                    para conocer, restaurantes con lo mejor de la gastronomía local, actividades recreativas y eventos
+                    culturales, para que tu experiencia sea inolvidable.
+                </p>
+                <p>
+                    Si necesitás servicios adicionales, como la organización de eventos especiales, bodas o conferencias,
+                    buscamos lugares emblemáticos de la región del Tuyú para que todo resulte perfecto.
+                </p>
+                <p>
+                    Al viajar a través de Épica sabés que vas a contar con transporte seguro y cómodo, asistencia
+                    personalizada en caso de cualquier eventualidad, y nuestra disponibilidad para atender tus consultas.
+                    Viajá con Épica y crea recuerdos para toda la vida.
+                </p> -->
+            </article>
+            <div class="RRSSMenuNosotros">
+                <a class="me-2" href="https://www.instagram.com/epica.tur/"
+                    target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="me-2" href="mailto:epicaserviciosturisticos@gmail.com"><i
+                        class="fa-regular fa-envelope"></i></a>
+                <a class="me-1" href="https://wa.me/5492246519749" target="_blank"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footerEpico">
+        <div class="contenedorImgFooter"><img src="../img/logotipo_claro.svg" alt=""></div>
+        <h3>Servicios turísticos</h3>
+        <hr>
+        <div class="contenedorFooter">
+            <div class="footerNosotros">
+                <!-- <h4>Nosotros</h4> -->
+                <p class="nosotros"><a href="./pages/nosotros.html">Quiénes somos</a></p>
+                <p class="nosotros"><a
+                        href="https://docs.google.com/forms/d/17dQlBx7Xo3vlqjjxCy2NNH5l-9zKJFYXOLj0VNlTXSw/prefill"
+                        target="_blank">¿Quéres trabajar con nosotros?</a></p>
+                <p>Épica Servicio turísticos es un producto de Querandí Turismo</p>
+                <p>EVyT Legajo MINTUR: XXX</p>
+                <p>Todos los derechos reservados <i class="fa-regular fa-copyright"></i> 2023</p>
+            </div>
+
+            <div class="footerContacto">
+                <!--   <h4>Dónde estamos</h4> -->
+                <p><a href="https://maps.app.goo.gl/AJWC1nfeCbJDZdVr7" target="_blank"><i
+                            class="fa-regular fa-map-location-dot"></i> Calle 3 N° 1225, Santa Teresita, partido de La
+                        Costa</a></p>
+                <p><i class="fa-solid fa-phone"></i> <a class=" text-decoration-none" href="tel:+5492246519749"> +54 9
+                        2246
+                        51 9749</a></p>
+                <p><a href="mailto:epicaserviciosturisticos@gmail.com" target="_blank"><i
+                            class="fa-regular fa-envelope"></i> epicaserviciosturisticos@gmail.com</a></p>
+                <p><a href="https://www.instagram.com/epica.tur" target="_blank"><i class="fa-brands fa-instagram"></i>
+                        instagram.com/epica.tur</a></p>
+                <p><a href="#" class="nav-item nav-link">Reservá online <i class="fa-regular fa-store"></i> </a></p>
+            </div>
+        </div>
+        <div class="contenedorFooter">
+
+            <button class="btn btn-outline-light btn-sm">Botón de arrepentimiento</button>
+
+
+        </div>
+        <div class="contenedorFooter2">
+            <small class="firmaER">Hecho con <i class="fa-sharp fa-solid fa-heart"></i> por <a
+                    href="https://estudiorec.com.ar/" target="_blank">EstudioREC</a></small>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/stickyNavBar.js"></script>
+    <script src="./js/volverArriba.js"></script>
 
 </body>
+
 </html>
