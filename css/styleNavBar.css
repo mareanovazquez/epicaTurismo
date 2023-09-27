@@ -43,7 +43,7 @@ El icono aparece después del contenido del menú desplegable.*/
 }
 
 .navClasicas a {
-    color:#F5F5DC;
+    color: #F5F5DC;
 }
 
 .navClasicas hr {
@@ -51,7 +51,8 @@ El icono aparece después del contenido del menú desplegable.*/
 }
 
 .navClasicas a:hover {
-    background-image: linear-gradient(278deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%);
+    /* background-image: linear-gradient(278deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%); */
+    background-color: transparent;
     font-weight: 800;
     transition: .3s;
 }
@@ -60,33 +61,42 @@ El icono aparece después del contenido del menú desplegable.*/
     background-image: linear-gradient(90deg, rgba(194, 51, 115, 1) 0%, rgba(194, 51, 115, 0.5215336134453781) 100%);
     border: none;
     transition: background-image 0.3s ease;
-    
+    padding-top: 10px;
+
 }
 
 .navUnicas a {
-    color:#F5F5DC;
+    color: #F5F5DC;
 }
 
 .navUnicas a:hover {
-    background-image: linear-gradient(90deg, rgba(194, 51, 115, 1) 0%, rgba(194, 51, 115, 0.5215336134453781) 100%);
+    
+   /*  background-image: linear-gradient(90deg, rgba(194, 51, 115, 1) 0%, rgba(194, 51, 115, 0.5215336134453781) 100%); */
+    background-color: transparent;
     font-weight: 800;
     transition: 0.3s;
-    
+
 }
 
 .navEpicas {
+    padding-top: 10px;
     background-image: linear-gradient(278deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%);
     border: none;
 }
 
 .navEpicas a {
-    color:#F5F5DC;
+    color: #F5F5DC;
 }
 
 .navEpicas a:hover {
-    background-image: linear-gradient(278deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%);
+    /* background-image: linear-gradient(278deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%); */
+    background-color: transparent;
     font-weight: 800;
     transition: .3s;
+}
+
+.dropdown-menu {
+    border: none;
 }
 
 
@@ -118,7 +128,7 @@ El icono aparece después del contenido del menú desplegable.*/
         top: -100px;
         transition: .5s;
     }
-    
+
 }
 
 /* Estilo para NAVBAR PARA dispositivos con un ancho entre 500.01px y 991.98px */
@@ -128,10 +138,11 @@ El icono aparece después del contenido del menú desplegable.*/
         margin-right: 0;
         padding: 10px 0;
     }
+
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
-    
+
     .navbar-light .navbar-brand,
     .navbar-light a.btn {
         height: 75px;
@@ -167,7 +178,16 @@ El icono aparece después del contenido del menú desplegable.*/
         visibility: visible;
         transition: .5s;
         opacity: 1;
-        background: rgb(248,111,3);
-background: linear-gradient(180deg, rgba(248,111,3,1) 10%, rgba(194,51,115,1) 35%, rgba(93,156,89,1) 100%);
+        
+        }
+
+    .navbar .nav-item:hover .dropdown-experiencias {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+        background: rgb(248, 111, 3);
+        background: linear-gradient(180deg, rgba(248, 111, 3, 1) 10%, rgba(194, 51, 115, 1) 35%, rgba(93, 156, 89, 1) 100%);
+
     }
 }

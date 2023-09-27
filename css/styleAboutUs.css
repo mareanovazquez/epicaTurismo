@@ -6,8 +6,8 @@ reescrito en MediaQueries */
     background-image: url('../img/nosotros/kayakBlur.png');
     background-position: center;
     background-size: cover;
-    height: 100vh;
-
+    padding-bottom: 30px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,12 +73,19 @@ reescrito en MediaQueries */
 
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+
+    
+}
 
 /* Entre 768px y 991px */
 /* Bootstrap breakpoints MD y superiores */
 @media (min-width: 768px) {
 
+    .principalAboutUs {
+        height: 100vh;
+        
+    }
     .principalAboutUs h1 {
         font-size: 50px;
     }
