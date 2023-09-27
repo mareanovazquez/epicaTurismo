@@ -285,8 +285,8 @@ body {
 }
 
 .itemService {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     border-radius: 20px;
     color: #F5F5DC;
     background-color: #056734;
@@ -299,7 +299,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -314,9 +314,9 @@ body {
 .itemService h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
 }
-.accordionItemClassic
+
 .itemService i {
     font-size: 30px;
 }
@@ -496,6 +496,9 @@ body {
     transition: .4s;
 }
 
+.footerContacto p i {
+    padding:5px;
+}
 
 .contenedorFooter .footerContacto {
     padding-top: 30px;
@@ -545,6 +548,18 @@ body {
     .principal .mainCarousel h1 {
         font-size: 30px;
     }
+
+    .itemService {
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+    }
+
+    .itemService i {
+        font-size: 40px;
+    }
+
+
 }
 
 /* Entre 768px y 991px */
@@ -643,6 +658,7 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        
     }
 
     .expClassicTitle {
@@ -1035,7 +1051,7 @@ body {
     }
 
     .itemService i {
-        font-size: 30px;
+        font-size: 40px;
     }
 
 

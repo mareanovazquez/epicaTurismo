@@ -38,7 +38,7 @@ reescrito en MediaQueries */
 .contenedorAboutUs article p {
     color: #F5F5DC;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -92,8 +92,7 @@ reescrito en MediaQueries */
         .contenedorAboutUs article p {
         font-size: 16px;
         text-align: left;
-        font-weight: 500;
-    }
+        }
 }
 
 /* Entre 992px y 1199px */
@@ -112,9 +111,9 @@ reescrito en MediaQueries */
     }
 
     .contenedorAboutUs article p {
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
-        font-weight: 500;
+        
     }
     .RRSSMenuNosotros {
         width: 50%;
