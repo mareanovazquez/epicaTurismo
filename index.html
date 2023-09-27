@@ -112,21 +112,26 @@
                             <a href="#clasicas" class="dropdown-item">Cabalgatas</a>
                             <a href="#clasicas" class="dropdown-item">Clínicas de Surf</a>
                             <a href="#clasicas" class="dropdown-item">Pesca embarcada</a>
+                            <a href="" class="dropdown-item"><small>Más experiencias clásicas <i
+                                        class="fa-solid fa-arrow-right"></i></small></a>
                         </div>
                         <div class="navUnicas">
                             <a href="#unicas" class="dropdown-item"><strong>ÚNICAS</strong></a>
-                            <a href="#unicas" class="dropdown-item">Playas Naturales</a>
-                            <a href="#unicas" class="dropdown-item">Historia viva</a>
+                            <a href="#unicas" class="dropdown-item">Astroturismo</a>
+                            <a href="#unicas" class="dropdown-item">Cultura gauchesca</a>
                             <a href="#unicas" class="dropdown-item">Punta Rasa</a>
                             <a href="#unicas" class="dropdown-item">Avistaje de aves</a>
+                            <a href="" class="dropdown-item"><small>Más experiencias únicas <i
+                                        class="fa-solid fa-arrow-right"></i></small></a>
                         </div>
                         <div class="navEpicas">
                             <a href="#epicas" class="dropdown-item"><strong>ÉPICAS</strong></a>
-                            <a href="#epicas" class="dropdown-item">Surf trip</a>
+                            <a href="#epicas" class="dropdown-item">Kitesurf</a>
                             <a href="#epicas" class="dropdown-item">Cruce de aguas</a>
-                            <a href="#epicas" class="dropdown-item">Desconexión</a>
                             <a href="#epicas" class="dropdown-item">Dunas milenarias</a>
                             <a href="#epicas" class="dropdown-item">Noche de luna</a>
+                            <a href="" class="dropdown-item"><small>Más experiencias épicas <i
+                                        class="fa-solid fa-arrow-right"></i></small></a>
                         </div>
                     </div>
                 </div>
@@ -193,26 +198,33 @@
     <!-- EXPERIENCIAS START -->
     <section id="experiencias" class="contenedorExperiencias">
         <h2>EXPERIENCIAS</h2>
+
+        <!-- EXPERIENCIAS CLÁSICAS -->
         <div id="clasicas">
             <article class="contenedorClassic">
                 <div class="expClassicTitle">
                     <h3> CLÁSICAS</h3>
+                    <button class=" btn btn-sm btn-outline-light"> Buscá más experiencias</button>
                 </div>
                 <div class="expClassic expClassic1" type="button" data-bs-toggle="modal"
                     data-bs-target="#modalExperienciasClasicas1">
                     <h4>Parques temáticos</h4>
                 </div>
-                <div class="expClassic expClassic2">
+                <div class="expClassic expClassic2" type="button" data-bs-toggle="modal"
+                    data-bs-target="#modalExperienciasClasicas2">
                     <h4>Cabalgatas</h4>
                 </div>
-                <div class="expClassic expClassic3">
+                <div class="expClassic expClassic3" type="button" data-bs-toggle="modal"
+                    data-bs-target="#modalExperienciasClasicas3">
                     <h4>Clínicas de surf</h4>
                 </div>
-                <div class="expClassic expClassic4">
+                <div class="expClassic expClassic4" type="button" data-bs-toggle="modal"
+                    data-bs-target="#modalExperienciasClasicas4">
                     <h4>Pesca embarcada</h4>
                 </div>
             </article>
 
+            <!-- ACCORDION EXPERIENCIAS CLÁSICAS -->
             <article class="contenedorClassicAccordion">
                 <div class="accordion" id="expClassicAccordion">
                     <h3>CLÁSICAS</h3>
@@ -243,6 +255,25 @@
                             data-bs-parent="#expClassicAccordion">
                             <div class="accordion-body">
                                 <img class="img-fluid rounded" src="./img/expClassic/cabalgatas.jpg" alt="">
+                                <div class="texto-modal">
+                                    <p>
+                                        Una experiencia especial para los amantes de los caballos y la naturaleza y para
+                                        quienes
+                                        disfrutan de paseos escénicos por la playa y por los bosques.
+                                    </p>
+                                    <p>
+                                        Dependiendo de la ruta elegida, podrás disfrutar de vistas panorámicas del
+                                        océano,
+                                        sentir la brisa marina y maravillarte con la belleza natural de los bosques de
+                                        la
+                                        región. Recordá ir con ropa cómoda, pantalón largo, abrigo liviano en verano y
+                                        consistente en invierno; no olvidar los anteojos de sol, la protección solar y
+                                        el
+                                        repelente.
+                                    </p>
+                                    <button class="btn btn-outline-success btn-sm">Reservá online <i
+                                        class="fa-regular fa-store"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -258,6 +289,19 @@
                             data-bs-parent="#expClassicAccordion">
                             <div class="accordion-body">
                                 <img class="img-fluid rounded" src="./img/expClassic/clinicaSurf.JPG" alt="">
+                                <div class="texto-modal">
+                                    <p>Comenzá un día diferente, cargado de energía, adrenalina y buena vibra del mar.
+                                        Todo esto
+                                        caracteriza a un día de surf, que va a despertar en tu interior una conexión
+                                        extrema con
+                                        el mar y su modo de vida. Te brindamos todo lo necesario para que puedas
+                                        aprender,
+                                        subirte a una tabla y vivir esta inolvidable experiencia que, de seguro, te
+                                        atrapará.
+                                    </p>
+                                    <button class="btn btn-outline-success btn-sm">Reservá online <i
+                                        class="fa-regular fa-store"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -272,6 +316,22 @@
                             data-bs-parent="#expClassicAccordion">
                             <div class="accordion-body">
                                 <img class="img-fluid rounded" src="./img/expClassic/pescaEmbarcada2.jpg" alt="">
+                                <div class="texto-modal">
+                                    <p>Una experiencia emocionante y divertida para los amantes de la
+                                        pesca y los entusiastas del mar. Ingresando 2 km mar adentro, casi acariciando
+                                        el
+                                        horizonte, podrás disfrutar de la tranquilidad y los sonidos del agua, viendo
+                                        alejarse la zona de la costa.</p>
+                                    <p>La excursión comienza temprano en la mañana, cuando el grupo de pescadores se
+                                        reúne
+                                        en la playa y aborda la embarcación. La lancha está equipada con todo lo
+                                        necesario
+                                        para una experiencia exitosa, como cañas de pescar, carnadas y equipos de
+                                        seguridad.
+                                    </p>
+                                    <button class="btn btn-outline-success btn-sm">Reservá online <i
+                                            class="fa-regular fa-store"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -298,21 +358,112 @@
                         <p>Costa Acuática</p>
                         <p>Mundo Marino</p>
                         <p>Costa Salvaje</p>
-                        <button class="btn btn-outline-light btn-sm">Reservá online</button>
+                        <button class="btn btn-outline-success btn-sm">Reservá online</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="modalExperienciasClasicas2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Cabalgatas</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/expClassic/cabalgatas.jpg" class="img-fluid rounded" alt="">
+
+                        <div class="texto-modal">
+                            <p>
+                                Una experiencia especial para los amantes de los caballos y la naturaleza y para quienes
+                                disfrutan de paseos escénicos por la playa y por los bosques.
+                            </p>
+                            <p>
+                                Dependiendo de la ruta elegida, podrás disfrutar de vistas panorámicas del océano,
+                                sentir la brisa marina y maravillarte con la belleza natural de los bosques de la
+                                región. Recordá ir con ropa cómoda, pantalón largo, abrigo liviano en verano y
+                                consistente en invierno; no olvidar los anteojos de sol, la protección solar y el
+                                repelente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-success">Reservá online <i
+                                class="fa-regular fa-store"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalExperienciasClasicas3" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Clínica de surf</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/expClassic/clinicaSurf.JPG" class="img-fluid rounded" alt="...">
+                        <div class="texto-modal">
+                            <p>Comenzá un día diferente, cargado de energía, adrenalina y buena vibra del mar. Todo esto
+                                caracteriza a un día de surf, que va a despertar en tu interior una conexión extrema con
+                                el mar y su modo de vida. Te brindamos todo lo necesario para que puedas aprender,
+                                subirte a una tabla y vivir esta inolvidable experiencia que, de seguro, te atrapará.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-success">Reservá online <i
+                                class="fa-regular fa-store"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalExperienciasClasicas4" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modalCompletoExpClassic">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">PESCA EMBARCADA</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/expClassic/pescaEmbarcada.jpg" class="img-fluid rounded" alt="...">
+                        <div class="texto-modal">
+                            <p>Una experiencia emocionante y divertida para los amantes de la
+                                pesca y los entusiastas del mar. Ingresando 2 km mar adentro, casi acariciando el
+                                horizonte, podrás disfrutar de la tranquilidad y los sonidos del agua, viendo
+                                alejarse la zona de la costa.</p>
+                            <p>La excursión comienza temprano en la mañana, cuando el grupo de pescadores se reúne
+                                en la playa y aborda la embarcación. La lancha está equipada con todo lo necesario
+                                para una experiencia exitosa, como cañas de pescar, carnadas y equipos de seguridad.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-success">Reservá online <i
+                                class="fa-regular fa-store"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPERIENCIAS ÚNICAS -->
         <div id="unicas">
             <article class="contenedorUnicas">
                 <div class="expUnicTitle">
                     <h3> ÚNICAS</h3>
+                    <button class=" btn btn-sm btn-outline-light"> Buscá más experiencias</button>
                 </div>
                 <div class="expUnic expUnic1">
-                    <h4>Playas Naturales</h4>
+                    <h4>Astroturismo</h4>
                 </div>
                 <div class="expUnic expUnic2">
-                    <h4>Historia viva</h4>
+                    <h4>Cultura gauchesca</h4>
                 </div>
                 <div class="expUnic expUnic3">
                     <h4>Avistaje de aves</h4>
@@ -322,6 +473,7 @@
                 </div>
             </article>
 
+            <!-- ACCORDION EXPERIENCIAS ÚNICAS -->
             <article class="contenedorUnicAccordion">
                 <div class="accordion" id="expUnicAccordion">
                     <h3>ÚNICAS</h3>
@@ -330,13 +482,13 @@
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#accordionPlayasNaturales" aria-expanded="true"
                                 aria-controls="accordionPlayasNaturales">
-                                PLAYAS NATURALES
+                                ASTROTURISMO
                             </button>
                         </h2>
                         <div id="accordionPlayasNaturales" class="accordion-collapse collapse"
                             data-bs-parent="#expUnicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expUnicas/faro.jpg" alt="">
+                                <img class="img-fluid rounded" src="./img/expUnicas/astroturismo.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -345,13 +497,13 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#accordionHistoriaViva" aria-expanded="false"
                                 aria-controls="accordionHistoriaViva">
-                                HISTORIA VIVA
+                                CULTURA GAUCHESCA
                             </button>
                         </h2>
                         <div id="accordionHistoriaViva" class="accordion-collapse collapse"
                             data-bs-parent="#expUnicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expUnicas/madariaga.jpg" alt="">
+                                <img class="img-fluid rounded" src="./img/expUnicas/lavalle.jpeg" alt="">
                             </div>
                         </div>
                     </div>
@@ -392,9 +544,10 @@
             <article class="contenedorEpicas">
                 <div class="expEpicTitle">
                     <h3> ÉPICAS</h3>
+                    <button class=" btn btn-sm btn-outline-light"> Buscá más experiencias</button>
                 </div>
                 <div class="expEpic expEpic1">
-                    <h4>Surf trip</h4>
+                    <h4>Kitesurf</h4>
                 </div>
                 <div class="expEpic expEpic2">
                     <h4> Cruce de aguas</h4>
@@ -415,13 +568,13 @@
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#accordionSurfTrip" aria-expanded="true"
                                 aria-controls="accordionSurfTrip">
-                                SURF TRIP
+                                KITESURF
                             </button>
                         </h2>
                         <div id="accordionSurfTrip" class="accordion-collapse collapse"
                             data-bs-parent="#expEpicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expEpic/surf.JPG" alt="">
+                                <img class="img-fluid rounded" src="./img/expEpic/kitesurf.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -539,18 +692,8 @@
                         </div>
                     </div>
                 </div>
-                <!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestinos"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselDestinos"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> -->
             </div>
- 
+
             <div id="carouselDestinos" class="carousel slide carousel-fade d-lg-none" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="0" class="active"
@@ -583,18 +726,8 @@
                         </div>
                     </div>
                 </div>
-                <!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestinos"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselDestinos"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> -->
             </div>
-            
+
         </section>
     </section>
 
@@ -606,8 +739,8 @@
             </a>
         </div>
     </section>
+    <!-- BOTÓN VOLVER ARRIBA-->
     <section>
-        <!-- Boton "Volver Arriba" -->
         <div class="btn-volver-arriba" id="btnVolverArriba">
             <a href="#topBar" class="volver-arriba"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
@@ -632,7 +765,7 @@
                 <!--   <h4>Dónde estamos</h4> -->
                 <p><a href="https://maps.app.goo.gl/AJWC1nfeCbJDZdVr7" target="_blank"><i
                             class="fa-regular fa-map-location-dot"></i> Calle 3 N° 1225, Santa Teresita </a></p>
-                <p><i class="fa-solid fa-umbrella-beach"></i>Partido de La Costa</p>            
+                <p><i class="fa-solid fa-umbrella-beach"></i>Partido de La Costa</p>
                 <p><i class="fa-solid fa-phone"></i> <a class=" text-decoration-none" href="tel:+5492246519749"> +54 9
                         2246
                         51 9749</a></p>
@@ -640,7 +773,7 @@
                             class="fa-regular fa-envelope"></i> epicaserviciosturisticos@gmail.com</a></p>
                 <p><a href="https://www.instagram.com/epica.tur" target="_blank"><i class="fa-brands fa-instagram"></i>
                         instagram.com/epica.tur</a></p>
-                <p> <a href="#" class="nav-item nav-link"> <i class="fa-regular fa-store"></i>Reservá online  </a></p>
+                <p> <a href="#" class="nav-item nav-link"> <i class="fa-regular fa-store"></i>Reservá online </a></p>
             </div>
         </div>
         <div class="contenedorFooter">
