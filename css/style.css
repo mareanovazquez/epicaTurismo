@@ -169,10 +169,10 @@ body {
     text-align: center;
 }
 
-.contenedorClassicAccordion h2 button {
+.contenedorClassicAccordion h6 button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     padding: 10px;
     color: #056734;
@@ -187,10 +187,7 @@ body {
 /* CUERPO MODAL EXPERIENCIAS CLÁSICAS */
 
 
-.modal-dialog {
-    max-width: 35%;
-    max-height: 70vh;
-}
+
 .modal-content {
     background-color: #F5F5DC;
 }
@@ -205,7 +202,7 @@ body {
 } 
 
 .modal-body  img {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -241,10 +238,10 @@ body {
     text-align: center;
 }
 
-.contenedorUnicAccordion h2 button {
+.contenedorUnicAccordion h6 button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     padding: 10px;
     color: #056734;
@@ -277,10 +274,10 @@ body {
     text-align: center;
 }
 
-.contenedorEpicAccordion h2 button {
+.contenedorEpicAccordion h6 button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     padding: 10px;
     color: #056734;
