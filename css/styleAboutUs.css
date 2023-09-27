@@ -101,6 +101,7 @@ reescrito en MediaQueries */
 @media (min-width: 992px) {
 
     .principalAboutUs {
+        height: 120vh;
         justify-content: center;
         align-items: center;
     }
@@ -136,5 +137,9 @@ reescrito en MediaQueries */
 /* Desde 1200px en adelante */
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 1200px) {
+
+    .principalAboutUs {
+        height: 100vh;
+    }
     /* Tus estilos para dispositivos extra large y superiores van aquí */
 }
