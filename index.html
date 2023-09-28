@@ -86,7 +86,8 @@
                         target="_blank"><i class="fa-regular fa-envelope"></i></a>
                     <a class="btn btn-sm-square bg-light me-0" href="https://wa.me/5492246519749" target="_blank"><i
                             class="fab fa-whatsapp"></i></a>
-                    <a href="#" class="btn btn-sm-square bg-light me-1"> <i class="fa-regular fa-store"></i> </a>
+                    <a class="btn btn-sm-square bg-light me-1" type="button" data-bs-toggle="modal"
+                        data-bs-target="#proximamente"> <i class="fa-regular fa-store"></i> </a>
                 </div>
             </div>
         </div>
@@ -110,9 +111,10 @@
                             <a href="#clasicas" class="dropdown-item"><strong>CLÁSICAS</strong></a>
                             <a href="#clasicas" class="dropdown-item">Parques temáticos</a>
                             <a href="#clasicas" class="dropdown-item">Cabalgatas</a>
-                            <a href="#clasicas" class="dropdown-item">Clínicas de Surf</a>
+                            <a href="#clasicas" class="dropdown-item">Clínica de surf</a>
                             <a href="#clasicas" class="dropdown-item">Pesca embarcada</a>
-                            <a href="" class="dropdown-item"><small>Más experiencias clásicas <i
+                            <a href="" class="dropdown-item" type="button" data-bs-toggle="modal"
+                                data-bs-target="#proximamente"><small>Más experiencias clásicas <i
                                         class="fa-solid fa-arrow-right"></i></small></a>
                         </div>
                         <div class="navUnicas">
@@ -121,7 +123,8 @@
                             <a href="#unicas" class="dropdown-item">Cultura gauchesca</a>
                             <a href="#unicas" class="dropdown-item">Punta Rasa</a>
                             <a href="#unicas" class="dropdown-item">Avistaje de aves</a>
-                            <a href="" class="dropdown-item"><small>Más experiencias únicas <i
+                            <a href="" class="dropdown-item" type="button" data-bs-toggle="modal"
+                                data-bs-target="#proximamente"><small>Más experiencias únicas <i
                                         class="fa-solid fa-arrow-right"></i></small></a>
                         </div>
                         <div class="navEpicas">
@@ -130,7 +133,8 @@
                             <a href="#epicas" class="dropdown-item">Cruce de aguas</a>
                             <a href="#epicas" class="dropdown-item">Dunas milenarias</a>
                             <a href="#epicas" class="dropdown-item">Noche de luna</a>
-                            <a href="" class="dropdown-item"><small>Más experiencias épicas <i
+                            <a href="" class="dropdown-item" type="button" data-bs-toggle="modal"
+                                data-bs-target="#proximamente"><small>Más experiencias épicas <i
                                         class="fa-solid fa-arrow-right"></i></small></a>
                         </div>
                     </div>
@@ -176,17 +180,20 @@
                 <div class="carousel-item active slide1">
                     <img src="./img/logotipo_claro.svg" alt="">
                     <h1>CREADORES DE EXPERIENCIAS MEMORABLES</h1>
-                    <button class="btn btn-success btn-lg">Reservá online</button>
+                    <button class="btn btn-success btn-lg" type="button" data-bs-toggle="modal"
+                        data-bs-target="#proximamente">Reservá online</button>
                 </div>
                 <div class="carousel-item slide2">
                     <img src="./img/logotipo_claro.svg" alt="">
                     <h1>CREADORES DE EXPERIENCIAS MEMORABLES</h1>
-                    <button class="btn btn-success btn-lg">Reservá online</button>
+                    <button class="btn btn-success btn-lg" type="button" data-bs-toggle="modal"
+                        data-bs-target="#proximamente">Reservá online</button>
                 </div>
                 <div class="carousel-item slide3">
                     <img src="./img/logotipo_claro.svg" alt="">
                     <h1>CREADORES DE EXPERIENCIAS MEMORABLES</h1>
-                    <button class="btn btn-success btn-lg">Reservá online</button>
+                    <button class="btn btn-success btn-lg" type="button" data-bs-toggle="modal"
+                        data-bs-target="#proximamente">Reservá online</button>
                 </div>
             </div>
 
@@ -204,7 +211,8 @@
             <article class="contenedorClassic">
                 <div class="expClassicTitle">
                     <h3> CLÁSICAS</h3>
-                    <button class=" btn btn-sm btn-outline-light"> Buscá más experiencias</button>
+                    <button class=" btn btn-sm btn-outline-light" type="button" data-bs-toggle="modal"
+                        data-bs-target="#proximamente"> Buscá más experiencias</button>
                 </div>
                 <div class="expClassic expClassic1" type="button" data-bs-toggle="modal"
                     data-bs-target="#modalExperienciasClasicas1">
@@ -216,7 +224,7 @@
                 </div>
                 <div class="expClassic expClassic3" type="button" data-bs-toggle="modal"
                     data-bs-target="#modalExperienciasClasicas3">
-                    <h4>Clínicas de surf</h4>
+                    <h4>Clínica de surf</h4>
                 </div>
                 <div class="expClassic expClassic4" type="button" data-bs-toggle="modal"
                     data-bs-target="#modalExperienciasClasicas4">
@@ -230,7 +238,7 @@
                     <h3>CLÁSICAS</h3>
                     <div class="accordion-item accordionItemClassic">
                         <h6 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#accordionParquesTematicos" aria-expanded="true"
                                 aria-controls="accordionParquesTematicos">
                                 PARQUES TEMÁTICOS
@@ -254,7 +262,7 @@
                         <div id="accordionCabalgatas" class="accordion-collapse collapse"
                             data-bs-parent="#expClassicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expClassic/cabalgatas.jpg" alt="">
+                                <img class="img-fluid rounded" src="./img/expClassicModal/cabalgatasModal.jpg" alt="">
                                 <div class="texto-modal">
                                     <p>
                                         Una experiencia especial para los amantes de los caballos y la naturaleza y para
@@ -282,13 +290,13 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#accordionClinicasSurf" aria-expanded="false"
                                 aria-controls="accordionClinicasSurf">
-                                CLÍNICAS DE SURF
+                                CLÍNICA DE SURF
                             </button>
                         </h6>
                         <div id="accordionClinicasSurf" class="accordion-collapse collapse"
                             data-bs-parent="#expClassicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expClassic/clinicaSurf.JPG" alt="">
+                                <img class="img-fluid rounded" src="./img/expClassicModal/clinicaSurfModal.jpg" alt="">
                                 <div class="texto-modal">
                                     <p>Comenzá un día diferente, cargado de energía, adrenalina y buena vibra del mar.
                                         Todo esto
@@ -315,7 +323,8 @@
                         <div id="accordionPescaE" class="accordion-collapse collapse"
                             data-bs-parent="#expClassicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expClassic/pescaEmbarcada2.jpg" alt="">
+                                <img class="img-fluid rounded" src="./img/expClassicModal/pescaEmbarcadaModal.jpg"
+                                    alt="">
                                 <div class="texto-modal">
                                     <p>Una experiencia emocionante y divertida para los amantes de la
                                         pesca y los entusiastas del mar. Ingresando 2 km mar adentro, casi acariciando
@@ -329,7 +338,8 @@
                                         para una experiencia exitosa, como cañas de pescar, carnadas y equipos de
                                         seguridad.
                                     </p>
-                                    <button class="btn btn-outline-success btn-sm">Reservá online <i
+                                    <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#proximamente">Reservá online <i
                                             class="fa-regular fa-store"></i></button>
                                 </div>
                             </div>
@@ -373,7 +383,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="./img/expClassic/cabalgatas.jpg" class="img-fluid rounded" alt="">
+                        <img src="./img/expClassicModal/cabalgatasModal.jpg" class="img-fluid rounded" alt="">
 
                         <div class="texto-modal">
                             <p>
@@ -406,7 +416,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="./img/expClassic/clinicaSurf.JPG" class="img-fluid rounded" alt="...">
+                        <img src="./img/expClassicModal/clinicaSurfModal.jpg" class="img-fluid rounded" alt="...">
                         <div class="texto-modal">
                             <p>Comenzá un día diferente, cargado de energía, adrenalina y buena vibra del mar. Todo esto
                                 caracteriza a un día de surf, que va a despertar en tu interior una conexión extrema con
@@ -432,7 +442,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="./img/expClassic/pescaEmbarcada.jpg" class="img-fluid rounded" alt="...">
+                        <img src="./img/expClassicModal/pescaEmbarcadaModal.jpg" class="img-fluid rounded" alt="...">
                         <div class="texto-modal">
                             <p>Una experiencia emocionante y divertida para los amantes de la
                                 pesca y los entusiastas del mar. Ingresando 2 km mar adentro, casi acariciando el
@@ -457,7 +467,8 @@
             <article class="contenedorUnicas">
                 <div class="expUnicTitle">
                     <h3> ÚNICAS</h3>
-                    <button class=" btn btn-sm btn-outline-light"> Buscá más experiencias</button>
+                    <button class=" btn btn-sm btn-outline-light" type="button" data-bs-toggle="modal"
+                        data-bs-target="#proximamente"> Buscá más experiencias</button>
                 </div>
                 <div class="expUnic expUnic1">
                     <h4>Astroturismo</h4>
@@ -479,7 +490,7 @@
                     <h3>ÚNICAS</h3>
                     <div class="accordion-item accordionItemUnic">
                         <h6 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#accordionPlayasNaturales" aria-expanded="true"
                                 aria-controls="accordionPlayasNaturales">
                                 ASTROTURISMO
@@ -488,7 +499,7 @@
                         <div id="accordionPlayasNaturales" class="accordion-collapse collapse"
                             data-bs-parent="#expUnicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expUnicas/astroturismo.jpg" alt="">
+                                <img class="img-fluid rounded" src="./img/expUnicModal/astroturismoModal.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -503,7 +514,7 @@
                         <div id="accordionHistoriaViva" class="accordion-collapse collapse"
                             data-bs-parent="#expUnicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expUnicas/lavalle.jpeg" alt="">
+                                <img class="img-fluid rounded" src="./img/expUnicModal/lavalleModal.jpeg" alt="">
                             </div>
                         </div>
                     </div>
@@ -518,7 +529,7 @@
                         <div id="accordionAvistajeAves" class="accordion-collapse collapse"
                             data-bs-parent="#expUnicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expUnicas/avistajeAves.jpg" alt="">
+                                <img class="img-fluid rounded" src="./img/expUnicModal/avistajeAvesModal.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -533,7 +544,8 @@
                         <div id="accordionPuntaRasa" class="accordion-collapse collapse"
                             data-bs-parent="#expUnicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expUnicas/bahiaSamboronbom.JPG" alt="">
+                                <img class="img-fluid rounded" src="./img/expUnicModal/bahiaSamboronbomModal.jpg"
+                                    alt="">
                             </div>
                         </div>
                     </div>
@@ -544,7 +556,8 @@
             <article class="contenedorEpicas">
                 <div class="expEpicTitle">
                     <h3> ÉPICAS</h3>
-                    <button class=" btn btn-sm btn-outline-light"> Buscá más experiencias</button>
+                    <button class=" btn btn-sm btn-outline-light" type="button" data-bs-toggle="modal"
+                        data-bs-target="#proximamente"> Buscá más experiencias</button>
                 </div>
                 <div class="expEpic expEpic1">
                     <h4>Kitesurf</h4>
@@ -565,7 +578,7 @@
                     <h3>ÉPICAS</h3>
                     <div class="accordion-item accordionItemEpic">
                         <h6 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#accordionSurfTrip" aria-expanded="true"
                                 aria-controls="accordionSurfTrip">
                                 KITESURF
@@ -574,7 +587,7 @@
                         <div id="accordionSurfTrip" class="accordion-collapse collapse"
                             data-bs-parent="#expEpicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expEpic/kitesurf.jpg" alt="">
+                                <img class="img-fluid rounded" src="./img/expEpicModal/kitesurfModal.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -589,7 +602,7 @@
                         <div id="accordionCruceAguas" class="accordion-collapse collapse"
                             data-bs-parent="#expEpicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expEpic/kayak2.JPG" alt="">
+                                <img class="img-fluid rounded" src="./img/expEpicModal/kayakModal.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -604,7 +617,7 @@
                         <div id="accordionDunasMilenarias" class="accordion-collapse collapse"
                             data-bs-parent="#expEpicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expEpic/sandboard.jpg" alt="">
+                                <img class="img-fluid rounded" src="./img/expEpicModal/sandboardModal.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -619,7 +632,7 @@
                         <div id="accordionNocheLuna" class="accordion-collapse collapse"
                             data-bs-parent="#expEpicAccordion">
                             <div class="accordion-body">
-                                <img class="img-fluid rounded" src="./img/expEpic/playaAtardecer.jpg" alt="">
+                                <img class="img-fluid rounded" src="./img/expEpicModal/playaAtardecerModal.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -674,7 +687,7 @@
                         <img src="./img/destinos/laCosta.jpg" class="d-block w-75 rounded" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>REDESCUBRÍ LA COSTA </h3>
-                            <p>Propuestas frescas y originales, solo como una agencia local sabe hacerlo </p>
+                            <p>Propuestas frescas y originales, como solo una agencia local sabe hacerlo </p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -687,8 +700,8 @@
                     <div class="carousel-item">
                         <img src="./img/destinos/internacionales.jpg" class="d-block w-75 rounded" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3>EL MUNDO </h3>
-                            <p>Viajá a los destinos más emblemáticos y volvé con experiencias inolvidables</p>
+                            <h3>RECORRÉ EL MUNDO </h3>
+                            <p>Viajá a los destinos más emblemáticos y volvé con experiencias inolvidables</p>
                         </div>
                     </div>
                 </div>
@@ -739,6 +752,24 @@
             </a>
         </div>
     </section>
+
+    <!-- MODAL PROXIMAMENTE TIENDA ÉPICA -->
+    <div class="modal fade" id="proximamente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>En construcción</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/enConstruccion.png" alt="">
+                    <h5>Falta poco para que puedas contratar las excursiones más épicas de tu visita a la Costa
+                        Atlántica</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- BOTÓN VOLVER ARRIBA-->
     <section>
         <div class="btn-volver-arriba" id="btnVolverArriba">
@@ -756,7 +787,7 @@
                 <p class="nosotros"><a href="./pages/nosotros.html">Quiénes somos</a></p>
                 <p><a href="https://docs.google.com/forms/d/17dQlBx7Xo3vlqjjxCy2NNH5l-9zKJFYXOLj0VNlTXSw/prefill"
                         target="_blank">¿Quéres trabajar con nosotros?</a></p>
-                <p>Épica Servicio turísticos es un producto de Querandí Turismo</p>
+                <p>Épica Servicios turísticos es un producto de Querandí Turismo</p>
                 <p>EVyT Legajo MINTUR: XXX</p>
                 <p>Todos los derechos reservados <i class="fa-regular fa-copyright"></i> 2023</p>
             </div>
@@ -773,7 +804,8 @@
                             class="fa-regular fa-envelope"></i> contacto@epicaserviciosturisticos.com.ar</a></p>
                 <p><a href="https://www.instagram.com/epica.tur" target="_blank"><i class="fa-brands fa-instagram"></i>
                         instagram.com/epica.tur</a></p>
-                <p> <a href="#" class="nav-item nav-link"> <i class="fa-regular fa-store"></i>Reservá online </a></p>
+                <p> <a class="nav-item nav-link" type="button" data-bs-toggle="modal" data-bs-target="#proximamente"> <i
+                            class="fa-regular fa-store"></i>Reservá online </a></p>
             </div>
         </div>
         <div class="contenedorFooter">

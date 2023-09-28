@@ -183,7 +183,19 @@ body {
 .contenedorClassicAccordion .accordionItemClassic {
     background-color: #F5F5DC;
 }
+.accordion-button:not(.collapsed) {
+    background-color: #F5F5DC;  /* Color de fondo cuando está seleccionado */
+    color:#056734;               /* Color de texto cuando está seleccionado */
+}
 
+.accordion-button.collapsed {
+    background-color:#F5F5DC; /* Color de fondo cuando está colapsado */
+    color: #056734;                /* Color de texto cuando está colapsado */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
 /* CUERPO MODAL EXPERIENCIAS CLÁSICAS */
 
 
@@ -1076,7 +1088,7 @@ body {
     }
 
     #destinos h3 {
-        font-size: 50px;
+        font-size: 45px;
     }
     .contenedorImgCarousel .carousel-item {
         display: flex;
