@@ -398,6 +398,13 @@ body {
     font-size: 30px;
     font-weight: 800;
 }
+#destinos p {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+}
 
 /*BOTÓN WHATSAPP*/
 .whatsapp {
