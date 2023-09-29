@@ -86,12 +86,13 @@ body {
     width: 80%;
     padding: 5px;
     color: #F5F5DC;
-    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     text-align: center;
     font-family: 'neueMontralRegular', sans-serif;
     margin-top: 20px;
-}
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    }
 
 .principal .mainCarousel button {
     margin-top: 50px;
@@ -368,6 +369,15 @@ body {
     font-size: 30px;
 }
 
+.texto-modal-service {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    font-size: 16px;
+    font-family:'neueMontrealRegular', sans-serif ;
+    }
+
 
 .carouselDestinos {
     width: 95%;
@@ -416,6 +426,9 @@ body {
     letter-spacing: 1px;
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 18px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 /*BOTÓN WHATSAPP*/
@@ -653,7 +666,7 @@ body {
     .principal .mainCarousel h1 {
         font-size: 30px;
         color: #F5F5DC;
-        background-color: rgba(0, 0, 0, 0.3);
+        /* background-color: rgba(0, 0, 0, 0.3); */
         border-radius: 10px;
         text-align: center;
         font-family: 'neueMontralRegular', sans-serif;
@@ -1198,7 +1211,7 @@ body {
     .principal .mainCarousel h1 {
         font-size: 40px;
         color: #F5F5DC;
-        background-color: rgba(0, 0, 0, 0.3);
+       /*  background-color: rgba(0, 0, 0, 0.3); */
         border-radius: 10px;
         text-align: center;
         font-family: 'neueMontralRegular', sans-serif;
