@@ -557,7 +557,7 @@ body {
 .contenedorFooter .footerContacto {
     padding-top: 30px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .contenedorFooter .footerContacto p a {
@@ -575,13 +575,14 @@ body {
     padding-right: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
 .contenedorFooter2 small a {
     text-decoration: none;
     color: #F5F5DC;
+    padding-top: 10px;
 }
 
 .contenedorFooter2 small i:hover {
@@ -1070,8 +1071,6 @@ body {
         filter: grayscale(70%);
     }
 
-
-
     .itemService h5 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
@@ -1165,7 +1164,14 @@ body {
 
     .footerEpico .contenedorFooter .footerContacto {
         text-align: left;
+    }
 
+    .contenedorFooter .footerContacto  {
+        font-size: 16px;
+    }
+
+    .contenedorFooter2 {
+        justify-content: flex-end;
     }
 
 }
