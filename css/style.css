@@ -229,6 +229,14 @@ body {
     font-size: 16px;
     }
 
+    .accordion-body .texto-modal {
+        width: 90%;
+    }
+
+    .texto-modal p span {
+        font-style: italic;
+    }
+
    /* EXPERIENCIAS ÚNICAS */
 
 .contenedorUnicas {
@@ -556,6 +564,10 @@ body {
 .footerNosotros p a {
     text-decoration: none;
     color: #F5F5DC;
+}
+
+.footerNosotros p span {
+    font-style: italic;
 }
 
 .footerNosotros .nosotros a:hover {
