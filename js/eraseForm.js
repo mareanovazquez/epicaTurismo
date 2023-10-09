@@ -4,6 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('nombre').value = '';
             document.getElementById('email').value = '';
             document.getElementById('mensaje').value = '';
-        }, 1000);
+        }, 100);
     });
 });
