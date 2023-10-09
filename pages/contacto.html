@@ -175,7 +175,7 @@
                     <div class="formulario" id="formulario">
                         <h2>Envianos tu consulta</h2>
                         <p>Dejanos un mensaje y te responderemos lo antes posible.</p>
-                        <form>
+                        <form action="https://formspree.io/f/mjvqjbpw" method="POST" id="contactoForm">
                             <div>
                                 <input type="text" name="nombre" placeholder="Nombre" id="nombre">
                                 <p class="error">Por fa vor escribe tu nombre</p>
@@ -189,8 +189,7 @@
                                 <p class="error">Por favor escribe tu mensaje</p>
                             </div>
                             <div>
-                                <button class="btn btn-sm btn-outline-success" type="submit" name="enviar"
-                                    value="Enviar">ENVIAR</button>
+                                <button class="btn btn-sm btn-outline-success" type="submit" >ENVIAR</button>
                             </div>
                         </form>
                     </div>
@@ -262,6 +261,7 @@
     <script src="../js/stickyNavBar.js"></script>
     <script src="../js/volverArriba.js"></script>
     <script src="../js/validateForm.js"></script>
+    <script src="../js/eraseForm.js"></script>
 </body>
 
 </html>
