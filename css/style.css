@@ -3,19 +3,10 @@ Paleta de colores
 Principal:#056734 rgb (
 Claro: #F5F5DC rgb(245, 245, 220) crudo
 Fondo:#ccccd2
-PRODUCTOS: FFB000 rgb(255, 176, 0) Amarillo
-            C64756 rgb(198, 71, 86) Rojo
-            FAD586 rgb(250, 213, 134) Amarillo
-            F86F03 rgb(248, 111, 3) Naranja
-            525FE1 rgb(82, 95, 225) Azul
-            DF2E38 rgb(223, 46, 56) rojo
-            5D9C59 rgb(93, 156, 89) Verde
-            FD8D14 rgb(253, 141, 20) Naranja
-            C51605 rgb(197, 22, 5) Rojo
-            79155B rgb(121, 21, 91) Violeta
-            C23373 rgb(194, 51, 115) Morado
-            F6635C rgb(246, 99, 92) Anaranjado
-*/
+EXPERIENCIAS CLÁSICAS #F86F03 rgb(248, 111, 3) Naranja
+EXPERIENCIAS ÚNICAS #C23373 rgb(194, 51, 115) Morado
+EXPERIENCIAS ÉPICAS #5D9C59 rgb(93, 156, 89) Verde
+    */
 
 /* Menores a 576px 
 aplica a todo aquello que no sea 
@@ -92,7 +83,7 @@ body {
     margin-top: 20px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     display: inline-block;
-    }
+}
 
 .principal .mainCarousel button {
     margin-top: 50px;
@@ -184,19 +175,25 @@ body {
 .contenedorClassicAccordion .accordionItemClassic {
     background-color: #F5F5DC;
 }
+
 .accordion-button:not(.collapsed) {
-    background-color: #F5F5DC;  /* Color de fondo cuando está seleccionado */
-    color:#056734;               /* Color de texto cuando está seleccionado */
+    background-color: #F5F5DC;
+    /* Color de fondo cuando está seleccionado */
+    color: #056734;
+    /* Color de texto cuando está seleccionado */
 }
 
 .accordion-button.collapsed {
-    background-color:#F5F5DC; /* Color de fondo cuando está colapsado */
-    color: #056734;                /* Color de texto cuando está colapsado */
+    background-color: #F5F5DC;
+    /* Color de fondo cuando está colapsado */
+    color: #056734;
+    /* Color de texto cuando está colapsado */
 }
 
 .accordion-button:focus {
     box-shadow: none;
 }
+
 /* CUERPO MODAL EXPERIENCIAS CLÁSICAS */
 
 
@@ -211,10 +208,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-} 
 
-.modal-body  img {
+}
+
+.modal-body img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -227,17 +224,17 @@ body {
     margin-right: auto;
     padding-top: 20px;
     font-size: 16px;
-    }
+}
 
-    .accordion-body .texto-modal {
-        width: 90%;
-    }
+.accordion-body .texto-modal {
+    width: 90%;
+}
 
-    .texto-modal p span {
-        font-style: italic;
-    }
+.texto-modal p span {
+    font-style: italic;
+}
 
-   /* EXPERIENCIAS ÚNICAS */
+/* EXPERIENCIAS ÚNICAS */
 
 .contenedorUnicas {
     display: none;
@@ -383,8 +380,8 @@ body {
     margin-right: auto;
     padding-top: 20px;
     font-size: 16px;
-    font-family:'neueMontrealRegular', sans-serif ;
-    }
+    font-family: 'neueMontrealRegular', sans-serif;
+}
 
 
 .carouselDestinos {
@@ -428,6 +425,7 @@ body {
     font-size: 30px;
     font-weight: 800;
 }
+
 #destinos p {
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
@@ -576,7 +574,7 @@ body {
 }
 
 .footerContacto p i {
-    padding:5px;
+    padding: 5px;
 }
 
 .contenedorFooter .footerContacto {
@@ -738,7 +736,7 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        
+
     }
 
     .expClassicTitle {
@@ -830,7 +828,7 @@ body {
 
     }
 
-    
+
     /* EXPERIENCIAS ÚNICAS */
     .contenedorUnicas {
         /*Decoración contenedor*/
@@ -864,7 +862,7 @@ body {
         font-size: 30px;
         padding: 5px;
         color: #F5F5DC;
-        
+
     }
 
     .expUnic h4 {
@@ -1114,6 +1112,7 @@ body {
     #destinos h3 {
         font-size: 45px;
     }
+
     .contenedorImgCarousel .carousel-item {
         display: flex;
         justify-content: center;
@@ -1121,16 +1120,17 @@ body {
         align-items: center;
         /* Centra verticalmente */
     }
-    
+
     .contenedorImgCarousel .carousel-item img {
         max-height: 100%;
         /* Para asegurarte de que la imagen no exceda el alto del contenedor */
     }
-    
+
     #destinos {
         padding: 30px;
     }
-   /*  .contenedorClientes {
+
+    /*  .contenedorClientes {
         width: 95%;
         padding: 30px;
     }
@@ -1191,7 +1191,7 @@ body {
         text-align: left;
     }
 
-    .contenedorFooter .footerContacto  {
+    .contenedorFooter .footerContacto {
         font-size: 16px;
     }
 
@@ -1223,7 +1223,7 @@ body {
     .principal .mainCarousel h1 {
         font-size: 40px;
         color: #F5F5DC;
-       /*  background-color: rgba(0, 0, 0, 0.3); */
+        /*  background-color: rgba(0, 0, 0, 0.3); */
         border-radius: 10px;
         text-align: center;
         font-family: 'neueMontralRegular', sans-serif;
@@ -1370,7 +1370,7 @@ body {
 
     /* CUERPO MODAL EXPERIENCIAS CLÁSICAS */
 
-   /*  .modalCompleto {
+    /*  .modalCompleto {
         background-image: linear-gradient(98deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 91%), url('../img/expClassic/mundoMarino.jpg');
         background-size: center;
         background-size: cover;
