@@ -89,6 +89,11 @@ body {
     margin-top: 50px;
 }
 
+.principal .mainCarousel button a {
+    text-decoration: none;
+    color: #F5F5DC;
+}
+
 /* MAIN CAROUSEL SLIDE 2 */
 .principal .mainCarousel .slide2 {
     background-image: url('../img/mainCarousel/avistadoresAves.jpg');
@@ -195,7 +200,6 @@ body {
 }
 
 /* CUERPO MODAL EXPERIENCIAS CLÁSICAS */
-
 
 
 .modal-content {
@@ -738,6 +742,7 @@ body {
         align-items: center;
 
     }
+
 
     .expClassicTitle {
         width: 18%;
