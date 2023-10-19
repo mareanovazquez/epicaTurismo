@@ -1,0 +1,65 @@
+/* Menores a 576px 
+aplica a todo aquello que no sea 
+reescrito en MediaQueries */
+
+.galeriaPrincipal {
+    background-color: #ffff;
+    padding: 20px 0;
+}
+
+.galeriaPrincipal h2 {
+    font-family: 'Rowdies', sans-serif;
+    color: #056734;
+}
+.contenedorGaleria div{
+    padding-bottom: 20px;
+}
+
+.contenedorGaleria div {
+    overflow: hidden; /* Evita que la imagen desborde al escalar */
+    
+}
+
+.contenedorGaleria div img:hover {
+    transform: scale(0.96); /* Aumenta la imagen en un 10% */
+    transition: 0.3s;
+    
+}
+.contenedorModalGaleria {
+    border-radius: 20px;
+}
+/* .galeriaAvistajeAves {
+    background-image: url('../img/galeria/galeriaAvistajeAves.jpg');
+    background-position: center;
+    background-size: cover;
+} */
+/* Entre 576px y 767px */
+/* Bootstrap breakpoints SM y superiores */
+@media (min-width: 576px) {
+    
+}
+
+/* Entre 768px y 991px */
+/* Bootstrap breakpoints MD y superiores */
+@media (min-width: 768px) {
+    
+}
+
+/* Entre 992px y 1199px */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 992px) {
+    /* Tus estilos para dispositivos large y superiores van aquí */
+    .galeriaPrincipal h2 {
+        
+        font-size: 45px;
+    }
+    .contenedorGaleria div{
+        padding-bottom: 0;
+    }
+}
+
+/* Desde 1200px en adelante */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 1200px) {
+    /* Tus estilos para dispositivos extra large y superiores van aquí */
+}

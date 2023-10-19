@@ -428,13 +428,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 800;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+    color: #F5F5DC;
 }
 
 #destinos p {
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
-    background-color: rgba(0, 0, 0, 0.3);
+    color: #F5F5DC;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
     font-size: 18px;
     display: inline-block;
     padding: 5px;
@@ -782,7 +785,7 @@ body {
         font-size: 20px;
         text-transform: uppercase;
         padding: 2px;
-        background-color: rgba(0, 0, 0, 0.3);
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
     }
 
     .expClassic1 {
@@ -878,7 +881,7 @@ body {
         font-size: 18px;
         text-transform: uppercase;
         padding: 2px;
-        background-color: rgba(0, 0, 0, 0.3);
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
     }
 
     .expUnic {
@@ -1001,7 +1004,7 @@ body {
         font-size: 20px;
         text-transform: uppercase;
         padding: 2px;
-        background-color: rgba(0, 0, 0, 0.3);
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
     }
 
     .expEpic1 {
@@ -1103,6 +1106,7 @@ body {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: 16px;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
     }
 
     .itemService i {
