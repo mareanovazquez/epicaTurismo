@@ -138,9 +138,9 @@ body {
 
 .contenedorExperiencias h2 {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Rowdies', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     color: #056734
 }
 
@@ -323,7 +323,7 @@ body {
     text-align: center;
     padding: 20px;
     font-family: 'Rowdies', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     color: #056734
 }
 
@@ -418,7 +418,7 @@ body {
     text-align: center;
     padding: 20px;
     font-family: 'Rowdies', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     color: #056734
 }
 
@@ -513,7 +513,6 @@ body {
 }
 
 
-
 .footerEpico {
     background-color: #056734;
 }
@@ -599,10 +598,20 @@ body {
     margin-top: -15px;
 }
 
+.btn-arrepentimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .contenedorFooter2 {
     color: #F5F5DC;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
