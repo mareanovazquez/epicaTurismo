@@ -151,7 +151,8 @@
                 </select>
             </div>
             <div class=" contenedorGaleria">
-                <div class="itemAlojamiento almarenaHotel costaDelEste">
+                <div class="itemAlojamiento almarenaHotel costaDelEste" type="button" data-bs-toggle="modal"
+                    data-bs-target="#modalAlmarenaHotel">
                     <h6>Costa del Este</h6>
                     <h5>ALMARENA</h5>
                 </div>
@@ -190,9 +191,75 @@
 
     </main>
 
-    <section id="contenedor-modal">
+    <!-- MODAL ALOJAMIENTO -->
 
-    </section>
+    <div class="modal fade" id="modalAlmarenaHotel" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Almarena Apart & Hotel Boutique</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/alojamiento/almarenaHotel.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/alojamiento/altairHotel.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/alojamiento/chiavariHotel.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="texto-modal-service">
+                        <p>
+                            Inmerso en el bosque de Costa del Este y con vistas soñadas al mar, se encuentra Almarena
+                            Apart & Hotel Boutique, el lugar ideal para regalar o regalarte un momento de reconexión en
+                            cualquier época del año. La arquitectura amigable con el entorno te invita a aprovechar los
+                            increíbles paisajes de Costa del Este y disfrutar de la naturaleza que nos rodea. Combinando
+                            confort, servicios de calidad y pasión por los detalles, 40 modernos departamentos y 19
+                            confortables suites te esperan para ser tu hogar en La Costa.
+                        </p>
+                        <ul>
+                            <h5>Servicios</h5>
+                            <li>Servicio de limpieza diario</li>
+                            <li>2 restaurantes y bar</li>
+                            <li>Spa de servicio completo</li>
+                            <li>2 piscinas cubiertas</li>
+                            <li>Terraza en la azotea</li>
+                            <li>Sala de fitness</li>
+                            <li>Sauna</li>
+                            <li>Baño turco</li>
+                            <li>Bicicletas gratuitas</li>
+                            <li>Toallas de playa</li>
+                            <li>Sombrillas de playa</li>
+                            <li>WiFi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-sm btn-success" href="https://www.almarena.com.ar/" target="_blank">Almarena hotel
+                        <i class="fa-solid fa-hotel"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footerEpico">
         <div class="contenedorImgFooter"><img src="../img/logotipo_claro.svg" alt=""></div>
         <h3>Servicios turísticos</h3>
