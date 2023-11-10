@@ -1,0 +1,162 @@
+/* Menores a 576px 
+aplica a todo aquello que no sea 
+reescrito en MediaQueries */
+body {
+    color: #323232;
+}
+
+.galeriaPrincipalAlojamientos {
+    background-color: #ffff;
+    padding: 20px 0;
+    }
+
+.galeriaPrincipalAlojamientos .contenedorAlojamientos h2 {
+    font-family: 'Rowdies', sans-serif;
+    color: #056734;
+    text-align: center;
+}
+
+.galeriaPrincipalAlojamientos .contenedorAlojamientos {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorFilter{
+    width: 15%;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+.galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 30vh;
+    width: 21%;
+    margin-bottom: 20px;
+    
+    }
+
+.galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento h6 {
+    display: inline-block;
+    align-self: end;
+    background-color: #056734;
+    color: #F5F5DC;
+    padding: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    font-size: 18px;
+    }
+
+
+.galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento h5 {
+    /* background-color: rgba(245, 245, 220, 0.5); */
+    background-color: #056734;
+    color: #F5F5DC;
+    width: 100%;
+    margin-bottom: 0;
+    font-weight: 500;
+    padding:5px;
+    font-size: 18px;
+}
+
+
+.contenedorGaleria .itemAlojamiento:hover {
+    transform: scale(0.96);
+    /* Aumenta la imagen en un 10% */
+    transition: 0.3s;
+}
+
+/* ALOJAMIENTOS */
+
+.contenedorGaleria .almarenaHotel {
+    background-image: url('../img/alojamiento/almarenaHotel.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorGaleria .altairHotel {
+    background-image: url('../img/alojamiento/altairHotel.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorGaleria .chiavariHotel {
+    background-image: url('../img/alojamiento/chiavariHotel.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorGaleria .eoParkHotel {
+    background-image: url('../img/alojamiento/eoParkHotel.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorGaleria .fontainbleauHotel {
+    background-image: url('../img/alojamiento/hotelFontainbleau.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorGaleria .paucamHotel {
+    background-image: url('../img/alojamiento/paucamHotel.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.contenedorGaleria .savoiaHotelSC {
+    background-image: url('../img/alojamiento/savoiahotelSC.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorGaleria .veronaHotel {
+    background-image: url('../img/alojamiento/veronaHotel.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Entre 576px y 767px */
+/* Bootstrap breakpoints SM y superiores */
+@media (min-width: 576px) {}
+
+/* Entre 768px y 991px */
+/* Bootstrap breakpoints MD y superiores */
+@media (min-width: 768px) {}
+
+/* Entre 992px y 1199px */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 992px) {
+
+    /* Tus estilos para dispositivos large y superiores van aquí */
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos h2 {
+
+        font-size: 45px;
+    }
+
+    .contenedorGaleria div {
+        padding-bottom: 0;
+    }
+}
+
+/* Desde 1200px en adelante */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 1200px) {
+    /* Tus estilos para dispositivos extra large y superiores van aquí */
+}
