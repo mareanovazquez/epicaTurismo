@@ -8,7 +8,7 @@ body {
 .galeriaPrincipalAlojamientos {
     background-color: #ffff;
     padding: 20px 0;
-    }
+}
 
 .galeriaPrincipalAlojamientos .contenedorAlojamientos h2 {
     font-family: 'Rowdies', sans-serif;
@@ -25,9 +25,9 @@ body {
 
 }
 
-.galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorFilter{
-    width: 15%;
-    align-self: flex-end;
+.galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorFilter {
+    width: 90%;
+    align-self: center;
     margin-bottom: 10px;
 }
 
@@ -37,7 +37,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    }
+}
 
 .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento {
     display: flex;
@@ -46,10 +46,11 @@ body {
     align-items: center;
     padding: 0;
     height: 30vh;
-    width: 21%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
-    
-    }
+}
 
 .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento h6 {
     display: inline-block;
@@ -59,8 +60,8 @@ body {
     padding: 5px;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 3px;
-    font-size: 18px;
-    }
+    font-size: 16px;
+}
 
 
 .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento h5 {
@@ -70,8 +71,8 @@ body {
     width: 100%;
     margin-bottom: 0;
     font-weight: 500;
-    padding:5px;
-    font-size: 18px;
+    padding: 5px;
+    font-size: 16px;
 }
 
 
@@ -134,11 +135,46 @@ body {
 
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorFilter {
+        width: 80%;
+        align-self: center;
+    }
+
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento {
+        width: 40%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
 
 /* Entre 768px y 991px */
 /* Bootstrap breakpoints MD y superiores */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorFilter {
+        width: 30%;
+        align-self: flex-end;
+    }
+
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento {
+        width: 30%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento h6 {
+        font-size: 18px;
+    }
+
+
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento h5 {
+        font-size: 18px;
+    }
+
+
+}
 
 /* Entre 992px y 1199px */
 /* Bootstrap breakpoints LG y superiores */
@@ -153,10 +189,32 @@ body {
     .contenedorGaleria div {
         padding-bottom: 0;
     }
+
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorFilter {
+        width: 30%;
+        align-self: flex-end;
+    }
+
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento {
+        width: 30%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 /* Desde 1200px en adelante */
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 1200px) {
+
     /* Tus estilos para dispositivos extra large y superiores van aquí */
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorFilter {
+        width: 22%;
+        align-self: flex-end;
+    }
+
+    .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento {
+        width: 22%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
