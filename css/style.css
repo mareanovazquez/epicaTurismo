@@ -130,8 +130,8 @@ body {
 
 /* EXPERIENCIAS CLÁSICAS */
 .contenedorExperiencias {
-    padding: 30px;
-    width: 95%;
+    padding-top: 30px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -223,15 +223,13 @@ body {
 
 
 .texto-modal {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 20px;
     font-size: 16px;
+    margin: 0 auto;
 }
 
 .accordion-body .texto-modal {
-    width: 90%;
+    width: 100%;
 }
 
 .texto-modal p span {
@@ -643,6 +641,12 @@ body {
         font-size: 30px;
     }
 
+    .contenedorExperiencias {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .itemService {
         width: 200px;
         height: 200px;
@@ -658,7 +662,13 @@ body {
 
 /* Entre 768px y 991px */
 /* Bootstrap breakpoints MD y superiores */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .contenedorExperiencias {
+        width: 80%;
+        
+    }
+}
 
 /* Entre 992px y 1199px */
 /* Bootstrap breakpoints LG y superiores */
