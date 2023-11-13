@@ -156,8 +156,8 @@
                     <h6>Costa del Este</h6>
                     <h5>ALMARENA</h5>
                 </div>
-
-                <div class=" itemAlojamiento altairHotel sanClemente">
+                <div class=" itemAlojamiento altairHotel sanClemente" type="button" data-bs-toggle="modal"
+                    data-bs-target="#modalAltairHotel">
                     <h6>San Clemente</h6>
                     <h5>ALTAIR</h5>
                 </div>
@@ -194,57 +194,67 @@
     <!-- MODAL ALOJAMIENTO -->
 
     <!-- ALMARENA HOTEL -->
-    <div class="modal fade" id="modalAlmarenaHotel" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal" id="modalAlmarenaHotel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" id="exampleModalLabel">Almarena Apart & Hotel Boutique</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div id="carouselAlmarena" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal1.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal1.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal2.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal2.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal3.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal3.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal4.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal4.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal5.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal5.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal6.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal6.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal7.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal7.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal8.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal8.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal9.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal9.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal10.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal10.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal11.jpg" class="d-block w-100" alt="...">
+                                <img src="../img/alojamiento/alamarenaModal/alamarenaHotelModal11.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlmarena"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAlmarena"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -280,6 +290,80 @@
                 <div class="modal-footer">
                     <a class="btn btn-sm btn-success" href="https://www.almarena.com.ar/" target="_blank">Almarena hotel
                         <i class="fa-solid fa-hotel"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALTAIR HOTEL -->
+    <div class="modal" id="modalAltairHotel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Hotel Altair</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselAltair" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/alojamiento/altairModal/altairHotel1.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/alojamiento/altairModal/altairHotel2.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/alojamiento/altairModal/altairHotel3.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/alojamiento/altairModal/altairHotel4.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAltair"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAltair"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="texto-modal-service">
+                        <p>
+                            Tu refugio en San Clemente del Tuyú, donde la comodidad y la hospitalidad se encuentran en
+                            cada rincón.
+
+                            El hotel te brinda una estancia inolvidable con una amplia gama de servicios. Relájate y
+                            disfruta de nuestra piscina climatizada, el lugar perfecto para descansar y refrescarte
+                            después de un día explorando las maravillas de San Clemente del Tuyú.
+
+                        </p>
+                        <ul>
+                            <h5>Servicios</h5>
+                            <li>Piscina techada</li>
+                            <li>Estacionamiento</li>
+                            <li>Bar</li>
+                            <li>Servicio a la habitación</li>
+                            <li>Recepción disponible las 24 horas</li>
+                            <li>Jardín</li>
+                            <li>Snack-bar o delicatessen</li>
+                            <li>Servicios de concierge</li>
+                            <li>Asistencia turística y para la compra de entradas</li>
+                            <li>Televisión en las áreas comunes</li>
+                            <li>WIFI</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-sm btn-success" href="tel:02252521429">Hotel Altair <i
+                            class="fa-solid fa-phone"></i></a>
                 </div>
             </div>
         </div>
