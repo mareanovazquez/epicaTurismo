@@ -440,6 +440,32 @@ body {
     border-radius: 10px;
 }
 
+.contenedorEspeciales {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedorEspeciales h2 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 30px;
+    color: #056734
+}
+
+.contenidoEspeciales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedorEspeciales .contenidoEspeciales .itemEspeciales {
+    margin: 10px;
+}
+
 /*BOTÓN WHATSAPP*/
 .whatsapp {
     position: fixed;
