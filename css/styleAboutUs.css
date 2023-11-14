@@ -26,7 +26,7 @@ reescrito en MediaQueries */
 .contenedorAboutUs {
     width: 80%;
     background-color: rgba(5, 103, 52, 0.7);
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 30px;
 
 }

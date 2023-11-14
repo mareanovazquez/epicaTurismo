@@ -30,7 +30,7 @@ reescrito en MediaQueries */
 }
 
 .contenedorModalGaleria {
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 /*Modal fotos proyectos*/
@@ -51,7 +51,7 @@ reescrito en MediaQueries */
     width: 80%;
     max-width: 900px;
     transition: 2s;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .modal .btn-cerrar {
