@@ -841,6 +841,7 @@ body {
 
     .contenedorExperiencias {
         width: 90%;
+        padding-top: 20px;
     }
     .contenedorExperiencias h2 {
         font-size: 40px;
@@ -1187,6 +1188,7 @@ body {
 
     .contenedorServicios {
         width: 90%;
+        padding-top: 20px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1287,6 +1289,8 @@ body {
 
     .contenedorEspeciales {
         width: 90%;
+        padding-top: 20px;
+        padding-bottom: 0;
     }
     .contenedorEspeciales .contenidoEspeciales {
         flex-direction: row;
