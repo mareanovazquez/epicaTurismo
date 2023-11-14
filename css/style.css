@@ -153,7 +153,6 @@ body {
     background-size: center;
     padding: 30px;
     width: 100%;
-   
 }
 
 .contenedorClassicAccordion h3 {
@@ -280,7 +279,7 @@ body {
     background-repeat: repeat;
     padding: 30px;
     width: 100%;
-    
+
 }
 
 .contenedorEpicAccordion h3 {
@@ -311,11 +310,7 @@ body {
     display: none;
 }
 
-#servicios {
-    padding: 30px;
-}
-
-#servicios h2 {
+.contenedorServicios h2 {
     text-align: center;
     padding: 20px;
     font-family: 'Rowdies', sans-serif;
@@ -327,12 +322,13 @@ body {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    padding: 30px;
 }
 
 .subContenedorService {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -340,7 +336,7 @@ body {
 .itemService {
     width: 120px;
     height: 120px;
-    border-radius: 20px;
+    border-radius: 5px;
     color: #F5F5DC;
     background-color: #056734;
     padding: 20px;
@@ -361,8 +357,6 @@ body {
     transform: translateY(5px);
     filter: grayscale(70%);
 }
-
-
 
 .itemService h5 {
     font-family: 'Montserrat', sans-serif;
@@ -388,8 +382,7 @@ body {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
-
+    border-radius: 5px;
 }
 
 .contenedorImgCarousel .carousel-item {
@@ -444,6 +437,7 @@ body {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
 }
 
 .contenedorEspeciales h2 {
@@ -463,8 +457,47 @@ body {
 }
 
 .contenedorEspeciales .contenidoEspeciales .itemEspeciales {
-    margin: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 20vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.contenedorEspeciales .contenidoEspeciales .itemEspeciales h3 {
+    font-family: 'blennyTrial', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding: 5px;
+    color: #F5F5DC;
+    text-align: center;
+}
+
+
+.itemEscapadas {
+    background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%), url('../img/especiales/especialesEscapadas.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    }
+    
+.itemDeportes {
+    background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%), url('../img/especiales/especialesDeportes.png');
+    background-size: cover;
+    background-position: center;
+}
+.itemRecitales {
+    background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%), url('../img/especiales/especialesRecitales.png');
+    background-size: cover;
+    background-position: center;
+}
+
 
 /*BOTÓN WHATSAPP*/
 .whatsapp {
@@ -581,7 +614,7 @@ body {
     font-family: 'neueMontrealRegular', sans-serif;
     font-size: 16px;
     border: solid;
-    border-radius: 10px;
+    border-radius: 5px;
     border-width: .5px;
     padding: 20px;
     width: 75%;
@@ -671,6 +704,10 @@ body {
         margin-right: auto;
     }
 
+    .contenedorServicios {
+        width: 90%;
+        padding: 0;
+    }
     .itemService {
         width: 200px;
         height: 200px;
@@ -682,25 +719,50 @@ body {
     }
 
     .contenedorClassicAccordion {
-        border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
     }
 
     .contenedorEpicAccordion {
-        border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 
-
+.contenedorServicios {
+    width: 90%;
 }
+
+.subContenedorService {
+    justify-content: space-between;
+    
+}
+.contenedorEspeciales .contenidoEspeciales .itemEspeciales {
+    height: 30vh;
+    width: 100%;
+}
+    }
 
 /* Entre 768px y 991px */
 /* Bootstrap breakpoints MD y superiores */
 @media (min-width: 768px) {
 
     .contenedorExperiencias {
-        width: 80%;
-        
+        width: 85%;
+    }
+    .contenedorServicios {
+        width: 85%;
+    }
+
+    .carouselDestinos {
+        width: 90%;
+    }
+
+    .contenedorEspeciales {
+        width: 85%;
+    }
+
+    .contenedorEspeciales .contenidoEspeciales .itemRecitales {
+        background-position: top;
     }
 }
 
@@ -777,6 +839,9 @@ body {
         width: 30%;
     }
 
+    .contenedorExperiencias {
+        width: 90%;
+    }
     .contenedorExperiencias h2 {
         font-size: 40px;
     }
@@ -787,8 +852,8 @@ body {
         background-size: center;
         padding: 30px;
         width: 100%;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
 
         /*Organización contenido*/
         display: flex;
@@ -821,7 +886,7 @@ body {
     .expClassic {
         width: 18%;
         height: 300px;
-        border-radius: 20px;
+        border-radius: 5px;
 
         /* ORGANIZACIÓN DEL CONTENIDO */
         display: flex;
@@ -940,7 +1005,7 @@ body {
     .expUnic {
         width: 18%;
         height: 300px;
-        border-radius: 20px;
+        border-radius: 5px;
 
         /* ORGANIZACIÓN DEL CONTENIDO */
         display: flex;
@@ -1007,8 +1072,8 @@ body {
         background-repeat: repeat;
         padding: 30px;
         width: 100%;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
 
         /*Organización contenido*/
         display: flex;
@@ -1040,7 +1105,7 @@ body {
     .expEpic {
         width: 18%;
         height: 300px;
-        border-radius: 20px;
+        border-radius: 5px;
 
         /* ORGANIZACIÓN DEL CONTENIDO */
         display: flex;
@@ -1121,7 +1186,7 @@ body {
     }
 
     .contenedorServicios {
-        width: 95%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1136,7 +1201,7 @@ body {
     .itemService {
         width: 18%;
         height: 18vh;
-        border-radius: 20px;
+        border-radius: 5px;
         color: #F5F5DC;
         background-color: #056734;
         padding: 10px;
@@ -1166,7 +1231,9 @@ body {
         font-size: 40px;
     }
 
-
+   .carouselDestinos{
+        width: 90%;
+    }
     #destinos h2 {
         font-size: 50px;
     }
@@ -1184,14 +1251,11 @@ body {
     }
 
     .contenedorImgCarousel .carousel-item img {
-        max-height: 100%;
+        max-height: 80%;
         /* Para asegurarte de que la imagen no exceda el alto del contenedor */
     }
 
-    #destinos {
-        padding: 30px;
-    }
-
+   
     /*  .contenedorClientes {
         width: 95%;
         padding: 30px;
@@ -1220,6 +1284,28 @@ body {
         font-size: 80px;
         color: #056734;
     } */
+
+    .contenedorEspeciales {
+        width: 90%;
+    }
+    .contenedorEspeciales .contenidoEspeciales {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .contenedorEspeciales h2 {
+        font-size: 50px;
+    }
+    
+    .contenedorEspeciales .contenidoEspeciales .itemEspeciales h3 {
+        font-size: 33px;
+    }
+    
+    .contenedorEspeciales .contenidoEspeciales .itemEspeciales {
+        width: 30%;
+        height: 25vh;
+    }
 
     .footerEpico .contenedorImgFooter {
         margin-left: auto;
@@ -1260,6 +1346,7 @@ body {
     .contenedorFooter2 {
         justify-content: flex-end;
     }
+
 
 }
 
@@ -1325,381 +1412,72 @@ body {
         width: 30%;
     }
 
+    .contenedorExperiencias {
+        width: 89%;
+    }
     #experiencias h2 {
         font-size: 50px;
     }
 
-    .contenedorClassic {
-        /*Decoración contenedor*/
-        background-image: linear-gradient(98deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%), url('../img/expClassic/mundoMarino.jpg');
-        background-size: center;
-        padding: 30px;
-        width: 100%;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-
-        /*Organización contenido*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
 
     .expClassicTitle {
         width: 20%;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding-right: 0;
 
     }
 
     .expClassicTitle h3 {
-        font-family: 'blennyTrial', sans-serif;
-        letter-spacing: 2px;
         font-size: 40px;
-        color: #F5F5DC;
-    }
-
-    .expClassic {
-        margin: 20px;
-        width: 15%;
-        height: 300px;
-        border-radius: 20px;
-
-        /* ORGANIZACIÓN DEL CONTENIDO */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+        padding: 0;
+        }
 
     .expClassic h4 {
-        color: #F5F5DC;
-        font-family: 'Montserrat', sans-serif;
         font-weight: 800;
-        text-align: center;
     }
-
-    .expClassic1 {
-        background-image: url('../img/expClassic/costaAcuatica.jpeg');
-        background-position: center;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-    .expClassic1:hover {
-        background-position: right;
-
-    }
-
-    .expClassic2 {
-        background-image: url('../img/expClassic/cabalgatas.jpg');
-        background-position: center;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-    .expClassic2:hover {
-        background-position: right;
-
-    }
-
-    .expClassic3 {
-        background-image: url('../img/expClassic/clinicaSurf.JPG');
-        background-position: center;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-    .expClassic3:hover {
-        background-position: right;
-
-    }
-
-    .expClassic4 {
-        background-image: url('../img/expClassic/pescaEmbarcada.jpg');
-        background-position: center;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-    .expClassic4:hover {
-        background-position: right;
-
-    }
-
-    /* CUERPO MODAL EXPERIENCIAS CLÁSICAS */
-
-    /*  .modalCompleto {
-        background-image: linear-gradient(98deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 91%), url('../img/expClassic/mundoMarino.jpg');
-        background-size: center;
-        background-size: cover;
-        transition: background-position 6s;
-        border: none;
-    }
-
-    .modalCompleto .modal-header h5 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        color: #F5F5DC;
-    }
-
-    .modalBodyExpClassic1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        font-weight: 500;
-        color: #F5F5DC;
-    }
-
-    .modalBodyExpClassic1 p:hover {
-        font-weight: 800;
-        transition: 0.2s;
-    } */
 
     /* EXPERIENCIAS ÚNICAS */
-    .contenedorUnicas {
-        /*Decoración contenedor*/
-        background-image: linear-gradient(98deg, rgba(194, 51, 115, 0.5215336134453781) 0%, rgba(194, 51, 115, 1) 41%), url('../img/expUnicas/faro.jpg');
-        background-size: center;
-        padding: 30px;
-        width: 100%;
-
-
-        /*Organización contenido*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
     .expUnicTitle {
         width: 20%;
-        height: 300px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding-right: 0;
     }
 
     .expUnicTitle h3 {
-        font-family: 'blennyTrial', sans-serif;
-        letter-spacing: 2px;
         font-size: 40px;
-        color: #F5F5DC;
+        padding: 0;
     }
 
     .expUnic h4 {
-        color: #F5F5DC;
-        font-family: 'Montserrat', sans-serif;
         font-weight: 800;
-        text-align: center;
     }
 
-    .expUnic {
-        margin: 20px;
-        width: 15%;
-        height: 300px;
-        border-radius: 20px;
-
-        /* ORGANIZACIÓN DEL CONTENIDO */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .expUnic1 {
-        background-image: url('../img/expUnicas/astroturismo.jpg');
-        background-position: center;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-    .expUnic1:hover {
-        background-position: right;
-
-    }
-
-    .expUnic2 {
-        background-image: url('../img/expUnicas/lavalle.jpeg');
-        background-position: left;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-
-    .expUnic2:hover {
-        background-position: right;
-    }
-
-    .expUnic3 {
-        background-image: url('../img/expUnicas/avistajeAves.jpg');
-        background-position: left;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-
-    .expUnic3:hover {
-        background-position: right;
-    }
-
-    .expUnic4 {
-        background-image: url('../img/expUnicas/bahiaSamboronbom.jpg');
-        background-position: center;
-        background-size: cover;
-        transition: background-position 6s;
-        font-weight: 500;
-    }
-
-
-    .expUnic4:hover {
-        background-position: right;
-    }
-
-    .contenedorEpicas {
-
-        background-image: linear-gradient(98deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%), url('../img/expEpic/kayak.jpg');
-        background-size: contain;
-        background-position: left;
-        background-repeat: repeat;
-        padding: 30px;
-        width: 100%;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-
-        /*Organización contenido*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
+  /* EXPERIENCIAS ÉPICAS */
     .expEpicTitle {
         width: 20%;
-        height: 300px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding-right: 0;
     }
 
     .expEpicTitle h3 {
-        font-family: 'blennyTrial', sans-serif;
-        letter-spacing: 2px;
         font-size: 40px;
-        color: #F5F5DC;
-    }
-
-    .expEpic {
-        margin: 20px;
-        width: 15%;
-        height: 300px;
-        border-radius: 20px;
-
-        /* ORGANIZACIÓN DEL CONTENIDO */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0;
     }
 
     .expEpic h4 {
-        color: #F5F5DC;
-        font-family: 'Montserrat', sans-serif;
         font-weight: 800;
-        text-align: center;
     }
-
-    .expEpic1 {
-        background-image: url('../img/expEpic/kitesurf.jpg');
-        background-position: center;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-    .expEpic1:hover {
-        background-position: right;
-    }
-
-    .expEpic2 {
-        background-image: url('../img/expEpic/avistadoresAves.jpg');
-        background-position: center;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-    .expEpic2:hover {
-        background-position: right;
-    }
-
-    .expEpic3 {
-        background-image: url('../img/expEpic/sandboard.jpg');
-        background-position: right;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-    .expEpic3:hover {
-        background-position: center;
-    }
-
-    .expEpic4 {
-        background-image: url('../img/expEpic/playaAtardecer.jpg');
-        background-position: center;
-        background-size: cover;
-        transition: background-position 6s;
-    }
-
-    .expEpic4:hover {
-        background-position: right;
-    }
-
-    #servicios {
-        padding: 30px;
-    }
-
-    #servicios h2 {
-        text-align: center;
-        padding: 20px;
-        font-family: 'Rowdies', sans-serif;
-        font-size: 50px;
-        color: #056734
-    }
-
-    .contenedorServicios {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+/* SERVICIOS */
 
     .subContenedorService {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
     .itemService {
-        width: 17%;
+        padding: 0;
         height: 400px;
-        border: 2px solid black;
-        border-radius: 20px;
-        color: #F5F5DC;
-        transition: transform 0.3s ease, filter 0.3s ease;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+        width: 17%;
+        }
 
     .itemService:hover {
         transition: .3s;
@@ -1718,45 +1496,43 @@ body {
     }
 
 
-
     .itemService1 {
         background-image: url(../img/servicios/corporativo.png);
         background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
-        border: none;
-    }
+        }
 
     .itemService2 {
         background-image: url(../img/servicios/gastronomia.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border: none;
-    }
+        }
 
     .itemService3 {
         background-image: url(../img/servicios/hoteleria.jpg);
         background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
-        border: none;
-    }
+        }
 
     .itemService4 {
         background-image: url(../img/servicios/transfers.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border: none;
-    }
+        }
 
     .itemService5 {
         background-image: url(../img/servicios/personalizado.jpg);
         background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
-        border: none;
+        }
+
+    .contenedorEspeciales .contenidoEspeciales .itemEspeciales h3 {
+        font-size: 40px;
     }
 
 }
