@@ -136,6 +136,9 @@ body {
     background-size: cover;
 }
 
+.texto-modal-service ul h5 {
+    margin-left: -1rem;
+}
 
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
