@@ -63,6 +63,72 @@ reescrito en MediaQueries */
     /* Ajustado para que la imagen sea responsive */
 }
 
+.contenedorTraslados {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.contenedorTraslados h2 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 30px;
+    color: #056734
+}
+
+.contenidoTraslados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedorTraslados .contenidoTraslados .itemTraslados {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 20vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedorTraslados .contenidoTraslados .itemTraslados h3 {
+    font-family: 'blennyTrial', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding: 5px;
+    color: #F5F5DC;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.contenedorTraslados .contenidoTraslados .itemClasicos {
+    background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%), url('../img/transfers/imgTransfersClassic.svg');
+    background-size: cover;
+    background-position: center;
+        }
+    
+.contenedorTraslados .contenidoTraslados .itemNegocios {
+    background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%), url('../img/transfers/imgTransfersBussiness.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedorTraslados .contenidoTraslados .itemGrupos {
+    background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%), url('../img/transfers/imgTransfersGrupos.svg');
+    background-size: cover;
+    background-position: center;
+}
+
 
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
@@ -129,8 +195,7 @@ reescrito en MediaQueries */
         text-align: left;
         margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
     }
-    
-    
+        
     .transfersPrincipal .imgTransfers {
         width: 60%;
         /* Cambiado a 50% */
@@ -138,11 +203,34 @@ reescrito en MediaQueries */
         /* Añadido para centrar la imagen */
     }
     
-    
     .transfersPrincipal .imgTransfers img {
         max-width: 100%;
         /* Ajustado para que la imagen sea responsive */
     }
+
+    .contenedorTraslados {
+        width: 90%;
+        padding-bottom: 0;
+    }
+    .contenedorTraslados .contenidoTraslados {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .contenedorTraslados h2 {
+        font-size: 50px;
+    }
+    
+    .contenedorTraslados .contenidoTraslados .itemTraslados h3 {
+        font-size: 40px;
+    }
+    
+    .contenedorTraslados .contenidoTraslados .itemTraslados {
+        width: 30%;
+        height: 25vh;
+    }
+
     
 
 }
