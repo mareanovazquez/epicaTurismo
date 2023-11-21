@@ -1,0 +1,157 @@
+/* Menores a 576px 
+aplica a todo aquello que no sea 
+reescrito en MediaQueries */
+
+
+.transfersPrincipal {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Cambiado a 'center' */
+    align-items: center;
+}
+
+.transfersPrincipal .dataTransfers {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    /* Cambiado a 50% */
+    text-align: center;
+    /* Añadido para centrar el texto */
+}
+
+.transfersPrincipal .dataTransfers .dataTransfersContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.transfersPrincipal .dataTransfers .dataTransfersContent h2 {
+    font-family: 'Rowdies', sans-serif;
+    color: #056734;
+    font-size: 40px;
+    margin-bottom: 40px; /* Ajusta el valor según la separación deseada */
+}
+
+.transfersPrincipal .dataTransfers .dataTransfersContent h4 {
+    font-size: 20px;    
+    margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+}
+
+.transfersPrincipal .dataTransfers .dataTransfersContent h6 {
+    font-size: 16px;
+    margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+}
+
+.transfersPrincipal .imgTransfers {
+    width: 100%;
+    /* Cambiado a 50% */
+    text-align: center;
+    /* Añadido para centrar la imagen */
+}
+
+
+.transfersPrincipal .imgTransfers img {
+    max-width: 100%;
+    /* Ajustado para que la imagen sea responsive */
+}
+
+
+/* Entre 576px y 767px */
+/* Bootstrap breakpoints SM y superiores */
+@media (min-width: 576px) {}
+
+/* Entre 768px y 991px */
+/* Bootstrap breakpoints MD y superiores */
+@media (min-width: 768px) {
+
+    .transfersPrincipal .dataTransfers .dataTransfersContent h2 {
+        font-size: 45px;
+        
+    }
+}
+
+/* Entre 992px y 1199px */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 992px) {
+    /* Tus estilos para dispositivos large y superiores van aquí */
+
+    .transfersPrincipal {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* Cambiado a 'center' */
+        align-items: center;
+    }
+
+    .transfersPrincipal .dataTransfers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 40%;
+        /* Cambiado a 50% */
+        text-align: center;
+        /* Añadido para centrar el texto */
+    }
+    
+    .transfersPrincipal .dataTransfers .dataTransfersContent {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 50%;
+    }
+    
+    .transfersPrincipal .dataTransfers .dataTransfersContent h2 {
+        font-family: 'Rowdies', sans-serif;
+        color: #056734;
+        text-align: left;
+        font-size: 45px;
+        margin-bottom: 40px; /* Ajusta el valor según la separación deseada */
+    }
+    
+    .transfersPrincipal .dataTransfers .dataTransfersContent h4 {
+        text-align: left;
+        margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+    }
+    
+    .transfersPrincipal .dataTransfers .dataTransfersContent h6 {
+        text-align: left;
+        margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+    }
+    
+    
+    .transfersPrincipal .imgTransfers {
+        width: 60%;
+        /* Cambiado a 50% */
+        text-align: center; 
+        /* Añadido para centrar la imagen */
+    }
+    
+    
+    .transfersPrincipal .imgTransfers img {
+        max-width: 100%;
+        /* Ajustado para que la imagen sea responsive */
+    }
+    
+
+}
+
+/* Desde 1200px en adelante */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 1200px) {
+    /* Tus estilos para dispositivos extra large y superiores van aquí */
+    .transfersPrincipal .dataTransfers .dataTransfersContent h2 {
+        font-size: 55px;
+    }
+}
