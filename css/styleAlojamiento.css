@@ -5,6 +5,70 @@ body {
     color: #323232;
 }
 
+.alojamientosPrincipal {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Cambiado a 'center' */
+    align-items: center;
+    background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%);
+    
+}
+
+.alojamientosPrincipal .dataAlojamientos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    /* Cambiado a 50% */
+    text-align: center;
+    /* Añadido para centrar el texto */
+}
+
+.alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h2 {
+    font-family: 'Rowdies', sans-serif;
+    color: #056734;
+    font-size: 40px;
+    margin-bottom: 40px; /* Ajusta el valor según la separación deseada */
+}
+
+.alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h4 {
+    font-size: 20px;    
+    margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+}
+
+.alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h6 {
+    font-size: 16px;
+    margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+    font-family: 'neueMontrealRegular', 'Courier New', Courier, monospace;
+}
+
+.alojamientosPrincipal .imgAlojamientos {
+    width: 100%;
+    /* Cambiado a 50% */
+    text-align: center;
+    /* Añadido para centrar la imagen */
+}
+
+
+.alojamientosPrincipal .imgAlojamientos img {
+    max-width: 100%;
+    /* Ajustado para que la imagen sea responsive */
+}
+
 .galeriaPrincipalAlojamientos {
     background-color: #ffff;
     padding: 20px 0;
@@ -183,6 +247,67 @@ body {
 /* Entre 992px y 1199px */
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 992px) {
+
+    .alojamientosPrincipal {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* Cambiado a 'center' */
+        align-items: center;
+    }
+
+    .alojamientosPrincipal .dataAlojamientos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 40%;
+        /* Cambiado a 50% */
+        text-align: center;
+        /* Añadido para centrar el texto */
+    }
+    
+    .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 50%;
+    }
+    
+    .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h2 {
+        font-family: 'Rowdies', sans-serif;
+        color: #056734;
+        text-align: left;
+        font-size: 45px;
+        margin-bottom: 40px; /* Ajusta el valor según la separación deseada */
+    }
+    
+    .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h4 {
+        text-align: left;
+        margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+        
+    }
+    
+    .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h6 {
+        text-align: left;
+        margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+        
+    }
+        
+    .alojamientosPrincipal .imgAlojamientos {
+        width: 60%;
+        /* Cambiado a 50% */
+        text-align: center; 
+        /* Añadido para centrar la imagen */
+    }
+    
+    .alojamientosPrincipal .imgAlojamientos img {
+        max-width: 100%;
+        /* Ajustado para que la imagen sea responsive */
+    }
 
     /* Tus estilos para dispositivos large y superiores van aquí */
     .galeriaPrincipalAlojamientos .contenedorAlojamientos h2 {

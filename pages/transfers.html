@@ -135,14 +135,15 @@
     <!-- Navbar End -->
     <main id="transfersPrincipal" class="transfersPrincipal">
         <div class="dataTransfers">
-            
+
             <div class="dataTransfersContent">
                 <h2>TRANSFERS</h2>
                 <h4>En Épica cada viaje se convierte en una experiencia única.</h4>
-                <h6>Nos enorgullece ofrecer una amplia gama de servicios de traslados personalizados que se adaptan a tus
+                <h6>Nos enorgullece ofrecer una amplia gama de servicios de traslados personalizados que se adaptan a
+                    tus
                     necesidades y hacen que tu viaje sea inolvidable.</h6>
             </div>
-            
+
         </div>
         <div class="imgTransfers">
             <div><img src="../img/transfers/mainTransfers.svg" alt=""></div>
@@ -152,21 +153,156 @@
     <section class="contenedorTraslados">
         <h2>TRASLADOS</h2>
         <article class="contenidoTraslados">
-            <div class="itemTraslados itemClasicos">
+            <div class="itemTraslados itemClasicos" type="button" data-bs-toggle="modal"
+                data-bs-target="#modalTrasladoClasicos">
                 <h3>CLÁSICOS</h3>
             </div>
-            <div class="itemTraslados itemNegocios">
+            <div class="itemTraslados itemNegocios" type="button" data-bs-toggle="modal"
+                data-bs-target="#modalTrasladoNegocios">
                 <h3>NEGOCIOS</h3>
             </div>
-            <div class="itemTraslados itemGrupos">
+            <div class="itemTraslados itemGrupos" type="button" data-bs-toggle="modal"
+                data-bs-target="#modalTrasladoGrupos">
                 <h3>GRUPOS</h3>
             </div>
         </article>
     </section>
 
-    <section id="contenedor-modal">
+    <section class="contenedorCompromiso">
+        <div class="contenidoCompromiso">
+
+            <h2>NUESTRO COMPROMISO</h2>
+            <div>
+                <p>En Épica Turismo, la seguridad y la satisfacción del cliente son nuestra máxima prioridad.</p>
+                <p>Te ofrecemos:</p>
+                <ul>
+                    <li>Conductores profesionales</li>
+                    <li>Vehículos de calidad</li>
+                    <li>Puntualidad</li>
+                </ul>
+            </div>
+        </div>
 
     </section>
+
+    <!-- START MODAL TRASLADOS -->
+    <div class="modal fade" id="modalTrasladoClasicos" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">TRASLADOS CLÁSICOS</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/transfers/ModalTransfersClassic.png" class="img-fluid rounded" alt="">
+
+                    <div class="texto-modal">
+                        <p>
+                            Viaja con comodidad y sin preocupaciones. Nuestro equipo estará listo para recogerte y
+                            llevarte al aeropuerto, garantizando un inicio o final de viaje sin estrés. Puntualidad y
+                            comodidad son nuestro compromiso con vos.
+                        </p>
+                        <ul>
+                            <li>Aeropuerto Internacional Ástor Piazzolla (MDP)</li>
+                            <li>Aeroparque Internacional Jorge Newbery (AEP)</li>
+                            <li>Aeropuerto Internacional Ezeiza (EZE)</li>
+                            <li>Terminal Fluvial Buquebus Puerto Madero</li>
+                            <li>Estación Divisadero de Pinamar</li>
+                            <br>
+                            <li>¿Con cuánta antelación debo reservar el traslado?</li>
+                            <li class="modalTraslados">Es posible reservar traslados en Buenos Aires con un mínimo de 24
+                                horas de antelación.
+                                ¿Qué hora de recogida tengo que indicar?
+                                En los traslados con origen en el aeropuerto tenés que indicar la hora de llegada
+                                programada
+                                del vuelo. Lo mismo sucede en puertos de cruceros y estaciones de tren, tenés que
+                                indicar la
+                                hora programada de llegada.
+                            </li>
+                            <br>
+                            <li>¿Cuánto tiempo me esperará el conductor?
+                            </li>
+                            <li class="modalTraslados"> Aeropuertos: 1 hora desde la hora efectiva de aterrizaje del
+                                vuelo.
+                                <br>
+                                Puertos de cruceros: 1 hora desde la hora efectiva de atraque del barco.
+                                <br>
+                                Estaciones de tren: 15 minutos desde la hora efectiva de llegada del tren.
+                                <br>
+                                Si por algún motivo necesitáis más tiempo, deberéis llamar al teléfono de contacto que
+                                aparece en la reserva. En este caso, se podrán aplicar suplementos.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-sm btn-success" href="mailto:contacto@epicaserviciosturisticos.com.ar"
+                        target="_blank"><i class="fa-regular fa-envelope"></i>
+                        contacto@epicaserviciosturisticos.com.ar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTrasladoNegocios" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">TRASLADOS NEGOCIOS</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/transfers/ModalTransfersBusinness.svg" class="img-fluid rounded" alt="">
+
+                    <div class="texto-modal">
+                        <p>
+                            Simplifica tus desplazamientos durante tus viajes de trabajo en la región. Nuestros
+                            servicios de transporte ejecutivo están diseñados para garantizar que llegues a tus
+                            reuniones y eventos puntualmente, permitiéndote centrarse en lo más importante: tus
+                            negocios.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-sm btn-success" href="mailto:contacto@epicaserviciosturisticos.com.ar"
+                        target="_blank"><i class="fa-regular fa-envelope"></i>
+                        contacto@epicaserviciosturisticos.com.ar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTrasladoGrupos" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">TRASLADOS CLÁSICOS</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/transfers/ModalTransfersGrupos.svg" class="img-fluid rounded" alt="">
+
+                    <div class="texto-modal">
+                        <p>
+                            Garantizamos un traslado cómodo y sin complicaciones, para que todos disfruten del viaje
+                            juntos.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-sm btn-success" href="mailto:contacto@epicaserviciosturisticos.com.ar"
+                        target="_blank"><i class="fa-regular fa-envelope"></i>
+                        contacto@epicaserviciosturisticos.com.ar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIN MODAL TRASLADOS -->
     <footer class="footerEpico">
         <div class="contenedorImgFooter"><img src="../img/logotipo_claro.svg" alt=""></div>
         <h3>Servicios turísticos</h3>
@@ -213,7 +349,7 @@
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/stickyNavBar.js"></script>
-    <script src="../js/modal.js"></script>
+
 </body>
 
 </html>

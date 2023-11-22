@@ -11,6 +11,8 @@ reescrito en MediaQueries */
     justify-content: center;
     /* Cambiado a 'center' */
     align-items: center;
+    background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%);
+    
 }
 
 .transfersPrincipal .dataTransfers {
@@ -43,11 +45,13 @@ reescrito en MediaQueries */
 .transfersPrincipal .dataTransfers .dataTransfersContent h4 {
     font-size: 20px;    
     margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
 }
 
 .transfersPrincipal .dataTransfers .dataTransfersContent h6 {
     font-size: 16px;
     margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+    font-family: 'neueMontrealRegular', 'Courier New', Courier, monospace;
 }
 
 .transfersPrincipal .imgTransfers {
@@ -65,9 +69,11 @@ reescrito en MediaQueries */
 
 .contenedorTraslados {
     width: 95%;
+    height: 50vh;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
+    
 }
 
 .contenedorTraslados h2 {
@@ -100,6 +106,11 @@ reescrito en MediaQueries */
     
 }
 
+.contenedorTraslados .contenidoTraslados .itemTraslados:hover {
+    transform: translate(-10px); /* Equivalente a translateX(10px) */
+    transition: .3s;
+}
+
 .contenedorTraslados .contenidoTraslados .itemTraslados h3 {
     font-family: 'blennyTrial', sans-serif;
     letter-spacing: 1px;
@@ -129,6 +140,37 @@ reescrito en MediaQueries */
     background-position: center;
 }
 
+.modalTraslados {
+    font-family: 'neueMontrealRegular', 'Courier New', Courier, monospace;
+    list-style: none;
+    }
+
+.contenedorCompromiso {
+    width: 86%;
+    margin: 0 auto;
+    border: 2px solid #056734;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.contenedorCompromiso .contenidoCompromiso h2 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Didot', sans-serif;
+    font-size: 30px;
+    color: #056734;
+    font-weight: 800;
+}
+
+.contenedorCompromiso .contenidoCompromiso div {
+    width: 90%;
+    margin: 0 auto;
+}
+.contenedorCompromiso .contenidoCompromiso div p {
+    font-family: 'neueMontrealRegular', 'Courier New', Courier, monospace;
+    font-size: 15px;
+
+}
 
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
@@ -151,7 +193,7 @@ reescrito en MediaQueries */
 
     .transfersPrincipal {
         width: 100%;
-        height: 80vh;
+        height: 90vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -189,11 +231,13 @@ reescrito en MediaQueries */
     .transfersPrincipal .dataTransfers .dataTransfersContent h4 {
         text-align: left;
         margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+        
     }
     
     .transfersPrincipal .dataTransfers .dataTransfersContent h6 {
         text-align: left;
         margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+        
     }
         
     .transfersPrincipal .imgTransfers {
@@ -209,8 +253,9 @@ reescrito en MediaQueries */
     }
 
     .contenedorTraslados {
+        padding-top: 30px;
         width: 90%;
-        padding-bottom: 0;
+        padding-bottom: 30px;
     }
     .contenedorTraslados .contenidoTraslados {
         flex-direction: row;
@@ -222,6 +267,7 @@ reescrito en MediaQueries */
         font-size: 50px;
     }
     
+    
     .contenedorTraslados .contenidoTraslados .itemTraslados h3 {
         font-size: 40px;
     }
@@ -231,6 +277,9 @@ reescrito en MediaQueries */
         height: 25vh;
     }
 
+    .contenedorCompromiso {
+        width: 40%;
+    }
     
 
 }
