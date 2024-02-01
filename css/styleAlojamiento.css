@@ -14,7 +14,7 @@ body {
     /* Cambiado a 'center' */
     align-items: center;
     background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%);
-    
+
 }
 
 .alojamientosPrincipal .dataAlojamientos {
@@ -34,26 +34,30 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
+
 }
 
 .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h2 {
     font-family: 'Rowdies', sans-serif;
     color: #056734;
     font-size: 40px;
-    margin-bottom: 40px; /* Ajusta el valor según la separación deseada */
+    margin-bottom: 40px;
+    /* Ajusta el valor según la separación deseada */
 }
 
 .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h4 {
-    font-size: 20px;    
-    margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* Ajusta el valor según la separación deseada */
     font-family: 'Montserrat', 'Courier New', Courier, monospace;
 }
 
 .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h6 {
     font-size: 16px;
-    margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
+    margin-bottom: 10px;
+    /* Ajusta el valor según la separación deseada */
     font-family: 'neueMontrealRegular', 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
 }
 
 .alojamientosPrincipal .imgAlojamientos {
@@ -78,7 +82,7 @@ body {
     font-family: 'Rowdies', sans-serif;
     color: #056734;
     text-align: center;
-    }
+}
 
 .galeriaPrincipalAlojamientos .contenedorAlojamientos {
     width: 90%;
@@ -143,66 +147,79 @@ body {
     border-bottom-right-radius: 5px;
 }
 
-
-.contenedorGaleria .itemAlojamiento:hover {
-    transform: scale(0.96);
-    /* Aumenta la imagen en un 10% */
-    transition: 0.3s;
-}
-
 /* ALOJAMIENTOS */
 
 .contenedorGaleria .almarenaHotel {
     background-image: url('../img/alojamiento/almarenaHotel.png');
     background-position: center;
     background-size: cover;
+    transition: background-position 2s;
 }
 
 .contenedorGaleria .altairHotel {
     background-image: url('../img/alojamiento/altairHotel.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: 110%;
+    transition: background-position 2s;
 }
 
 .contenedorGaleria .chiavariHotel {
     background-image: url('../img/alojamiento/chiavariHotel.jpg');
     background-position: center;
     background-size: cover;
+    transition: background-position 2s;
 }
 
 .contenedorGaleria .eoParkHotel {
     background-image: url('../img/alojamiento/eoParkHotel.jpg');
-    background-position: center;
-    background-size: cover;
+    background-position: left;
+    background-size: 110%;
+    transition: background-position 2s;
 }
 
 .contenedorGaleria .fontainbleauHotel {
     background-image: url('../img/alojamiento/hotelFontainbleau.jpg');
     background-position: center;
     background-size: cover;
+    transition: background-position 2s;
 }
 
 .contenedorGaleria .paucamHotel {
     background-image: url('../img/alojamiento/paucamHotel.jpg');
     background-position: bottom;
     background-size: cover;
+    transition: background-position 2s;
 }
 
 .contenedorGaleria .savoiaHotelSC {
     background-image: url('../img/alojamiento/savoiahotelSC.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: 110%;
+    transition: background-position 2s;
 }
 
 .contenedorGaleria .veronaHotel {
     background-image: url('../img/alojamiento/veronaHotel.jpg');
     background-position: center;
     background-size: cover;
+    transition: background-position 2s;
 }
+
+.contenedorGaleria .almarenaHotel:hover , 
+.contenedorGaleria .altairHotel:hover , 
+.contenedorGaleria .chiavariHotel:hover , 
+.contenedorGaleria .eoParkHotel:hover , 
+.contenedorGaleria .fontainbleauHotel:hover , 
+.contenedorGaleria .paucamHotel:hover , 
+.contenedorGaleria .savoiaHotelSC:hover,
+.contenedorGaleria .veronaHotel:hover{
+    background-position:right;
+}
+
 
 .texto-modal-service ul h5 {
     margin-left: -1rem;
-}
+} 
 
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
@@ -214,7 +231,7 @@ body {
 
     .galeriaPrincipalAlojamientos .contenedorAlojamientos .contenedorGaleria .itemAlojamiento {
         width: 40%;
-        }
+    }
 }
 
 /* Entre 768px y 991px */
@@ -269,41 +286,44 @@ body {
         text-align: center;
         /* Añadido para centrar el texto */
     }
-    
+
     .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent {
         display: flex;
         flex-direction: column;
         width: 70%;
         height: 50%;
     }
-    
+
     .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h2 {
         font-family: 'Rowdies', sans-serif;
         color: #056734;
         text-align: left;
         font-size: 45px;
-        margin-bottom: 40px; /* Ajusta el valor según la separación deseada */
+        margin-bottom: 40px;
+        /* Ajusta el valor según la separación deseada */
     }
-    
+
     .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h4 {
         text-align: left;
-        margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
-        
+        margin-bottom: 10px;
+        /* Ajusta el valor según la separación deseada */
+
     }
-    
+
     .alojamientosPrincipal .dataAlojamientos .dataAlojamientosContent h6 {
         text-align: left;
-        margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
-        
+        margin-bottom: 10px;
+        /* Ajusta el valor según la separación deseada */
+
     }
-        
+
     .alojamientosPrincipal .imgAlojamientos {
         width: 60%;
         /* Cambiado a 50% */
-        text-align: center; 
+        text-align: center;
         /* Añadido para centrar la imagen */
     }
-    
+
     .alojamientosPrincipal .imgAlojamientos img {
         max-width: 100%;
         /* Ajustado para que la imagen sea responsive */

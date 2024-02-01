@@ -33,7 +33,7 @@ El icono aparece después del contenido del menú desplegable.*/
 }
 
 .navbar-brand .logoEpica {
-    width: 100px;
+    width: 90px;
 }
 
 .navClasicas {
@@ -44,6 +44,7 @@ El icono aparece después del contenido del menú desplegable.*/
 
 .navClasicas a {
     color: #F5F5DC;
+    
 }
 
 .navClasicas hr {
@@ -53,7 +54,7 @@ El icono aparece después del contenido del menú desplegable.*/
 .navClasicas a:hover {
     /* background-image: linear-gradient(278deg, rgba(248, 111, 3, 0.5215336134453781) 0%, rgba(248, 111, 3, 1) 41%); */
     background-color: transparent;
-    font-weight: 600;
+    font-weight: 300;
     transition: .3s;
     
 }
@@ -74,7 +75,7 @@ El icono aparece después del contenido del menú desplegable.*/
     
    /*  background-image: linear-gradient(90deg, rgba(194, 51, 115, 1) 0%, rgba(194, 51, 115, 0.5215336134453781) 100%); */
     background-color: transparent;
-    font-weight: 600;
+    font-weight: 300;
     transition: 0.3s;
 
 }
@@ -92,7 +93,7 @@ El icono aparece después del contenido del menú desplegable.*/
 .navEpicas a:hover {
     /* background-image: linear-gradient(278deg, rgba(93, 156, 89, 0.5215336134453781) 0%, rgba(93, 156, 89, 1) 41%); */
     background-color: transparent;
-    font-weight: 600;
+    font-weight: 300;
     transition: .3s;
 }
 
@@ -181,6 +182,11 @@ El icono aparece después del contenido del menú desplegable.*/
         opacity: 1;
         
         }
+
+        .navbar-light .navbar-nav .nav-link {
+            font-size: 14px;
+        }
+
 
     .navbar .nav-item:hover .dropdown-experiencias {
         top: 100%;
