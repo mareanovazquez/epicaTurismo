@@ -198,6 +198,16 @@ body {
     box-shadow: none;
 }
 
+  /* MODAL PARQUES TEMATICOS Y CAROUSEL */
+
+  .itemParquesTematicos h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+    
+    }
 /* CUERPO MODAL EXPERIENCIAS CLÁSICAS */
 
 
@@ -934,7 +944,6 @@ body {
         font-size: 45px;
         letter-spacing: 5px;
         text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
-
         
         }
 
