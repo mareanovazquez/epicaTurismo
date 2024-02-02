@@ -455,7 +455,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .contenedorEspeciales .contenidoEspeciales .itemEspeciales {
@@ -469,7 +469,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .contenedorEspeciales .contenidoEspeciales .itemEspeciales h3 {
@@ -486,14 +486,15 @@ body {
     background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%), url('../img/especiales/especialesEscapadas.jpg');
     background-size: cover;
     background-position: center;
-    
-    }
-    
+
+}
+
 .itemDeportes {
     background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%), url('../img/especiales/especialesDeportes.png');
     background-size: cover;
     background-position: center;
 }
+
 .itemRecitales {
     background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%), url('../img/especiales/especialesRecitales.png');
     background-size: cover;
@@ -710,6 +711,7 @@ body {
         width: 90%;
         padding: 0;
     }
+
     .itemService {
         width: 200px;
         height: 200px;
@@ -730,19 +732,20 @@ body {
         border-bottom-right-radius: 5px;
     }
 
-.contenedorServicios {
-    width: 90%;
-}
-
-.subContenedorService {
-    justify-content: space-between;
-    
-}
-.contenedorEspeciales .contenidoEspeciales .itemEspeciales {
-    height: 30vh;
-    width: 100%;
-}
+    .contenedorServicios {
+        width: 90%;
     }
+
+    .subContenedorService {
+        justify-content: space-between;
+
+    }
+
+    .contenedorEspeciales .contenidoEspeciales .itemEspeciales {
+        height: 30vh;
+        width: 100%;
+    }
+}
 
 /* Entre 768px y 991px */
 /* Bootstrap breakpoints MD y superiores */
@@ -751,6 +754,7 @@ body {
     .contenedorExperiencias {
         width: 85%;
     }
+
     .contenedorServicios {
         width: 85%;
     }
@@ -845,6 +849,7 @@ body {
         width: 90%;
         padding-top: 20px;
     }
+
     .contenedorExperiencias h2 {
         font-size: 40px;
     }
@@ -920,6 +925,18 @@ body {
         background-position: right;
 
     }
+
+    /* MODAL PARQUES TEMATICOS Y CAROUSEL */
+
+.itemParquesTematicos h3{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 45px;
+        letter-spacing: 5px;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+
+        
+        }
 
     .expClassic2 {
         background-image: url('../img/expClassic/cabalgatas.jpg');
@@ -1235,9 +1252,10 @@ body {
         font-size: 40px;
     }
 
-   .carouselDestinos{
+    .carouselDestinos {
         width: 90%;
     }
+
     #destinos h2 {
         font-size: 50px;
     }
@@ -1259,7 +1277,7 @@ body {
         /* Para asegurarte de que la imagen no exceda el alto del contenedor */
     }
 
-   
+
     /*  .contenedorClientes {
         width: 95%;
         padding: 30px;
@@ -1292,22 +1310,24 @@ body {
     .contenedorEspeciales {
         width: 90%;
         padding-top: 20px;
-        padding-bottom: 0;
+        padding-bottom: 30px;
     }
+
     .contenedorEspeciales .contenidoEspeciales {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        
+
     }
+
     .contenedorEspeciales h2 {
         font-size: 50px;
     }
-    
+
     .contenedorEspeciales .contenidoEspeciales .itemEspeciales h3 {
         font-size: 33px;
     }
-    
+
     .contenedorEspeciales .contenidoEspeciales .itemEspeciales {
         width: 30%;
         height: 25vh;
@@ -1421,6 +1441,7 @@ body {
     .contenedorExperiencias {
         width: 89%;
     }
+
     #experiencias h2 {
         font-size: 50px;
     }
@@ -1435,7 +1456,7 @@ body {
     .expClassicTitle h3 {
         font-size: 40px;
         padding: 0;
-        }
+    }
 
     .expClassic h4 {
         font-weight: 800;
@@ -1456,7 +1477,7 @@ body {
         font-weight: 800;
     }
 
-  /* EXPERIENCIAS ÉPICAS */
+    /* EXPERIENCIAS ÉPICAS */
     .expEpicTitle {
         width: 20%;
         padding-right: 0;
@@ -1470,7 +1491,8 @@ body {
     .expEpic h4 {
         font-weight: 800;
     }
-/* SERVICIOS */
+
+    /* SERVICIOS */
 
     .subContenedorService {
         display: flex;
@@ -1483,7 +1505,7 @@ body {
         padding: 0;
         height: 400px;
         width: 17%;
-        }
+    }
 
     .itemService:hover {
         transition: .3s;
@@ -1495,7 +1517,7 @@ body {
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
         font-size: 20px;
-        
+
     }
 
     .itemService i {
@@ -1508,14 +1530,14 @@ body {
         background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
-        }
+    }
 
     .itemService2 {
         background-image: url(../img/servicios/gastronomia.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        }
+    }
 
     .itemService3 {
         background-image: url(../img/servicios/hoteleria.jpg);
@@ -1523,7 +1545,7 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         text-decoration: none;
-        }
+    }
 
     .itemService4 {
         background-image: url(../img/servicios/transfers.jpg);
@@ -1531,14 +1553,14 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         text-decoration: none;
-        }
+    }
 
     .itemService5 {
         background-image: url(../img/servicios/personalizado.jpg);
         background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
-        }
+    }
 
     .contenedorEspeciales .contenidoEspeciales .itemEspeciales h3 {
         font-size: 40px;
