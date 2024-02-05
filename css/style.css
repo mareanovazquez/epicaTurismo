@@ -224,13 +224,11 @@ body {
     align-items: center;
 
 }
-
 .modal-body img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .texto-modal {
     padding-top: 20px;
@@ -313,7 +311,6 @@ body {
     background-color: #F5F5DC;
 }
 
-
 .contenedorEpicAccordion .accordionItemEpic {
     background-color: #F5F5DC;
 }
@@ -322,19 +319,19 @@ body {
     display: none;
 }
 
+.contenedorServicios {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
 .contenedorServicios h2 {
     text-align: center;
     padding: 20px;
     font-family: 'Rowdies', sans-serif;
     font-size: 30px;
     color: #056734
-}
-
-.contenedorServicios {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
 }
 
 .subContenedorService {
@@ -346,6 +343,7 @@ body {
 }
 
 .itemService {
+    text-decoration: none;
     width: 120px;
     height: 120px;
     border-radius: 5px;
@@ -374,7 +372,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 12px;
-
 }
 
 .itemService i {
@@ -390,9 +387,8 @@ body {
     font-family: 'neueMontrealRegular', sans-serif;
 }
 
-
 .carouselDestinos {
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
@@ -426,31 +422,22 @@ body {
 
 #destinos h3 {
     text-align: center;
-    padding: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
     color: #F5F5DC;
 }
 
 #destinos p {
-    font-weight: 700;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 1px;
-    color: #F5F5DC;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
-    font-size: 18px;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 10px;
+    display: none;
 }
 
 .contenedorEspeciales {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px;
+    padding-top: 30px;
 }
 
 .contenedorEspeciales h2 {
@@ -466,7 +453,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .contenedorEspeciales .contenidoEspeciales .itemEspeciales {
@@ -625,8 +611,8 @@ body {
 
 .footerNosotros {
     text-align: center;
-    font-family: 'neueMontrealRegular', sans-serif;
-    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     border: solid;
     border-radius: 5px;
     border-width: .5px;
@@ -637,6 +623,10 @@ body {
 .footerNosotros p a {
     text-decoration: none;
     color: #F5F5DC;
+}
+
+.footerNosotros p {
+    margin-top: -15px;
 }
 
 .footerNosotros p span {
@@ -745,11 +735,15 @@ body {
 
     .contenedorServicios {
         width: 90%;
+        padding-bottom: 30px;
     }
 
     .subContenedorService {
         justify-content: space-between;
+    }
 
+    .contenedorEspeciales {
+        width: 90%;
     }
 
     .contenedorEspeciales .contenidoEspeciales .itemEspeciales {
@@ -772,6 +766,23 @@ body {
 
     .carouselDestinos {
         width: 90%;
+    }
+
+    #destinos h3 {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    #destinos p {
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 1px;
+        color: #F5F5DC;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+        font-size: 18px;
+        display: inline-block;
+        padding: 5px;
+        border-radius: 10px;
     }
 
     .contenedorEspeciales {
@@ -880,9 +891,7 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-
     }
-
 
     .expClassicTitle {
         width: 18%;
@@ -934,7 +943,6 @@ body {
 
     .expClassic1:hover {
         background-position: right;
-
     }
 
     /* MODAL PARQUES TEMATICOS Y CAROUSEL */
@@ -969,7 +977,6 @@ body {
 
     .expClassic3:hover {
         background-position: right;
-
     }
 
     .expClassic4 {
@@ -992,7 +999,6 @@ body {
         background-size: center;
         padding: 30px;
         width: 100%;
-
 
         /*Organización contenido*/
         display: flex;
@@ -1266,6 +1272,10 @@ body {
         width: 90%;
     }
 
+    #destinos {
+        padding: 0;
+    }
+
     #destinos h2 {
         font-size: 50px;
     }
@@ -1287,41 +1297,10 @@ body {
         /* Para asegurarte de que la imagen no exceda el alto del contenedor */
     }
 
-
-    /*  .contenedorClientes {
-        width: 95%;
-        padding: 30px;
-    }
-
-    .contenedorClientes h2 {
-        text-align: center;
-        padding: 20px;
-        font-family: 'Rowdies', sans-serif;
-        font-size: 50px;
-        color: #056734;
-    }
-
-    .nuestrosClientes {
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .nuestrosClientes .card {
-        background-color: #F5F5DC;
-
-    }
-
-    .nuestrosClientes .card .quote {
-        font-size: 80px;
-        color: #056734;
-    } */
-
     .contenedorEspeciales {
         width: 90%;
         padding-top: 20px;
-        padding-bottom: 30px;
-    }
+            }
 
     .contenedorEspeciales .contenidoEspeciales {
         flex-direction: row;
@@ -1369,6 +1348,11 @@ body {
 
     .footerEpico .contenedorFooter .footerNosotros {
         text-align: left;
+        font-size: 16px;
+    }
+
+    .footerNosotros p {
+        margin-top: 0;
     }
 
     .footerEpico .contenedorFooter .footerContacto {
