@@ -224,6 +224,7 @@ body {
     align-items: center;
 
 }
+
 .modal-body img {
     width: 100%;
     margin-left: auto;
@@ -498,6 +499,21 @@ body {
     background-position: center;
 }
 
+.itemCalendario {
+    background-color: #056734;
+}
+
+.contenedorEspeciales .contenidoEspeciales .itemCalendario h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contenedorEspeciales .contenidoEspeciales .itemCalendario i {
+    color: #F5F5DC;
+    font-size: 35px;
+}
+
 
 /*BOTÓN WHATSAPP*/
 .whatsapp {
@@ -748,6 +764,11 @@ body {
 
     .contenedorEspeciales .contenidoEspeciales .itemEspeciales {
         height: 30vh;
+        width: 100%;
+    }
+
+    .contenedorEspeciales .contenidoEspeciales .itemCalendario {
+        height: 15vh;
         width: 100%;
     }
 }
@@ -1300,7 +1321,7 @@ body {
     .contenedorEspeciales {
         width: 90%;
         padding-top: 20px;
-            }
+    }
 
     .contenedorEspeciales .contenidoEspeciales {
         flex-direction: row;
@@ -1318,8 +1339,16 @@ body {
     }
 
     .contenedorEspeciales .contenidoEspeciales .itemEspeciales {
-        width: 30%;
+        width: 27%;
         height: 25vh;
+    }
+    .contenedorEspeciales .contenidoEspeciales .itemCalendario {
+        width: 13%;
+        height: 25vh;
+    }
+    .contenedorEspeciales .contenidoEspeciales .itemCalendario h3 {
+        font-size: 14px;
+        padding: 5px    ;
     }
 
     .footerEpico .contenedorImgFooter {
@@ -1558,6 +1587,16 @@ body {
 
     .contenedorEspeciales .contenidoEspeciales .itemEspeciales h3 {
         font-size: 40px;
+    }
+
+    .contenedorEspeciales .contenidoEspeciales .itemCalendario {
+        width: 10%;
+        height: 25vh;
+    }
+    .contenedorEspeciales .contenidoEspeciales .itemCalendario h3 {
+        width: 80%;
+        font-size: 16px;
+        padding: 5px    ;
     }
 
 }
