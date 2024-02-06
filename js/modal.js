@@ -5,6 +5,7 @@ let indiceActual;
 
 function desplegarModal() {
     let rutaImagen = this.getAttribute('src');
+    let textoImagen =  this.getAttribute('alt') //Obtiene el texto del atributo alt
 
     let modal = document.createElement('div');
     modal.setAttribute('class', 'modal');
@@ -14,6 +15,12 @@ function desplegarModal() {
     imagenModal.setAttribute('src', rutaImagen);
     imagenModal.setAttribute('alt', 'proyecto');
     modal.appendChild(imagenModal)
+
+    // Crear un elemento de párrafo para mostrar el texto de la imagen
+    let textoModal = document.createElement('p');
+    textoModal.textContent = textoImagen; // Agregar el texto obtenido del atributo 'alt'
+    modal.appendChild(textoModal);
+
 
     let btnModalCerrar = document.createElement('div')
     btnModalCerrar.setAttribute('class', 'btn-cerrar')
@@ -67,17 +74,21 @@ flechaDerecha.addEventListener('click', mostrarImagenSiguiente);
 
 function mostrarImagenSiguiente() {
     indiceActual = (indiceActual + 1) % imagenProyecto.length;
-    actualizarModalImagen(imagenProyecto[indiceActual].getAttribute('src'));
+    actualizarModalImagen(imagenProyecto[indiceActual].getAttribute('src'), imagenProyecto[indiceActual].getAttribute('alt'));
 }
 
 function mostrarImagenAnterior() {
     indiceActual = (indiceActual - 1 + imagenProyecto.length) % imagenProyecto.length;
-    actualizarModalImagen(imagenProyecto[indiceActual].getAttribute('src'));
+    actualizarModalImagen(imagenProyecto[indiceActual].getAttribute('src'), imagenProyecto[indiceActual].getAttribute('alt'));
 }
 
-function actualizarModalImagen(src) {
+
+function actualizarModalImagen(src, texto) {
     let modalImg = document.querySelector('.modal img');
-    if (modalImg) {
+    let modalTexto = document.querySelector('.modal p');
+
+    if (modalImg && modalTexto) {
         modalImg.setAttribute('src', src);
+        modalTexto.textContent = texto; // Actualiza el texto del modal con el texto correspondiente a la nueva imagen
     }
 }

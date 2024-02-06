@@ -43,6 +43,7 @@ reescrito en MediaQueries */
     background: rgba(0, 0, 0, 0.8);
     z-index: 9999999999;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -52,8 +53,14 @@ reescrito en MediaQueries */
     max-width: 900px;
     transition: 2s;
     border-radius: 5px;
+    
 }
 
+.modal p {
+    color: #F5F5DC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    }
 .modal .btn-cerrar {
     position: fixed;
     width: 50px;
@@ -105,7 +112,13 @@ reescrito en MediaQueries */
 
 /* Entre 768px y 991px */
 /* Bootstrap breakpoints MD y superiores */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .modal p {
+        color: #F5F5DC;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 19px;
+    }
+}
 
 /* Entre 992px y 1199px */
 /* Bootstrap breakpoints LG y superiores */
@@ -120,10 +133,18 @@ reescrito en MediaQueries */
     .contenedorGaleria div {
         padding-bottom: 0;
     }
+
+    .modal p {
+        color: #F5F5DC;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+    }
 }
 
 /* Desde 1200px en adelante */
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 1200px) {
     /* Tus estilos para dispositivos extra large y superiores van aquí */
+
+    
 }
