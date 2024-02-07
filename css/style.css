@@ -518,7 +518,7 @@ body {
     background-position: center;
 }
 
-.itemCalendario {
+/* .itemCalendario {
     background-color: #056734;
 }
 
@@ -531,7 +531,7 @@ body {
 .contenedorEspeciales .contenidoEspeciales .itemCalendario i {
     color: #F5F5DC;
     font-size: 35px;
-}
+} */
 
 
 /*BOTÓN WHATSAPP*/
@@ -786,10 +786,10 @@ body {
         width: 100%;
     }
 
-    .contenedorEspeciales .contenidoEspeciales .itemCalendario {
+    /* .contenedorEspeciales .contenidoEspeciales .itemCalendario {
         height: 15vh;
         width: 100%;
-    }
+    } */
 }
 
 /* Entre 768px y 991px */
@@ -1358,17 +1358,17 @@ body {
     }
 
     .contenedorEspeciales .contenidoEspeciales .itemEspeciales {
-        width: 27%;
+        width: 30%;
         height: 25vh;
     }
-    .contenedorEspeciales .contenidoEspeciales .itemCalendario {
+    /* .contenedorEspeciales .contenidoEspeciales .itemCalendario {
         width: 13%;
         height: 25vh;
     }
     .contenedorEspeciales .contenidoEspeciales .itemCalendario h3 {
         font-size: 14px;
         padding: 5px    ;
-    }
+    } */
 
     .footerEpico .contenedorImgFooter {
         margin-left: auto;
@@ -1608,7 +1608,7 @@ body {
         font-size: 40px;
     }
 
-    .contenedorEspeciales .contenidoEspeciales .itemCalendario {
+   /*  .contenedorEspeciales .contenidoEspeciales .itemCalendario {
         width: 10%;
         height: 25vh;
     }
@@ -1616,7 +1616,7 @@ body {
         width: 80%;
         font-size: 16px;
         padding: 5px    ;
-    }
+    } */
 
 }
 
