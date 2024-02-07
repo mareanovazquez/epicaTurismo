@@ -8,6 +8,15 @@ EXPERIENCIAS ÚNICAS #C23373 rgb(194, 51, 115) Morado
 EXPERIENCIAS ÉPICAS #5D9C59 rgb(93, 156, 89) Verde
     */
 
+    /*
+    FUENTES
+    font-family: "GFS Didot", serif;
+    font-family: "Rowdies", sans-serif;
+    font-family: "Onest", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    */
+
 /* Menores a 576px 
 aplica a todo aquello que no sea 
 reescrito en MediaQueries */
@@ -20,7 +29,7 @@ body {
 /* ESTILOS TOPBAR */
 .topBar {
     color: #056734;
-    font-family: 'neueMontrealRegular', sans-serif;
+    font-family: "Onest", sans-serif;
     font-size: 14px;
     height: 50px;
 }
@@ -385,7 +394,7 @@ body {
     margin-right: auto;
     padding-top: 20px;
     font-size: 16px;
-    font-family: 'neueMontrealRegular', sans-serif;
+    font-family: "Onest", sans-serif;
 }
 
 .carouselDestinos {

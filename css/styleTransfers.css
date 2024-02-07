@@ -51,7 +51,7 @@ reescrito en MediaQueries */
 .transfersPrincipal .dataTransfers .dataTransfersContent h6 {
     font-size: 16px;
     margin-bottom: 10px; /* Ajusta el valor según la separación deseada */
-    font-family: 'neueMontrealRegular', 'Courier New', Courier, monospace;
+    font-family: "Onest", sans-serif;
     letter-spacing: 1px;
 }
 

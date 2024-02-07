@@ -58,8 +58,10 @@ reescrito en MediaQueries */
 
 .modal p {
     color: #F5F5DC;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "GFS Didot", serif;
     font-size: 16px;
+    text-transform: uppercase;
+    
     }
 .modal .btn-cerrar {
     position: fixed;
@@ -114,8 +116,6 @@ reescrito en MediaQueries */
 /* Bootstrap breakpoints MD y superiores */
 @media (min-width: 768px) {
     .modal p {
-        color: #F5F5DC;
-        font-family: 'Montserrat', sans-serif;
         font-size: 19px;
     }
 }
@@ -135,8 +135,6 @@ reescrito en MediaQueries */
     }
 
     .modal p {
-        color: #F5F5DC;
-        font-family: 'Montserrat', sans-serif;
         font-size: 25px;
     }
 }

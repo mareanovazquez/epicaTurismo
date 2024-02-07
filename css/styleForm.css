@@ -60,7 +60,7 @@ reescrito en MediaQueries */
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 30px;
-    font-family: 'neueMontrealRegular', sans-serif;
+    font-family: "Onest", sans-serif;
     text-align: center;
 }
 
@@ -76,7 +76,7 @@ reescrito en MediaQueries */
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0.5px;
-    font-family: 'neueMontrealRegular', sans-serif;
+    font-family: "Onest", sans-serif;
 }
 
 .contacto .contenedor-formulario .formulario form textarea {
@@ -92,7 +92,7 @@ reescrito en MediaQueries */
     margin-bottom: 10px;
     font-size: 0.9rem;
     font-weight: 400;
-    font-family: 'neueMontrealRegular', sans-serif;
+    font-family: "Onest", sans-serif;
     letter-spacing: 0.5px;
 }
 
