@@ -533,7 +533,73 @@ body {
     font-size: 35px;
 } */
 
+/* FEED INSTAGRAM */
 
+.contenedorInstagram {
+    /* Disposición del contenedor */
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+.contenedorInstagram h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 30px;
+    color: #F5F5DC
+}
+
+.contenedorInstagram .contenidoInstagram {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.contenedorInstagram .contenidoInstagram .postsInstagram {
+    width: 22%;
+    height: 50vh;
+    position: relative;
+    /* Añadir posición relativa para el contenedor */
+    border-radius: 5px;
+}
+
+.contenedorInstagram .contenidoInstagram .postsInstagram p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Onest', sans-serif;
+    position: relative;
+    top: 0%;
+}
+
+.contenedorInstagram .contenidoInstagram .postsInstagram p a {
+    text-decoration: none;
+    color: transparent;
+    }
+
+.contenedorInstagram .contenidoInstagram .postsInstagram:hover p {
+    top: 50%; /* Cambiar la posición del elemento hijo a la derecha 0% */
+    transition: top 2s ease-in; /* Añadir una transición suave */
+   }
+
+.contenedorInstagram .contenidoInstagram .postsInstagram:hover p a {
+    color: #F5F5DC;
+    transition: color 1s linear;
+    }
+    
 /*BOTÓN WHATSAPP*/
 .whatsapp {
     position: fixed;
@@ -602,7 +668,7 @@ body {
     transition: 0.2s;
 }
 
-
+/* FOOTER */
 .footerEpico {
     background-color: #056734;
 }
