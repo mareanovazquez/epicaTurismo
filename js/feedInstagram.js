@@ -2,7 +2,7 @@
 const feed = document.querySelector('.contenidoInstagram');
 const posts = document.querySelectorAll('.postsInstagram');
 
-const token = 'IGQWROT3hXbTg4MU1maFBHX0Q1cEJZASnBTZAW9MLXBjUXVYRHNSQndkVlN1dWRqeUlIbk9xbW1YWTZAucm8wc2dJUmZAxNnprOVhHOHV6akpsTUlGOFp3NUNSaEczTUVEWWhFMVlaTjdPend1RjQwV2k3RW9CY2pEOFkZD';
+const token = 'IGQWRQcDd3cUllNm1GSzlsd2dmSndHY3lvaHFJX2RtQzZAXcm1kOUpFZAkhveVRoaHdIS0NNOGVncnhMOXM4Y2YxRDFEZA21xQTQ1SXBWLTNUaEFGR1ZA1cDFOWEhudWNhZADdCWDRITm4xNXoxTEFhbU41Qjd3ejJvSU0ZD';
 
 const url = `https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink,username,id&limit=4&access_token=${token}`;
 
@@ -28,7 +28,7 @@ fetch(url)
             // Crear un enlace para el permalink
             const permalinkLink = document.createElement('a');
             permalinkLink.href = imageData.permalink; // Suponiendo que permalink contiene la URL del permalink
-            permalinkLink.textContent = imageData.caption; // Texto del enlace
+            permalinkLink.textContent = imageData.caption.slice(0,100); // Texto del enlace
             permalinkLink.target = "_blank"; // Abrir el enlace en una nueva pestaña
             
 

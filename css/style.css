@@ -567,8 +567,8 @@ body {
 }
 
 .contenedorInstagram .contenidoInstagram .postsInstagram {
-    width: 22%;
-    height: 50vh;
+    width: 23%;
+    height: 45vh;
     position: relative;
     /* Añadir posición relativa para el contenedor */
     border-radius: 5px;
