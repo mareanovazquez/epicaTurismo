@@ -2,7 +2,7 @@ const feed = document.querySelector('.contenidoInstagram');
 
 const token = 'IGQWRQcDd3cUllNm1GSzlsd2dmSndHY3lvaHFJX2RtQzZAXcm1kOUpFZAkhveVRoaHdIS0NNOGVncnhMOXM4Y2YxRDFEZA21xQTQ1SXBWLTNUaEFGR1ZA1cDFOWEhudWNhZADdCWDRITm4xNXoxTEFhbU41Qjd3ejJvSU0ZD';
 
-const url = `https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink,username,id&limit=4&access_token=${token}`;
+const url = `https://graph.instagram.com/me/media?fields=thumbnail_url,media_type,media_url,caption,permalink,username,id&limit=4&access_token=${token}`;
 
 fetch(url)
     .then(res => res.json())
