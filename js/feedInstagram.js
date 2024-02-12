@@ -1,6 +1,4 @@
-
 const feed = document.querySelector('.contenidoInstagram');
-const posts = document.querySelectorAll('.postsInstagram');
 
 const token = 'IGQWRQcDd3cUllNm1GSzlsd2dmSndHY3lvaHFJX2RtQzZAXcm1kOUpFZAkhveVRoaHdIS0NNOGVncnhMOXM4Y2YxRDFEZA21xQTQ1SXBWLTNUaEFGR1ZA1cDFOWEhudWNhZADdCWDRITm4xNXoxTEFhbU41Qjd3ejJvSU0ZD';
 
@@ -12,7 +10,7 @@ fetch(url)
         const dataPub = data.data;
         console.log(dataPub);
         dataPub.forEach((imageData, index) => {
-            // Crear un contenedor para la imagen y la leyenda
+            // Crear un contenedor para la imagen
             const posts = document.createElement('div');
             posts.classList.add('postsInstagram'); // Agregar la clase 'postsInstagram' al contenedor
 
@@ -21,25 +19,28 @@ fetch(url)
             posts.style.backgroundPosition = 'center';
             posts.style.backgroundSize = 'cover';
             posts.style.backgroundRepeat = 'no-repeat';
+            posts.style.cursor = 'pointer'; // Cambiar el cursor a una manito
 
-            // Crear un elemento para la leyenda
-            const caption = document.createElement('p');
+            // Establecer el permalink
+            posts.addEventListener('click', () => {
+                window.open(imageData.permalink, '_blank');
+            });
 
-            // Crear un enlace para el permalink
-            const permalinkLink = document.createElement('a');
-            permalinkLink.href = imageData.permalink; // Suponiendo que permalink contiene la URL del permalink
-            permalinkLink.textContent = imageData.caption.slice(0,100); // Texto del enlace
-            permalinkLink.target = "_blank"; // Abrir el enlace en una nueva pestaña
-            
+            // Cambiar el tamaño del fondo en el evento mouseover con transición suave
+            posts.addEventListener('mouseover', () => {
+                posts.style.backgroundSize = '110%'; // Cambiar el tamaño al 110%
+                posts.style.transition = 'background-size 0.9s ease'; // Agregar una transición suave de 0.3 segundos
+            });
 
-            // Envolver el texto de la leyenda con el enlace al permalink
-            caption.appendChild(permalinkLink);
-
-            // Añadir la leyenda al contenedor
-            posts.appendChild(caption);
+            // Restaurar el tamaño del fondo en el evento mouseout con transición suave
+            posts.addEventListener('mouseout', () => {
+                posts.style.backgroundSize = 'cover'; // Restaurar el tamaño original 'cover'
+            });
 
             // Añadir el contenedor al contenedor de la galería
             feed.appendChild(posts); // Suponiendo que 'feed' es tu contenedor .contenedor-galeria
         });
 
     });
+
+
