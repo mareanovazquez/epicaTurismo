@@ -8,7 +8,7 @@ EXPERIENCIAS ÚNICAS #C23373 rgb(194, 51, 115) Morado
 EXPERIENCIAS ÉPICAS #5D9C59 rgb(93, 156, 89) Verde
     */
 
-    /*
+/*
     FUENTES
     font-family: "GFS Didot", serif;
     font-family: "Rowdies", sans-serif;
@@ -436,17 +436,17 @@ body {
     font-size: 20px;
     font-weight: 800;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
-    
+
 }
 
-#destinos h3 a{
+#destinos h3 a {
     color: #F5F5DC;
     text-decoration: none;
 }
 
-#destinos h3 a:hover{
+#destinos h3 a:hover {
     color: #5D9C59;
-    
+
 }
 
 #destinos p {
@@ -518,35 +518,14 @@ body {
     background-position: center;
 }
 
-/* .itemCalendario {
-    background-color: #056734;
-}
-
-.contenedorEspeciales .contenidoEspeciales .itemCalendario h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.contenedorEspeciales .contenidoEspeciales .itemCalendario i {
-    color: #F5F5DC;
-    font-size: 35px;
-} */
-
 /* FEED INSTAGRAM */
-
 .contenedorInstagram {
     /* Disposición del contenedor */
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    
-    border-radius: 5px;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     margin-bottom: 20px;
-
 }
 
 .contenedorInstagram h2 {
@@ -560,47 +539,20 @@ body {
 
 .contenedorInstagram .contenidoInstagram {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    
 }
 
 .contenedorInstagram .contenidoInstagram .postsInstagram {
-    width: 23%;
+    width: 85%;
     height: 45vh;
     position: relative;
     /* Añadir posición relativa para el contenedor */
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-.contenedorInstagram .contenidoInstagram .postsInstagram p {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 10px;
-    font-family: 'Onest', sans-serif;
-    position: relative;
-    top: 0%;
-}
-
-.contenedorInstagram .contenidoInstagram .postsInstagram p a {
-    text-decoration: none;
-    color: transparent;
-    }
-
-.contenedorInstagram .contenidoInstagram .postsInstagram:hover p {
-    top: 50%; /* Cambiar la posición del elemento hijo a la derecha 0% */
-    transition: top 2s ease-in; /* Añadir una transición suave */
-   }
-
-.contenedorInstagram .contenidoInstagram .postsInstagram:hover p a {
-    color: #F5F5DC;
-    transition: color 1s linear;
-    }
-    
 /*BOTÓN WHATSAPP*/
 .whatsapp {
     position: fixed;
@@ -853,10 +805,29 @@ body {
         width: 100%;
     }
 
-    /* .contenedorEspeciales .contenidoEspeciales .itemCalendario {
-        height: 15vh;
-        width: 100%;
-    } */
+    /* FEED INSTAGRAM */
+    .contenedorInstagram {
+        /* Disposición del contenedor */
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        margin-bottom: 20px;
+    }
+
+    .contenedorInstagram .contenidoInstagram {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .contenedorInstagram .contenidoInstagram .postsInstagram {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 /* Entre 768px y 991px */
@@ -899,6 +870,14 @@ body {
     .contenedorEspeciales .contenidoEspeciales .itemRecitales {
         background-position: top;
     }
+
+    /* FEED INSTAGRAM */
+
+    .contenedorInstagram .contenidoInstagram .postsInstagram {
+        width: 350px;
+        height: 350px;
+    }
+
 }
 
 /* Entre 992px y 1199px */
@@ -1428,6 +1407,7 @@ body {
         width: 30%;
         height: 25vh;
     }
+
     /* .contenedorEspeciales .contenidoEspeciales .itemCalendario {
         width: 13%;
         height: 25vh;
@@ -1480,6 +1460,13 @@ body {
 
     .contenedorFooter2 {
         justify-content: flex-end;
+    }
+
+    /* FEED INSTAGRAM */
+
+    .contenedorInstagram .contenidoInstagram .postsInstagram {
+        width: 400px;
+        height: 400px;
     }
 
 
@@ -1675,15 +1662,25 @@ body {
         font-size: 40px;
     }
 
-   /*  .contenedorEspeciales .contenidoEspeciales .itemCalendario {
-        width: 10%;
-        height: 25vh;
+    /* FEED INSTAGRAM */
+    .contenedorInstagram {
+        /* Disposición del contenedor */
+        width: 88%;
     }
-    .contenedorEspeciales .contenidoEspeciales .itemCalendario h3 {
-        width: 80%;
-        font-size: 16px;
-        padding: 5px    ;
-    } */
+
+    .contenedorInstagram h2 {
+        font-size: 50px;
+    }
+
+    .contenedorInstagram .contenidoInstagram {
+        justify-content: space-evenly;
+
+    }
+
+    .contenedorInstagram .contenidoInstagram .postsInstagram {
+        width: 250px;
+        height: 250px;
+    }
 
 }
 
@@ -1691,6 +1688,11 @@ body {
 
     .principal .mainCarousel h1 {
         font-size: 50px;
+    }
+
+    .contenedorInstagram .contenidoInstagram .postsInstagram {
+        width: 300px;
+        height: 300px;
     }
 
 }

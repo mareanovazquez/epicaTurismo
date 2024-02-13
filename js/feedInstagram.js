@@ -8,25 +8,22 @@ fetch(url)
     .then(res => res.json())
     .then(data => {
         const dataPub = data.data;
-        console.log(dataPub);
         dataPub.forEach((imageData, index) => {
-            // Crear un contenedor para la imagen
-            const posts = document.createElement('div');
-            posts.classList.add('postsInstagram'); // Agregar la clase 'postsInstagram' al contenedor
+            // Verificar si el tipo de medio es VIDEO
+            if (imageData.media_type === 'VIDEO') {
+                // Establecer el fondo del contenedor con la miniatura del video
+                const posts = document.createElement('div');
+                posts.classList.add('postsInstagram'); // Agregar la clase 'postsInstagram' al contenedor
+                posts.style.background = `linear-gradient(180deg, rgba(0,4,40,0) 37%, rgba(0,4,40,0.8156512605042017) 92%),url(${imageData.thumbnail_url})`; 
+                posts.style.backgroundPosition = 'center';
+                posts.style.backgroundSize = 'cover';
+                posts.style.backgroundRepeat = 'no-repeat';
+                posts.style.cursor = 'pointer'; // Cambiar el cursor a una manito
+                posts.addEventListener('click', () => {
+                    window.open(imageData.permalink, '_blank');
+                });
 
-            // Establecer el fondo del contenedor con la imagen
-            posts.style.background = `linear-gradient(180deg, rgba(0,4,40,0) 37%, rgba(0,4,40,0.8156512605042017) 92%),url(${imageData.media_url})`; // Suponiendo que media_url contiene la URL de la imagen
-            posts.style.backgroundPosition = 'center';
-            posts.style.backgroundSize = 'cover';
-            posts.style.backgroundRepeat = 'no-repeat';
-            posts.style.cursor = 'pointer'; // Cambiar el cursor a una manito
-
-            // Establecer el permalink
-            posts.addEventListener('click', () => {
-                window.open(imageData.permalink, '_blank');
-            });
-
-            // Cambiar el tamaño del fondo en el evento mouseover con transición suave
+                   // Cambiar el tamaño del fondo en el evento mouseover con transición suave
             posts.addEventListener('mouseover', () => {
                 posts.style.backgroundSize = '110%'; // Cambiar el tamaño al 110%
                 posts.style.transition = 'background-size 0.9s ease'; // Agregar una transición suave de 0.3 segundos
@@ -36,11 +33,31 @@ fetch(url)
             posts.addEventListener('mouseout', () => {
                 posts.style.backgroundSize = 'cover'; // Restaurar el tamaño original 'cover'
             });
+                feed.appendChild(posts); // Agregar el contenedor al contenedor de la galería
+            } else {
+                // Si no es un video, establecer el fondo del contenedor con la imagen
+                const posts = document.createElement('div');
+                posts.classList.add('postsInstagram'); // Agregar la clase 'postsInstagram' al contenedor
+                posts.style.background = `linear-gradient(180deg, rgba(0,4,40,0) 37%, rgba(0,4,40,0.8156512605042017) 92%),url(${imageData.media_url})`; 
+                posts.style.backgroundPosition = 'center';
+                posts.style.backgroundSize = 'cover';
+                posts.style.backgroundRepeat = 'no-repeat';
+                posts.style.cursor = 'pointer'; // Cambiar el cursor a una manito
+                posts.addEventListener('click', () => {
+                    window.open(imageData.permalink, '_blank');
+                });
 
-            // Añadir el contenedor al contenedor de la galería
-            feed.appendChild(posts); // Suponiendo que 'feed' es tu contenedor .contenedor-galeria
+                   // Cambiar el tamaño del fondo en el evento mouseover con transición suave
+            posts.addEventListener('mouseover', () => {
+                posts.style.backgroundSize = '110%'; // Cambiar el tamaño al 110%
+                posts.style.transition = 'background-size 0.9s ease'; // Agregar una transición suave de 0.3 segundos
+            });
+
+            // Restaurar el tamaño del fondo en el evento mouseout con transición suave
+            posts.addEventListener('mouseout', () => {
+                posts.style.backgroundSize = 'cover'; // Restaurar el tamaño original 'cover'
+            });
+                feed.appendChild(posts); // Agregar el contenedor al contenedor de la galería
+            }
         });
-
     });
-
-
