@@ -503,7 +503,17 @@ body {
     background: linear-gradient(98deg, rgba(255, 165, 0, 0.3) 5%, rgba(255, 165, 0, 0.3) 45%), url('../img/especiales/especialesEscapadas.jpg');
     background-size: cover;
     background-position: center;
+}
 
+.itemEscapadas h3 a {
+    text-decoration: none;
+    color: #F5F5DC;
+}
+
+.itemEscapadas h3 a:hover {
+    letter-spacing: 3px;
+    transition: 1s;
+    color: #FCFCF7;
 }
 
 .itemDeportes {

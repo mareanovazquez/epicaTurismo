@@ -14,7 +14,7 @@ fetch(url)
                 // Establecer el fondo del contenedor con la miniatura del video
                 const posts = document.createElement('div');
                 posts.classList.add('postsInstagram'); // Agregar la clase 'postsInstagram' al contenedor
-                posts.style.background = `linear-gradient(180deg, rgba(0,4,40,0) 37%, rgba(0,4,40,0.8156512605042017) 92%),url(${imageData.thumbnail_url})`; 
+                posts.style.background = `url(${imageData.thumbnail_url})`; 
                 posts.style.backgroundPosition = 'center';
                 posts.style.backgroundSize = 'cover';
                 posts.style.backgroundRepeat = 'no-repeat';
@@ -38,7 +38,7 @@ fetch(url)
                 // Si no es un video, establecer el fondo del contenedor con la imagen
                 const posts = document.createElement('div');
                 posts.classList.add('postsInstagram'); // Agregar la clase 'postsInstagram' al contenedor
-                posts.style.background = `linear-gradient(180deg, rgba(0,4,40,0) 37%, rgba(0,4,40,0.8156512605042017) 92%),url(${imageData.media_url})`; 
+                posts.style.background = `url(${imageData.media_url})`; 
                 posts.style.backgroundPosition = 'center';
                 posts.style.backgroundSize = 'cover';
                 posts.style.backgroundRepeat = 'no-repeat';
