@@ -517,8 +517,8 @@ body {
 }
 
 .contenedorInstagram .contenidoInstagram .postsInstagram {
-    width: 85%;
-    height: 38vh;
+    width: 150px;
+    height: 150px;
     position: relative;
     /* Añadir posición relativa para el contenedor */
     border-radius: 5px;
@@ -719,7 +719,26 @@ body {
     color: #e40434;
     font-weight: 700;
 }
+@media (min-width: 251px){
+    .contenedorInstagram .contenidoInstagram .postsInstagram {
+        width: 240px;
+        height: 240px;
+    }
+}
 
+@media (min-width: 351px){
+    .contenedorInstagram .contenidoInstagram .postsInstagram {
+        width: 80%;
+        height: 45vh;
+    }
+}
+
+@media (min-width: 451px){
+    .contenedorInstagram .contenidoInstagram .postsInstagram {
+        width: 80%;
+        height: 50vh;
+    }
+}
 
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
