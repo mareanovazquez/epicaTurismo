@@ -728,15 +728,15 @@ body {
 
 @media (min-width: 351px){
     .contenedorInstagram .contenidoInstagram .postsInstagram {
-        width: 80%;
-        height: 45vh;
+        width: 300px;
+        height: 300px;
     }
 }
 
 @media (min-width: 451px){
     .contenedorInstagram .contenidoInstagram .postsInstagram {
-        width: 80%;
-        height: 50vh;
+        width: 400px;
+        height: 400px;
     }
 }
 
