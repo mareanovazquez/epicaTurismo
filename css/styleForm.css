@@ -96,27 +96,10 @@ reescrito en MediaQueries */
     letter-spacing: 0.5px;
 }
 
-
-/* .contacto .contenedor-formulario .formulario form input[type="submit"] {
-        width: 100%;
-        border: none;
-        border: 1px solid #0089E0;
-        padding: 8px;
-        background: #056734;
-        color: #fff;
-        font-size: 0.9rem;
-        font-family: 'neueMontrealRegular', sans-serif;
-        letter-spacing: 0.5px;
-        cursor: pointer;
-        transition: all .7s ease;
-    } */
-
-/*  .contacto .contenedor-formulario .formulario form input[type="submit"]:hover {
-        background: #fff;
-        color: #056734;
-        font-family: 'neueMontrealRegular', sans-serif;
-    } */
-
+.contacto .contenedor-formulario .formulario form .container-button {
+    display: flex;
+    justify-content: end;
+}
 
 /*Validacion formulario*/
 
