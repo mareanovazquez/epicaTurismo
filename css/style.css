@@ -698,9 +698,13 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.contenedorFooter2 p {
+    font-size: 13px;
 }
 
 .contenedorFooter2 small a {
@@ -1490,7 +1494,14 @@ body {
     }
 
     .contenedorFooter2 {
-        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorFooter2 p {
+        font-size: 15px;
     }
 
     /* FEED INSTAGRAM */
